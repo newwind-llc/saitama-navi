@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>川越市 - さいたまなび</title>
+  <meta name="description" content="川越市は「小江戸」として知られる観光都市で、蔵造りの町並みや時の鐘など江戸情緒が色濃く残る、埼玉県を代表する歴史文化都市です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+            さいたまなび
+          </a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">川越市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">川越市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川越市は、埼玉県南西部に位置する中核市で、人口約35万人（2024年）を擁します。面積は109.13平方キロメートルで、江戸時代の城下町の面影を色濃く残す歴史文化都市として、「小江戸（こえど）」の愛称で全国的に知られています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          蔵造りの町並み、時の鐘、菓子屋横丁など、江戸情緒あふれる観光スポットが数多くあり、年間約700万人以上の観光客が訪れる埼玉県を代表する観光都市です。1999年には「川越市川越伝統的建造物群保存地区」が国の重要伝統的建造物群保存地区に選定され、歴史的景観の保存に努めています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          東京・池袋から東武東上線で約30分、西武新宿線でもアクセスでき、都心への通勤圏内でありながら、歴史と文化が息づく魅力的な住環境を提供しています。商業施設も充実しており、観光と生活の両面で魅力ある都市です。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="川越の蔵造りの町並み。黒漆喰の壁と重厚な瓦屋根を持つ伝統的な商家建築が連なる歴史的な街路景観" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">蔵造りの町並み - 江戸の面影を今に伝える</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">歴史と文化</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">城下町としての歴史</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川越の歴史は古く、平安時代には既に河越館が築かれていました。江戸時代には川越藩の城下町として栄え、江戸（東京）への物資輸送の重要な拠点でした。「江戸の北の守り」として重視され、歴代藩主には有力な大名が配置されました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          特に、川越藩主を務めた松平信綱は「知恵伊豆」として知られ、川越の発展に大きく貢献しました。新河岸川の水運を整備し、川越は江戸との交易で大いに繁栄しました。この時代の繁栄が、現在の「小江戸」という愛称の由来となっています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">蔵造りの町並み</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川越の最大の魅力は、黒漆喰の壁と重厚な瓦屋根が特徴的な蔵造りの商家建築が連なる歴史的町並みです。1893年（明治26年）の川越大火後、防火建築として蔵造りの建物が次々と建てられました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          一番街通りには約30棟の蔵造りの建物が現存し、多くが現役の商店として営業を続けています。重厚な扉を持つ観音開きの構造や、鬼瓦、漆喰細工など、随所に職人の技を見ることができます。この町並みを歩くと、まるで江戸時代にタイムスリップしたような感覚を味わえます。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">時の鐘</h3>
+        <p class="text-gray-700 leading-relaxed">
+          川越のシンボルである「時の鐘」は、約400年前に川越藩主・酒井忠勝によって建てられた鐘楼です。現在の建物は1893年の大火後に再建された4代目で、高さ約16メートルの木造3層構造です。今も1日4回（午前6時、正午、午後3時、午後6時）、時を告げる鐘の音が川越の街に響き渡り、「日本の音風景100選」に選ばれています。
+        </p>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="川越のシンボル「時の鐘」。木造3層構造の鐘楼で、高さ約16メートル。伝統的な日本建築様式の美しい塔" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">時の鐘 - 川越のシンボル、約400年の歴史を持つ鐘楼</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要観光スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">蔵造りの町並み（一番街）</h3>
+            <p class="text-gray-700 leading-relaxed">重要伝統的建造物群保存地区。黒漆喰の蔵造り建築が並ぶメインストリートで、土産物店、飲食店、ギャラリーなどが軒を連ねます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">菓子屋横丁</h3>
+            <p class="text-gray-700 leading-relaxed">石畳の路地に約20軒の駄菓子屋が並ぶ、懐かしい雰囲気の横丁。昔ながらの製法で作られる飴やせんべいなどを購入できます。「かおり風景100選」認定。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">喜多院</h3>
+            <p class="text-gray-700 leading-relaxed">天台宗の名刹で、徳川家康の側近・天海僧正ゆかりの寺。江戸城から移築された「家光誕生の間」「春日局化粧の間」があり、国の重要文化財に指定されています。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川越氷川神社</h3>
+            <p class="text-gray-700 leading-relaxed">約1,500年の歴史を持つ古社。縁結びの神様として知られ、夏の「縁むすび風鈴」イベントは特に人気。境内の絵馬トンネルも見どころです。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川越城本丸御殿</h3>
+            <p class="text-gray-700 leading-relaxed">江戸時代の本丸御殿建築が現存する貴重な史跡。全国でも本丸御殿が残るのは川越と高知のみです。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">大正浪漫夢通り</h3>
+            <p class="text-gray-700 leading-relaxed">大正時代の洋風建築が残る通り。レトロな雰囲気の中に、カフェやショップが点在し、蔵造りの町並みとは違った魅力があります。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="川越氷川神社の縁むすび風鈴。境内に色とりどりの江戸風鈴が無数に吊り下げられ、風に揺れて美しい音色を奏でる様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">川越氷川神社 縁むすび風鈴 - 夏の風物詩</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川越市は、東武東上線、西武新宿線、JR川越線の3路線が利用でき、都心へのアクセスが良好です。東武東上線で池袋まで約30分、西武新宿線で西武新宿まで約45分です。川越駅は特急停車駅でもあり、通勤・通学に便利です。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には川越駅、本川越駅、川越市駅など主要駅があり、バス網も充実しています。国道16号、関越自動車道も通り、車での移動も便利です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業施設</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川越駅周辺には、アトレマルヒロ、ルミネ川越などの駅ビル型商業施設があります。本川越駅周辺にはクレアモール商店街があり、約1キロメートルにわたって約250店舗が軒を連ねる県内有数の商店街です。郊外には大型ショッピングセンターもあり、買い物環境は充実しています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">教育環境</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には東京国際大学、東洋大学、尚美学園大学などの大学があり、学生の街としての一面も持ちます。県立川越高校、川越女子高校など進学実績の高い高校も多く、教育環境が整っています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">医療・子育て</h3>
+        <p class="text-gray-700 leading-relaxed">
+          埼玉医科大学総合医療センター、川越市医師会などの医療機関が充実しており、高度医療から地域医療まで安心です。子育て支援センターや保育施設も整備され、子育て世帯にも住みやすい環境です。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・特産品</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川越市は商業都市として発展してきましたが、農業も盛んです。特にサツマイモは川越の特産品として全国的に知られており、「川越いも」というブランドで親しまれています。江戸時代から栽培が始まり、「栗よりうまい十三里」として評判でした。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          また、川越は伝統工芸も盛んで、川越唐桟（とうざん）という織物、川越だるまなどが有名です。観光産業も市の重要な産業で、蔵造りの町並みを活かした観光振興に力を入れています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          近年は、歴史的景観を活かしたクリエイティブ産業やカフェ文化も育ちつつあり、若い世代にも魅力的な街として注目されています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川越まつり（10月第3土日）</h3>
+            <p class="text-gray-700 leading-relaxed">関東三大祭りの一つで、ユネスコ無形文化遺産に登録。精巧な人形を乗せた豪華絢爛な山車が町中を曳き回され、夜の「曳っかわせ」は圧巻です。毎年約100万人が訪れます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">小江戸川越花火大会（8月）</h3>
+            <p class="text-gray-700 leading-relaxed">安比奈親水公園で開催される花火大会。約6,000発の花火が夏の夜空を彩ります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">小江戸川越春まつり（3月下旬～5月上旬）</h3>
+            <p class="text-gray-700 leading-relaxed">桜の開花時期から新緑の季節にかけて、オープニングイベントやパレードなどが開催されます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川越氷川神社 縁むすび風鈴（7月～9月）</h3>
+            <p class="text-gray-700 leading-relaxed">境内に約2,000個の江戸風鈴が飾られ、涼やかな音色と色彩が訪れる人を魅了します。SNS映えスポットとしても人気です。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約35万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">109.13平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">1922年12月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">中核市指定</th>
+              <td class="py-3 px-4 text-gray-700">2003年4月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">川越駅、本川越駅、川越市駅</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">川越駅から池袋駅まで約30分、西武新宿駅まで約45分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花</th>
+              <td class="py-3 px-4 text-gray-700">木：クスノキ、花：ヤマブキ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/tourism/spots/kawagoe.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              川越の観光スポット
+            </a>
+          </li>
+          <li>
+            <a href="/tourism/events/kawagoe-matsuri.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              川越まつり
+            </a>
+          </li>
+          <li>
+            <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              埼玉の歴史
+            </a>
+          </li>
+          <li>
+            <a href="/tourism/culture.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              歴史・文化
+            </a>
+          </li>
+          <li>
+            <a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              交通アクセス
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。
+          </p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- モバイルメニュー制御スクリプト -->
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

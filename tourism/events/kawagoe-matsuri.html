@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>川越まつり - さいたまなび</title>
+    <meta name="description" content="370年の歴史を持つ川越まつり。毎年10月第3土曜・日曜に開催され、豪華な山車が小江戸の街並みを彩ります。関東三大祭の一つとして知られる伝統行事です。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">川越まつり</li>
+        </ol>
+    </nav>
+
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">川越まつり</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    370年の歴史を誇る川越まつり。江戸「天下祭」を今に再現する、精巧な人形を乗せた山車が小江戸の街並みを巡る壮麗な祭りです。
+                </p>
+            </header>
+
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-amber-600 to-amber-900 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">川越まつりとは</h3>
+                    <p class="leading-relaxed mb-4">
+                        川越まつりは、川越氷川神社の例大祭として毎年10月第3土曜日・日曜日に開催される、370年の伝統を持つ祭りです。江戸時代の寛永年間（1624～1644年）、川越藩主・松平信綱が祭礼を奨励したことが起源とされています。
+                    </p>
+                    <p class="leading-relaxed">
+                        精巧な人形を乗せた豪華絢爛な山車が、蔵造りの街並みを巡行する様子は、まるで江戸時代にタイムスリップしたかのようです。2016年には「川越氷川祭の山車行事」としてユネスコ無形文化遺産に登録されました。
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">祭りの見どころ</h3>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">豪華絢爛な山車</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="川越まつりの山車。精巧な人形と金箔装飾で飾られた豪華な山車が蔵造りの街並みを進む様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    精巧な人形を乗せた豪華な山車（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                川越まつりの主役は、江戸の「天下祭」を再現した山車です。現在、市内には29台の山車があり、毎年十数台～二十数台が祭りに参加します。それぞれの山車には歴史上の英雄や神話の神々を模した精巧な人形が乗せられています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                山車は2層または3層構造で、高さは最大で約8メートルにもなります。金箔や漆、彫刻などで豪華に装飾され、江戸時代の職人技術の粋を集めた芸術品といえます。昼は太陽の光を受けて輝き、夜は提灯の明かりに照らされて幻想的な姿を見せます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                各山車は町内ごとに所有・管理されており、それぞれの町の誇りとして大切に受け継がれています。山車の上では、江戸の「天下祭」の囃子を再現した川越囃子が演奏されます。
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">曳っかわせ（ひっかわせ）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                川越まつり最大の見どころが「曳っかわせ」です。夕方から夜にかけて、複数の山車が辻で向かい合い、囃子や踊りで競演する伝統行事です。笛、太鼓、鉦の音色が響き渡り、祭りは最高潮に達します。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                曳っかわせでは、各町内の山車が向かい合って停止し、それぞれの囃子を競い合います。囃子方は相手を上回ろうと演奏に熱が入り、観客も興奮のるつぼとなります。提灯に照らされた山車と、熱気あふれる囃子の競演は圧巻です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                特に夜の曳っかわせは、数台の山車が一堂に会することもあり、幻想的で迫力満点の光景が広がります。蔵造りの街並みを背景に、提灯の明かりに照らされた山車が並ぶ様子は、この祭りでしか見られない絶景です。
+                            </p>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="曳っかわせ。夜の街角で複数の山車が向かい合い、囃子で競演する様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    祭りのクライマックス・曳っかわせ（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">市内巡行</h4>
+                    <div class="prose max-w-none">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            山車は2日間にわたって川越市内を巡行します。蔵造りの街並みや時の鐘を背景に進む山車の姿は、江戸時代の情景を彷彿とさせます。巡行ルートは毎年公開されており、お気に入りの場所で山車を待つのも祭りの楽しみ方の一つです。
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            各山車には曳き手が数十人ずつ付き、「そーれ、そーれ」の掛け声とともに街を進みます。観客は山車に近づいて装飾を間近で見たり、写真を撮ったりすることができます。昼と夜では山車の雰囲気が大きく変わるため、両方を楽しむのがおすすめです。
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">開催日程・イベント情報</h3>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">開催日時</h4>
+                    <dl class="space-y-3">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-1">開催日：</dt>
+                            <dd class="text-gray-700 ml-4">毎年10月第3土曜日・日曜日</dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-1">主なイベント：</dt>
+                            <dd class="text-gray-700 ml-4">
+                                <p>• 土曜日：市内巡行、宵山（夕方～夜の曳っかわせ）</p>
+                                <p>• 日曜日：神幸祭、市内巡行、本祭（夕方～夜の曳っかわせ）</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-1">来場者数：</dt>
+                            <dd class="text-gray-700 ml-4">2日間で約90万人～100万人</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">観覧のポイント</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>夜の曳っかわせが見どころ。本川越駅周辺や一番街で行われることが多いです</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>蔵造りの街並みと山車を一緒に撮影できるスポットが人気です</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>祭り期間中は交通規制があるため、公共交通機関の利用を推奨します</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>屋台グルメや川越名物の食べ歩きも楽しめます</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">祭りの歴史</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        川越まつりの起源は、寛永年間（1624～1644年）に川越藩主・松平信綱が氷川神社に神輿・獅子頭・太鼓等を寄進し、祭礼を奨励したことに始まります。その後、江戸の「天下祭」の様式を取り入れ、現在の山車祭りの形態が確立されました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        江戸時代、川越は江戸の北の守りとして重要な位置を占め、「小江戸」と呼ばれるほど繁栄しました。商人たちは競って豪華な山車を作り、祭りを盛り上げました。この伝統は明治・大正・昭和と受け継がれ、今日に至っています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        1980年には「川越氷川祭の山車行事」として国の重要無形民俗文化財に指定され、2016年にはユネスコ無形文化遺産に登録されました。370年以上にわたって地域の人々に守り継がれてきた祭りは、今も川越市民の誇りです。
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">アクセス情報</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">川越市街地へのアクセス</h4>
+                    <dl class="space-y-4">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【電車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 池袋駅から東武東上線急行で約30分（川越駅下車）</p>
+                                <p>• 西武新宿駅から西武新宿線特急で約45分（本川越駅下車）</p>
+                                <p>• 祭り当日は臨時列車も運行されます</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 関越自動車道川越ICから約20分</p>
+                                <p class="text-sm text-red-600 font-semibold">※祭り当日は大規模な交通規制があり、駐車場も満車になるため、公共交通機関の利用を強く推奨します</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li><a href="/tourism/spots/kawagoe.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">川越エリアの観光</a></li>
+                    <li><a href="/tourism/events/chichibu-yomatsuri.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">秩父夜祭</a></li>
+                    <li><a href="/tourism/food/specialties.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の特産品</a></li>
+                    <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャートップ</a></li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

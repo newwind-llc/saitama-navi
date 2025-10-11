@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大宮エリアの観光 - さいたまなび</title>
+    <meta name="description" content="鉄道博物館、大宮盆栽村、武蔵一宮氷川神社など、大宮エリアの観光スポットをご紹介します。鉄道と盆栽の文化が息づく魅力的な地域です。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">大宮エリア</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">大宮エリアの観光</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    鉄道博物館、100年の歴史を持つ大宮盆栽村、2,400年以上の歴史を誇る武蔵一宮氷川神社など、鉄道文化と伝統が融合する魅力的なエリアです。
+                </p>
+            </header>
+
+            <!-- Overview -->
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">大宮エリアとは</h3>
+                    <p class="leading-relaxed mb-4">
+                        大宮は埼玉県の中核都市として、新幹線をはじめとする鉄道交通の要衝です。東京駅から上野東京ラインで約30分という好アクセスながら、緑豊かな公園や歴史ある神社、そして世界的にも珍しい盆栽文化が息づいています。
+                    </p>
+                    <p class="leading-relaxed">
+                        鉄道ファン必見の鉄道博物館、日本の盆栽文化を体感できる大宮盆栽村、関東屈指の古社である氷川神社など、多彩な観光資源を持つエリアです。サッカーJリーグの大宮アルディージャのホームタウンとしても知られています。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Main Attractions -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">主な観光スポット</h3>
+
+                <!-- Railway Museum -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">鉄道博物館（てつどうはくぶつかん）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="鉄道博物館。新幹線や蒸気機関車など多数の実物車両が展示された広大な館内"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    日本最大級の鉄道博物館（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                2007年10月に開館した日本最大級の鉄道博物館です。JR東日本創立20周年記念事業として設立され、明治時代から現代までの鉄道車両41両を展示しています。実物の新幹線、特急列車、蒸気機関車など、貴重な車両を間近で見学できます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                シミュレーターでの運転体験、ジオラマショー、歴史資料の展示など、見どころが満載です。2018年には南館が増設され、さらに充実した内容となりました。子どもから大人まで楽しめる、鉄道ファン必見のスポットです。
+                            </p>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
+                                <p class="text-sm font-semibold text-yellow-800 mb-1">重要なお知らせ</p>
+                                <p class="text-sm text-yellow-700">2025年9月から2027年3月まで、大規模改修工事のため休館予定です。訪問前に公式サイトでご確認ください。</p>
+                            </div>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">さいたま市大宮区大成町3-47</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">ニューシャトル鉄道博物館駅から徒歩1分</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">展示車両：</dt>
+                                    <dd class="text-gray-700">41両（蒸気機関車、新幹線、特急など）</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bonsai Village -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">大宮盆栽村（おおみやぼんさいむら）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                関東大震災後の1925年（大正14年）、東京の盆栽業者が移り住んで形成された、世界的にも珍しい盆栽の郷です。約9ヘクタールのエリアに、現在も複数の盆栽園が営業を続けており、樹齢数百年の名品盆栽を見学・購入することができます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                大宮盆栽美術館では、盆栽の歴史や文化、技術を学べる常設展示のほか、季節ごとに変わる企画展も開催されています。静かな住宅街の中に広がる緑豊かな盆栽園を巡りながら、日本の伝統文化である盆栽の奥深さを体感できます。
+                            </p>
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
+                                <p class="text-sm font-semibold text-green-800 mb-1">2025年は記念イヤー</p>
+                                <p class="text-sm text-green-700">大宮盆栽村は2025年に創立100周年を迎えます。5月3日から5日まで記念の盆栽まつりが開催される予定です。</p>
+                            </div>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">さいたま市北区盆栽町周辺</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">JR宇都宮線土呂駅から徒歩5分、東武野田線大宮公園駅から徒歩10分</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">特徴：</dt>
+                                    <dd class="text-gray-700">大宮盆栽美術館、複数の盆栽園が点在</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="大宮盆栽村。様々な形と大きさの盆栽が並ぶ盆栽園の風景"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    100年の歴史を持つ大宮盆栽村（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Hikawa Shrine -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">武蔵一宮氷川神社（むさしいちのみやひかわじんじゃ）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/800x500"
+                                     alt="武蔵一宮氷川神社。朱塗りの楼門と広大な境内、樹齢数百年の杉木立"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    2,400年以上の歴史を持つ武蔵一宮氷川神社（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                創建から2,400年以上の歴史を誇る、武蔵国（現在の埼玉県・東京都の大部分・神奈川県の一部）の一宮です。約3万坪の広大な境内には、樹齢数百年の杉やケヤキの巨木が立ち並び、厳かな雰囲気に包まれています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                参道は約2キロメートルにも及び、その先に朱塗りの楼門、拝殿、本殿が続きます。武蔵国の総鎮守として古くから信仰を集め、初詣には毎年200万人以上の参拝者が訪れます。大宮駅から徒歩15分というアクセスの良さも魅力です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                境内には樹齢400年以上とされる御神木があり、パワースポットとしても人気です。5月には例大祭が行われ、伝統的な神事と神楽が奉納されます。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">さいたま市大宮区高鼻町1-407</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">JR大宮駅東口から徒歩15分、東武野田線北大宮駅から徒歩10分</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">御祭神：</dt>
+                                    <dd class="text-gray-700">須佐之男命、稲田姫命、大己貴命</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Other Attractions -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">その他の見どころ</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">大宮公園</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            約68ヘクタールの広大な県営公園で、桜の名所として知られています。春には約1,000本のソメイヨシノが咲き誇り、多くの花見客で賑わいます。園内には小動物園や児童遊園地もあり、家族連れに人気です。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：東武野田線大宮公園駅から徒歩10分</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">NACK5スタジアム大宮</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            Jリーグ・大宮アルディージャのホームスタジアムです。収容人数約15,500人で、サッカーの試合だけでなく、コンサートなどのイベントも開催されます。サッカー観戦とともに地域の活気を感じられます。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：JR大宮駅から徒歩20分</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">さいたまスーパーアリーナ</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            最大37,000人を収容できる国内最大級の多目的アリーナです。コンサート、スポーツイベント、展示会など、年間を通じて様々なイベントが開催されています。大宮駅からも近く、訪れやすい立地です。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：JRさいたま新都心駅から徒歩3分</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">大宮ソニックシティ</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            31階建ての高層ビルで、コンサートホール、会議室、ホテル、展望ラウンジなどを備えた複合施設です。最上階の展望ラウンジからは、さいたま市内を一望できます。クラシックコンサートの会場としても有名です。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：JR大宮駅西口から徒歩3分</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Access -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">アクセス情報</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">大宮エリアへのアクセス</h4>
+                    <dl class="space-y-4">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【電車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 東京駅から上野東京ライン・宇都宮線で約30分（大宮駅）</p>
+                                <p>• 新宿駅から湘南新宿ライン・宇都宮線で約30分（大宮駅）</p>
+                                <p>• 池袋駅から埼京線で約25分（大宮駅）</p>
+                                <p>• 上野駅から高崎線・宇都宮線で約25分（大宮駅）</p>
+                                <p>• 各新幹線も大宮駅に停車</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 首都高速埼玉大宮線・新都心西出口から約5分</p>
+                                <p>• 東北自動車道岩槻ICから約20分</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【市内移動】</dt>
+                            <dd class="text-gray-700 ml-4">
+                                <p>• 大宮駅から各観光地へ徒歩・バス・ニューシャトルでアクセス</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/tourism/spots/kawagoe.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            川越エリアの観光
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            観光・レジャートップ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cities/saitama-city.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            さいたま市の情報
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の歴史
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所沢エリアの観光 - さいたまなび</title>
+    <meta name="description" content="所沢航空記念公園、メットライフドーム、角川武蔵野ミュージアムなど、所沢エリアの観光スポットをご紹介します。日本の航空発祥の地と最先端カルチャーが融合する街です。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">所沢エリア</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">所沢エリアの観光</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    日本の航空発祥の地・所沢航空記念公園、プロ野球観戦ができるメットライフドーム、最先端の角川武蔵野ミュージアムなど、歴史と未来が交差する魅力的なエリアです。
+                </p>
+            </header>
+
+            <!-- Overview -->
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">所沢エリアとは</h3>
+                    <p class="leading-relaxed mb-4">
+                        所沢は埼玉県南西部に位置し、池袋駅から西武線で約30分という好アクセスの都市です。1911年に日本初の飛行場が開設された「日本の航空発祥の地」として知られ、その歴史を今に伝える所沢航空記念公園があります。
+                    </p>
+                    <p class="leading-relaxed">
+                        プロ野球・埼玉西武ライオンズの本拠地メットライフドーム、2020年にオープンした角川武蔵野ミュージアムなど、スポーツと文化の拠点が集まっています。緑豊かな公園や商業施設も充実しており、家族連れから若者まで幅広い層が楽しめるエリアです。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Main Attractions -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">主な観光スポット</h3>
+
+                <!-- Aviation Memorial Park -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">所沢航空記念公園・所沢航空発祥記念館</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="所沢航空記念公園。広大な芝生広場と所沢航空発祥記念館の建物"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    日本の航空発祥の地・所沢航空記念公園（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                1911年（明治44年）4月1日、日本初の飛行場として開設された所沢飛行場の跡地に整備された約50ヘクタールの県営公園です。広大な芝生広場、ジョギングコース、テニスコート、野球場などのスポーツ施設が充実しており、市民の憩いの場となっています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                園内の所沢航空発祥記念館では、実物の航空機やヘリコプターを展示しており、日本の航空史を学ぶことができます。フライトシミュレーターでの操縦体験も人気です。子どもから大人まで楽しめる施設として、年間を通じて多くの来園者で賑わいます。
+                            </p>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
+                                <p class="text-sm font-semibold text-yellow-800 mb-1">重要なお知らせ</p>
+                                <p class="text-sm text-yellow-700">所沢航空発祥記念館は2025年9月から2027年3月まで、大規模改修工事のため休館予定です。訪問前に公式サイトでご確認ください。</p>
+                            </div>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">所沢市並木1-13</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">西武新宿線航空公園駅から徒歩すぐ</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">特徴：</dt>
+                                    <dd class="text-gray-700">日本初の飛行場跡地、航空機展示、広大な芝生広場</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- MetLife Dome -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">メットライフドーム</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                プロ野球・埼玉西武ライオンズの本拠地として1979年に開場した、収容人数約33,000人の多目的ドームスタジアムです。日本初の屋根付き球場として建設され、現在でも年間を通じて様々なイベントが開催されています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                プロ野球の試合はもちろん、コンサート、展示会、フリーマーケットなど多彩なイベント会場として活用されています。スタジアム周辺にはショッピングモール「ところざわサクラタウン」もあり、観戦前後のショッピングやグルメも楽しめます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                試合のない日でもスタジアムツアーが実施されており、普段は入れないグラウンドやベンチ、ロッカールームなどを見学できます。ライオンズファンならずとも、野球好きなら一度は訪れたいスポットです。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">所沢市上山口2135</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">西武狭山線西武球場前駅から徒歩すぐ</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">収容人数：</dt>
+                                    <dd class="text-gray-700">約33,000人</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="メットライフドーム。白い屋根を持つ大型ドーム球場の外観"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    埼玉西武ライオンズの本拠地メットライフドーム（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kadokawa Musashino Museum -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">角川武蔵野ミュージアム</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/800x500"
+                                     alt="角川武蔵野ミュージアム。多面体の独創的な外観を持つ現代建築"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    最先端の文化施設・角川武蔵野ミュージアム（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                2020年11月にところざわサクラタウン内にオープンした、図書館、美術館、博物館が融合した複合文化施設です。世界的建築家・隈研吾氏が設計した多面体の外観は、まるで巨大な岩のようで圧倒的な存在感を放っています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                館内の「本棚劇場」は高さ約8メートルの本棚が連なる圧巻の空間で、約3万冊の書籍が並びます。プロジェクションマッピングを使った展示や、マンガ・ラノベ図書館、アニメミュージアムなど、ポップカルチャーから学術まで幅広いコンテンツを楽しめます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                ところざわサクラタウン全体では、グッズショップ、カフェ、レストラン、書店なども充実しており、一日中楽しめる新しい文化発信拠点となっています。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">所沢市東所沢和田3-31-3</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">JR武蔵野線東所沢駅から徒歩10分</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">特徴：</dt>
+                                    <dd class="text-gray-700">隈研吾設計、本棚劇場、マンガ・ラノベ図書館</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Other Attractions -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">その他の見どころ</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">トトロの森</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            映画「となりのトトロ」の舞台モデルとなった雑木林が広がるエリアです。狭山丘陵の自然を保全する「トトロのふるさと基金」により管理されており、散策路を歩きながら豊かな自然を楽しめます。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：西武狭山線下山口駅から徒歩15分</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">西武園ゆうえんち</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            2021年にリニューアルオープンした、昭和レトロをテーマにした遊園地です。「夕日の丘商店街」など昭和30年代の街並みを再現したエリアや、アトラクション、プール（夏季）などが楽しめます。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：西武山口線遊園地西駅から徒歩すぐ</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">狭山湖（山口貯水池）</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            多摩湖とともに東京都の水がめとして1934年に完成した人造湖です。周辺は自然豊かな遊歩道が整備され、サイクリングやウォーキングに最適。桜や紅葉の名所としても知られています。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：西武狭山線西武球場前駅から徒歩20分</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">所沢プロペ通り商店街</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            所沢駅西口から続く全長約500メートルの商店街。飲食店、ファッション、雑貨など約100店舗が軒を連ねます。航空発祥の地にちなんで「プロペラ通り」の愛称で親しまれています。
+                        </p>
+                        <p class="text-sm text-gray-600">アクセス：西武線所沢駅西口から徒歩すぐ</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Access -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">アクセス情報</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">所沢エリアへのアクセス</h4>
+                    <dl class="space-y-4">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【電車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 池袋駅から西武池袋線急行で約30分（所沢駅）</p>
+                                <p>• 高田馬場駅から西武新宿線で約40分（所沢駅）</p>
+                                <p>• JR武蔵野線東所沢駅も利用可能（角川武蔵野ミュージアムへのアクセスに便利）</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 関越自動車道所沢ICから約10分</p>
+                                <p>• 圏央道入間ICから約15分</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【市内移動】</dt>
+                            <dd class="text-gray-700 ml-4">
+                                <p>• 所沢駅から西武線各線で各観光地へアクセス</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/tourism/spots/kawagoe.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            川越エリアの観光
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            観光・レジャートップ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の歴史
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/industry/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            産業・経済
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

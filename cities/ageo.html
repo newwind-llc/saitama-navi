@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上尾市 - さいたまなび</title>
+  <meta name="description" content="上尾市は人口約22万人の都市で、中山道の宿場町の歴史を持つ埼玉県中央部の住宅都市です。都心への良好なアクセスと住みやすい環境が魅力です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">メインコンテンツへスキップ</a>
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">さいたまなび</a>
+        </div>
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">上尾市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">上尾市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          上尾市は、埼玉県の中央部に位置する市で、人口約22万人（2024年）を擁します。面積は45.51平方キロメートルで、東京都心から約40キロメートル圏内に位置し、JR高崎線が市内を縦断する交通の便が良い住宅都市です。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          江戸時代には中山道の宿場町「上尾宿」として栄え、旅人や商人で賑わいました。現在も旧中山道沿いには歴史的な建造物が残り、往時の面影を感じることができます。戦後は東京のベッドタウンとして急速に発展し、住宅地が広がりました。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          市内には大型商業施設や公共施設が充実しており、生活利便性の高い環境が整っています。また、荒川沿いには豊かな自然が残り、上尾丸山公園などの憩いの場も多く、都市的な利便性と自然環境のバランスが取れた、住みやすい街として人気があります。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="上尾駅東口の駅前広場。駅ビルや商業施設が立ち並び、バスターミナルやペデストリアンデッキが整備された都市的な景観" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">上尾駅周辺 - 埼玉県中央部の住宅都市</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">歴史と文化</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">中山道上尾宿</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          上尾は、江戸時代に中山道の宿場町として発展しました。中山道は、江戸（東京）と京都を結ぶ五街道の一つで、上尾宿は江戸から数えて4番目の宿場でした。多くの旅籠や商家が軒を連ね、旅人の休息地として賑わいました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          現在も旧中山道沿いには歴史的な建造物が残り、街道の面影を偲ぶことができます。市内には上尾宿の歴史を伝える案内板や石碑が設置されており、歴史散策を楽しむことができます。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">上尾の伝統</h3>
+        <p class="text-gray-700 leading-relaxed">
+          上尾には、古くから伝わる祭りや行事があります。上尾夏まつりでは神輿や山車が市内を練り歩き、伝統文化が受け継がれています。また、市内各地の神社では例大祭が行われ、地域コミュニティの絆を深める場となっています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要施設・スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">上尾丸山公園</h3>
+            <p class="text-gray-700 leading-relaxed">自然林が残る約14.4ヘクタールの総合公園。バーベキュー場、児童遊園地、小動物コーナーなどがあり、家族連れに人気のレクリエーションスポットです。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">上尾運動公園</h3>
+            <p class="text-gray-700 leading-relaxed">野球場、テニスコート、プール、体育館などを備えた総合運動公園。市民のスポーツ活動の拠点となっています。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">イオンモール上尾</h3>
+            <p class="text-gray-700 leading-relaxed">約170店舗が出店する大型ショッピングモール。ファッション、グルメ、エンターテインメントが充実し、買い物や食事を楽しめます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">上尾市自然学習館</h3>
+            <p class="text-gray-700 leading-relaxed">荒川の自然や生態系について学べる施設。プラネタリウムもあり、星空の学習ができます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="上尾丸山公園の自然林。高い木々が生い茂る森の中を散策路が通り、緑豊かな自然環境が広がる様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">上尾丸山公園 - 自然豊かな市民の憩いの場</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          上尾市は、JR高崎線が市内を通り、上尾駅と北上尾駅があります。上尾駅から東京駅まで約45分、新宿駅まで約50分でアクセスでき、通勤・通学に便利です。また、圏央道の桶川北本ICや上尾中央ICも近く、車での移動も便利です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業・買い物</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          上尾駅周辺には商業施設や商店街があり、日常の買い物に便利です。また、イオンモール上尾をはじめとする大型ショッピングセンターもあり、幅広いショッピングニーズに対応しています。市内にはスーパーマーケットやホームセンターも点在し、生活利便性が高い環境です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">教育・子育て</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には多数の小中学校があり、教育環境が整っています。また、埼玉県立上尾高校、上尾南高校など公立高校も複数あります。子育て支援センターや児童館も各地域に配置され、子育て世帯にとって安心できる環境です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">医療・福祉</h3>
+        <p class="text-gray-700 leading-relaxed">
+          上尾中央総合病院をはじめ、総合病院や診療所が充実しており、医療体制は安心です。高齢者福祉施設も整備され、すべての世代が安心して暮らせる環境が整っています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・経済</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          上尾市は、住宅都市としての性格が強く、商業・サービス業が中心です。上尾駅周辺の商業地区には小売店や飲食店が集積し、市民生活を支えています。また、大型商業施設も市の経済に重要な役割を果たしています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          製造業では、機械金属、食品加工などの工場があります。市内には工業団地も整備され、多様な業種の企業が立地しています。特に自動車関連部品や精密機械の製造が盛んです。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          農業では、米や野菜の栽培が行われています。特に梨の栽培が盛んで、「上尾の梨」として地域ブランドになっています。都市近郊農業として、直売所での販売も行われており、新鮮な農産物が市民に提供されています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">上尾夏まつり（7月）</h3>
+            <p class="text-gray-700 leading-relaxed">市内最大の夏祭り。神輿や山車のパレード、出店などで賑わいます。夜には打ち上げ花火も楽しめます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">あげお花火大会（8月）</h3>
+            <p class="text-gray-700 leading-relaxed">平塚公園で開催される花火大会。約3,000発の花火が夏の夜空を彩ります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">上尾シティマラソン（11月）</h3>
+            <p class="text-gray-700 leading-relaxed">市民参加型のマラソン大会。ハーフマラソンから3kmまで様々な種目があり、多くのランナーが参加します。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約22万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">45.51平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">1958年7月15日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">上尾駅、北上尾駅</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">上尾駅から東京駅まで約45分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花・鳥</th>
+              <td class="py-3 px-4 text-gray-700">木：ツツジ、花：ツツジ、鳥：ヒバリ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li><a href="/life/housing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">住まい・住環境</a></li>
+          <li><a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">交通アクセス</a></li>
+          <li><a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉の歴史</a></li>
+          <li><a href="/industry/manufacturing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">製造業</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。</p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

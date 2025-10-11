@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>都心アクセス - 交通 - 暮らし - 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県から東京都心へのアクセス時間をご紹介。大宮駅、浦和駅、川口駅など主要駅から東京駅へ20〜30分で到着。通勤・ビジネスに便利な交通環境です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+  <!-- Skip Link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-green focus:text-white">
+    本文へスキップ
+  </a>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">
+            埼玉県総合案内
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block" aria-label="メインメニュー">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
+          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="パンくずリスト" class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">ホーム</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><a href="/life/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">暮らし</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><span class="text-gray-700" aria-current="page">都心アクセス</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">埼玉県から都心へのアクセス</h1>
+        <p class="text-lg text-gray-700 leading-loose">
+          埼玉県は東京都心への優れたアクセス性を誇り、通勤・通学・ビジネスに最適な立地環境が整っています。主要駅から東京駅まで20〜30分、池袋駅や新宿駅へはさらに短時間で到着できます。都心で働きながら緑豊かな住環境を享受できる、理想的な生活圏です。
+        </p>
+      </header>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="大宮駅のホームに停車する東京駅行きの快速列車、通勤客が乗降する朝の様子"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          都心へのアクセスに便利な大宮駅
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要駅から東京駅への所要時間</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            埼玉県内の主要駅から東京駅へは、JR線を利用して短時間でアクセスできます。上野東京ラインや湘南新宿ラインの開通により、乗り換えなしで都心主要駅へ到達できる利便性が大幅に向上しました。
+          </p>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <table class="min-w-full divide-y divide-gray-200">
+              <caption class="sr-only">埼玉県主要駅から東京駅への所要時間(概算)</caption>
+              <thead class="bg-saitama-green text-white">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">出発駅</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">利用路線</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">所要時間</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">乗り換え</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">大宮駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">JR上野東京ライン</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">25〜30分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">浦和駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">JR京浜東北線</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">20〜25分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通)</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">川口駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">JR京浜東北線</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">15〜20分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">さいたま新都心駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">JR京浜東北線</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">22〜27分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通)</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">熊谷駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">JR上野東京ライン</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">55〜65分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">春日部駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">東武線→地下鉄半蔵門線</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">45〜55分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通運転)</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">越谷駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">東武線→地下鉄半蔵門線</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">40〜50分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">なし(直通運転)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm font-bold text-gray-900">戸田駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">JR埼京線</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">20〜25分</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">赤羽駅または新宿駅で乗り換え</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-3">上野東京ラインの利便性</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              2015年に開業した上野東京ラインにより、埼玉県内のJR高崎線・宇都宮線の各駅から東京駅・品川駅・横浜駅方面へ乗り換えなしでアクセスできるようになりました。従来は上野駅での乗り換えが必要でしたが、これが不要となり通勤・通学の利便性が飛躍的に向上しています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li>乗り換え不要で東京駅・品川駅・横浜駅へ直通</li>
+              <li>通勤時間帯も頻繁に運行</li>
+              <li>快速列車・普通列車の両方が運行</li>
+              <li>座って通勤できる可能性が向上</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要駅から池袋駅・新宿駅への所要時間</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            池袋駅や新宿駅は、埼玉県民にとって東京駅以上に身近な都心のターミナル駅です。西武鉄道や東武鉄道、JR埼京線などを利用して短時間でアクセスできます。
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold text-saitama-green mb-4">池袋駅へのアクセス</h3>
+              <div class="space-y-3">
+                <div class="border-b pb-3">
+                  <p class="font-bold text-gray-800">川越駅</p>
+                  <p class="text-sm text-gray-600">東武東上線 急行利用</p>
+                  <p class="text-lg text-saitama-blue font-bold">約30分</p>
+                </div>
+                <div class="border-b pb-3">
+                  <p class="font-bold text-gray-800">所沢駅</p>
+                  <p class="text-sm text-gray-600">西武池袋線 急行利用</p>
+                  <p class="text-lg text-saitama-blue font-bold">約25分</p>
+                </div>
+                <div class="border-b pb-3">
+                  <p class="font-bold text-gray-800">朝霞駅</p>
+                  <p class="text-sm text-gray-600">東武東上線 急行利用</p>
+                  <p class="text-lg text-saitama-blue font-bold">約18分</p>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">和光市駅</p>
+                  <p class="text-sm text-gray-600">東武東上線・地下鉄副都心線</p>
+                  <p class="text-lg text-saitama-blue font-bold">約15分</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold text-saitama-green mb-4">新宿駅へのアクセス</h3>
+              <div class="space-y-3">
+                <div class="border-b pb-3">
+                  <p class="font-bold text-gray-800">川越駅</p>
+                  <p class="text-sm text-gray-600">JR埼京線 快速利用</p>
+                  <p class="text-lg text-saitama-blue font-bold">約45分</p>
+                </div>
+                <div class="border-b pb-3">
+                  <p class="font-bold text-gray-800">本川越駅</p>
+                  <p class="text-sm text-gray-600">西武新宿線 特急利用</p>
+                  <p class="text-lg text-saitama-blue font-bold">約45分</p>
+                </div>
+                <div class="border-b pb-3">
+                  <p class="font-bold text-gray-800">大宮駅</p>
+                  <p class="text-sm text-gray-600">JR埼京線 快速利用</p>
+                  <p class="text-lg text-saitama-blue font-bold">約30分</p>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">戸田公園駅</p>
+                  <p class="text-sm text-gray-600">JR埼京線</p>
+                  <p class="text-lg text-saitama-blue font-bold">約20分</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">湘南新宿ラインの利便性</h4>
+            <p class="text-gray-700 leading-loose">
+              湘南新宿ラインは、埼玉県内の高崎線・宇都宮線から新宿・渋谷・横浜方面へ直通運転する路線です。大宮駅から新宿駅まで約30分、渋谷駅まで約40分でアクセスでき、都心西部へのアクセスが格段に向上しました。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="川越駅のホームから発車する池袋行き東武東上線の急行列車"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          池袋駅へ約30分でアクセスできる川越駅
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">通勤・通学の利便性</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            埼玉県は「東京のベッドタウン」として発展してきた歴史があり、都心への通勤・通学に適した交通環境が整備されています。多様な路線選択肢と高い運行頻度により、快適な通勤・通学が実現されています。
+          </p>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">埼玉県から都心通勤のメリット</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-lg font-bold text-saitama-green mb-3">住環境面</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+                  <li>都内に比べて住居費が抑えられる</li>
+                  <li>広い居住スペースを確保できる</li>
+                  <li>公園や自然環境が豊富</li>
+                  <li>子育てしやすい環境</li>
+                  <li>駐車場付き物件が多い</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-saitama-green mb-3">交通面</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+                  <li>主要駅まで30分以内でアクセス可能</li>
+                  <li>複数路線が利用できる地域が多い</li>
+                  <li>始発駅も多く座って通勤できる</li>
+                  <li>運行本数が多く便利</li>
+                  <li>深夜まで運行している路線が多い</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-blue mb-3">通勤定期券の利用</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              埼玉県から都心への通勤には、1ヶ月・3ヶ月・6ヶ月の通勤定期券が利用できます。6ヶ月定期を利用すると、通常運賃の約50%程度の割引率となり、経済的です。また、多くの企業が通勤手当を支給しているため、実質的な負担はさらに軽減されます。
+            </p>
+            <div class="bg-white rounded p-4">
+              <p class="text-sm font-bold text-gray-800 mb-2">参考：大宮駅〜東京駅 通勤定期券(概算)</p>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>1ヶ月：約15,000円</li>
+                <li>3ヶ月：約42,000円</li>
+                <li>6ヶ月：約79,000円(1ヶ月あたり約13,000円)</li>
+              </ul>
+              <p class="text-xs text-gray-500 mt-2">※概算金額です。実際の金額は各鉄道会社にご確認ください。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">ビジネス・観光での都心アクセス</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            通勤・通学だけでなく、ビジネスミーティングや観光・ショッピングなどでも、埼玉県から都心へのアクセスは非常に便利です。日帰りで気軽に都心へ出かけられる環境が整っています。
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">ビジネス利用</h4>
+              <ul class="text-sm text-gray-700 leading-loose space-y-2">
+                <li>東京駅周辺のオフィス街へ30分</li>
+                <li>新宿・渋谷のビジネス街へ30分</li>
+                <li>品川・田町エリアへ40分</li>
+                <li>羽田空港へ約1時間</li>
+                <li>成田空港へ約1.5時間</li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">ショッピング</h4>
+              <ul class="text-sm text-gray-700 leading-loose space-y-2">
+                <li>銀座へ30〜40分</li>
+                <li>新宿の百貨店へ30分</li>
+                <li>渋谷・表参道へ40分</li>
+                <li>池袋の商業施設へ20〜30分</li>
+                <li>日帰りで都心ショッピングが可能</li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">観光・文化</h4>
+              <ul class="text-sm text-gray-700 leading-loose space-y-2">
+                <li>上野の美術館・博物館へ30分</li>
+                <li>六本木・青山エリアへ40分</li>
+                <li>お台場へ50分</li>
+                <li>浅草・スカイツリーへ30〜40分</li>
+                <li>都心のイベント会場へアクセス良好</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">新幹線へのアクセス</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              大宮駅には東北新幹線・上越新幹線・北陸新幹線が停車し、埼玉県から全国各地への移動拠点となっています。東京駅まで行かずに大宮駅から新幹線を利用できるため、時間の節約にもなります。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>東北新幹線：</strong>仙台・盛岡・新青森方面へ</li>
+              <li><strong>上越新幹線：</strong>新潟方面へ</li>
+              <li><strong>北陸新幹線：</strong>長野・金沢方面へ</li>
+              <li><strong>所要時間例：</strong>大宮駅〜仙台駅 最速約1時間30分</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">快適な通勤を実現するポイント</h2>
+
+        <div class="prose max-w-none">
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">座席確保のコツ</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+                <li>始発駅・始発列車を利用する</li>
+                <li>特急列車の利用(別途特急料金)</li>
+                <li>グリーン車の利用(別途グリーン券)</li>
+                <li>通勤時間帯をずらす(フレックス勤務)</li>
+                <li>各駅停車を選択(混雑緩和)</li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">便利なサービス</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+                <li>駅ナカ商業施設(買い物・食事)</li>
+                <li>無料Wi-Fi(一部駅・車両)</li>
+                <li>コンセント付き座席(一部車両)</li>
+                <li>駅構内のコワーキングスペース</li>
+                <li>パーク&ライド(駅周辺駐車場)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6">
+            <h4 class="text-lg font-bold text-gray-800 mb-3">通勤・通学時の注意点</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>時間帯による混雑：</strong>朝7時〜9時、夕方17時〜19時は混雑します。余裕を持った移動計画を立てましょう</li>
+              <li><strong>運行情報の確認：</strong>遅延や運休が発生する場合があります。出発前にスマートフォンアプリで確認しましょう</li>
+              <li><strong>IC乗車券の利用：</strong>Suica、PASMOなどのIC乗車券で改札通過がスムーズになります</li>
+              <li><strong>複数ルートの把握：</strong>トラブル時に備えて、代替ルートを把握しておくと安心です</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Pages -->
+      <aside class="mt-12 pt-8 border-t border-gray-300">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <nav aria-label="関連ページ">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li>
+              <a href="/life/transport/railway.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">鉄道網</span>
+                <p class="text-sm text-gray-600 mt-1">埼玉県の鉄道ネットワーク</p>
+              </a>
+            </li>
+            <li>
+              <a href="/life/transport/highway.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">道路・高速道路</span>
+                <p class="text-sm text-gray-600 mt-1">埼玉県の道路網</p>
+              </a>
+            </li>
+            <li>
+              <a href="/about/location.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">地理・位置</span>
+                <p class="text-sm text-gray-600 mt-1">埼玉県の地理的特性</p>
+              </a>
+            </li>
+            <li>
+              <a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">暮らし トップ</span>
+                <p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。
+          </p>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">主要カテゴリー</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      menu.classList.toggle('hidden');
+
+      if (!isExpanded) {
+        this.setAttribute('aria-label', 'メニューを閉じる');
+      } else {
+        this.setAttribute('aria-label', 'メニューを開く');
+      }
+    });
+  </script>
+</body>
+</html>

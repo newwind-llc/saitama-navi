@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>農業 - 産業・経済 | 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の農業に関する情報。深谷ねぎ、狭山茶、川越いもなどの特産品、都市近郊農業の特徴を紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity">埼玉県総合案内</a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-saitama-green font-bold">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+            <li><a href="/site-info/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメインナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-saitama-green font-bold">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+          <li><a href="/site-info/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html" class="text-saitama-blue hover:underline">産業・経済</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html#sectors" class="text-saitama-blue hover:underline">産業セクター</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">農業</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">埼玉県の農業</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <p class="text-lg leading-relaxed text-gray-700 mb-4">
+          埼玉県は、首都圏に位置する地理的優位性を活かした都市近郊農業が盛んです。大消費地・東京に隣接し、新鮮な農産物を短時間で届けることができる強みを持っています。野菜、米、茶、果樹など、多様な農産物を生産しており、特に深谷ねぎ、狭山茶、川越いもなどのブランド農産物は全国的に高い評価を得ています。
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          近年は、高品質農産物の生産、6次産業化の推進、スマート農業の導入など、時代のニーズに対応した農業経営が進んでいます。都市と農村が共存する環境の中で、持続可能な農業の実現を目指しています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="埼玉県の広大な農地の風景。整然と区画された畑に青々とした野菜が育ち、遠くに住宅地が見える都市近郊農業の様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">都市近郊の立地を活かした埼玉県の農業風景</figcaption>
+      </figure>
+
+      <!-- 主要特産品 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">埼玉県の主要農産物</h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-2xl font-bold text-saitama-blue mb-4">深谷ねぎ（ふかやねぎ）</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">特徴</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                  <li><strong>糖度15度</strong> - リンゴやメロンに匹敵する甘さ</li>
+                  <li>白い部分が長く、やわらかい</li>
+                  <li>加熱すると甘みがさらに増す</li>
+                  <li>生食でも辛みが少なく食べやすい</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">生産情報</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                  <li><strong>通年栽培</strong> - 年間を通じて出荷</li>
+                  <li><strong>最盛期は12月</strong> - 特に甘みが強い</li>
+                  <li>深谷市を中心に広範囲で栽培</li>
+                  <li>全国有数のねぎ産地</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              深谷ねぎは、埼玉県を代表する農産物です。利根川流域の肥沃な土壌と気候条件により、高品質のねぎが育ちます。糖度15度という驚異的な甘さは、リンゴやメロンに匹敵し、一般的なねぎとは一線を画します。白い部分が長く、きめ細かくやわらかい食感が特徴で、鍋料理、焼き物、薬味など幅広い用途で人気を集めています。生産者の高い栽培技術により、年間を通じて安定した品質の深谷ねぎが出荷されています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-2xl font-bold text-saitama-blue mb-4">狭山茶（さやまちゃ）</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">特徴</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                  <li><strong>日本三大茶</strong>の一つ</li>
+                  <li>「狭山火入れ」と呼ばれる独自の製法</li>
+                  <li>深い味わいと濃厚な香り</li>
+                  <li>コクのある風味</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">生産情報</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                  <li><strong>茶の北限産地</strong> - 寒冷地での栽培</li>
+                  <li><strong>年2回摘採</strong> - 温暖地より少ない</li>
+                  <li>入間市、狭山市を中心に生産</li>
+                  <li>伝統的な製茶技術の継承</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              狭山茶は、静岡茶、宇治茶と並ぶ日本三大茶の一つです。茶の生産地としては北限に近く、寒冷な気候により茶の成長がゆっくりと進むため、葉が厚く、味が濃くなります。最大の特徴は「狭山火入れ」と呼ばれる独自の仕上げ製法で、強めの火入れにより、深い味わいとコクのある香りが生まれます。温暖地の茶が年3〜4回摘採するのに対し、狭山茶は年2回の摘採のため、茶葉に栄養が凝縮され、濃厚な味わいとなります。「色は静岡、香りは宇治よ、味は狭山でとどめさす」という茶摘み歌にも歌われる銘茶です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-2xl font-bold text-saitama-blue mb-4">川越いも（かわごえいも）</h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-gray-900 mb-3">特徴と歴史</h4>
+              <p class="text-gray-700 leading-relaxed mb-3">
+                川越いもは、江戸時代から続く伝統的なさつまいもです。川越の火山灰を含む関東ローム層の土壌が、風味豊かな芋を育てます。ほくほくとした食感と上品な甘さが特徴で、焼き芋、天ぷら、スイーツなど様々な料理に使われます。
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                江戸時代、川越から江戸に運ばれた川越いもは、庶民から大名まで広く愛されました。現在も「江戸伝統野菜」として認定され、伝統の味を守り続けています。川越市内には、川越いもを使った菓子店や料理店が多数あり、地域の特産品として親しまれています。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-2xl font-bold text-saitama-blue mb-4">加須うどん（かぞうどん）</h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-gray-900 mb-3">特徴と生産</h4>
+              <p class="text-gray-700 leading-relaxed mb-3">
+                加須うどんは、なめらかでコシのある食感が特徴の手打ちうどんです。加須市周辺は小麦の生産が盛んで、地元産小麦を使用したうどん作りが伝統となっています。つるつるとしたのど越しと、もっちりとした食感が人気です。
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                加須市は「うどんのまち」として知られ、多くのうどん店が軒を連ねています。冷たいうどん、温かいうどん、つけ麺スタイルなど、様々な食べ方で楽しめます。地元で収穫された小麦を使用することで、地産地消を実践し、地域農業の振興にも貢献しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="収穫された深谷ねぎが整然と並んでいる様子。白く長い葉鞘部分が特徴的で、新鮮な緑の葉が付いている" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">収穫直後の新鮮な深谷ねぎ</figcaption>
+      </figure>
+
+      <!-- その他の主要農産物 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">その他の主要農産物</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">米</h3>
+            <p class="text-gray-700 leading-relaxed">
+              県内全域で米作が行われており、コシヒカリを中心に高品質な米を生産しています。利根川、荒川の豊富な水資源と肥沃な土壌により、食味の良い米が育ちます。近年は、特別栽培米や有機米の生産も増えています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">野菜</h3>
+            <p class="text-gray-700 leading-relaxed">
+              ほうれん草、小松菜、ブロッコリー、トマト、きゅうりなど、多様な野菜を生産しています。東京に近い立地を活かし、新鮮な野菜を迅速に出荷できることが強みです。直売所での販売も盛んで、消費者との距離が近い農業を実践しています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">果樹</h3>
+            <p class="text-gray-700 leading-relaxed">
+              梨、ぶどう、いちごなどの果樹栽培が盛んです。特に梨は生産量が多く、幸水、豊水など人気品種を栽培しています。観光農園も多く、いちご狩り、梨狩りなど、農業体験を楽しむことができます。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">畜産</h3>
+            <p class="text-gray-700 leading-relaxed">
+              酪農、養豚、養鶏が行われており、新鮮な乳製品、肉類、卵を供給しています。近年は、ブランド豚肉の生産や、放牧飼育による高品質な畜産物の生産にも取り組んでいます。地産地消の観点から、学校給食や地元飲食店での利用も進んでいます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 都市近郊農業の特徴 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">都市近郊農業の特徴と強み</h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+              大消費地への近接性
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              東京都心まで1時間圏内という立地により、収穫後短時間で消費者に届けることができます。鮮度を重視する野菜や果物の生産に有利で、朝採り野菜をその日のうちに出荷することも可能です。輸送コストの削減にもつながり、経営効率の向上に寄与しています。直売所やファーマーズマーケットも充実し、生産者と消費者の顔が見える関係を築いています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+              多様な販売チャネル
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              市場出荷だけでなく、直売所、インターネット販売、レストランへの直接納入など、多様な販売方法を選択できます。特に直売所は県内各地に多数あり、新鮮で安全な農産物を求める消費者に支持されています。学校給食への地元農産物の供給も進み、地産地消の取り組みが活発です。観光農園も多く、農業体験を通じた交流も盛んに行われています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+              高付加価値農業の展開
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              消費者の多様なニーズに対応し、有機栽培、特別栽培、ブランド化など、高付加価値農業に取り組む農家が増えています。安全・安心への関心の高まりに応え、減農薬・減化学肥料栽培や、トレーサビリティの確保に力を入れています。付加価値の高い農産物の生産により、収益性の向上を図っています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4</span>
+              農業の多面的機能
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              都市近郊の農地は、新鮮な農産物の供給だけでなく、緑地空間の保全、防災機能、環境教育の場など、多面的な役割を果たしています。学校給食への食材供給、農業体験学習の受け入れなど、地域社会との連携も深まっています。都市と農村が共存する環境の中で、持続可能な農業のあり方を模索しています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="茶畑で茶摘みを行う様子。整然と並んだ茶の木から新芽を丁寧に摘み取る作業風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">伝統の狭山茶を守る茶摘み作業</figcaption>
+      </figure>
+
+      <!-- 新しい農業の取り組み -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">新しい農業への取り組み</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">6次産業化の推進</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              農産物の生産（1次産業）だけでなく、加工（2次産業）、販売・サービス（3次産業）まで一体的に行う6次産業化が進んでいます。農家が自ら加工品を製造・販売することで、付加価値を高め、収益向上を図っています。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              ジャム、ドレッシング、菓子、惣菜など、多様な加工品が開発されています。道の駅や直売所での販売のほか、インターネット通販も活用され、販路の拡大が図られています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">スマート農業の導入</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              ICT、IoT、AI、ロボット技術などを活用したスマート農業の導入が進んでいます。センサーによる環境モニタリング、自動灌水システム、ドローンによる農薬散布など、先端技術の活用により、省力化と生産性向上を実現しています。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              データに基づく栽培管理により、品質の安定化や収量の向上も図られています。高齢化や担い手不足への対応としても期待されています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">環境保全型農業</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              化学肥料・農薬の使用を削減し、環境への負荷を低減する農業が広がっています。有機栽培、特別栽培、エコファーマー認定など、環境に配慮した農業実践が進んでいます。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              堆肥の活用、緑肥作物の導入、生物農薬の利用など、持続可能な農業技術の普及が図られています。安全・安心な農産物を求める消費者のニーズにも応えています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">農業体験・観光農業</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              いちご狩り、ぶどう狩り、野菜の収穫体験など、観光農園が県内各地に展開しています。都市住民が気軽に農業を体験できる機会を提供し、農業への理解促進と交流の場となっています。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              学校の体験学習の受け入れも盛んで、食育や環境教育の場としても機能しています。農業の多面的価値を伝える取り組みとして重要性を増しています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 農業支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">農業支援制度</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">新規就農者支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            新たに農業を始める方への支援制度が充実しています。研修制度、資金援助、農地取得の支援など、就農から経営安定までをサポートしています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>就農準備・経営開始資金の交付</li>
+            <li>農業研修制度（先進農家での実習など）</li>
+            <li>農地取得・設備投資への支援</li>
+            <li>就農相談・マッチング支援</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">経営支援・技術指導</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            農業経営の改善、新技術の導入、販路開拓など、様々な面から農業者を支援しています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>農業改良普及センターによる技術指導</li>
+            <li>経営相談・診断サービス</li>
+            <li>スマート農業技術導入支援</li>
+            <li>6次産業化・農商工連携支援</li>
+            <li>認証取得支援（有機JAS、GAP等）</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">販路開拓支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            生産した農産物の販売先確保、ブランド化、PR活動など、販路拡大を支援しています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>農産物直売所の整備支援</li>
+            <li>商談会・マッチングイベントの開催</li>
+            <li>ブランド化・PR支援</li>
+            <li>学校給食への地場産農産物供給推進</li>
+            <li>輸出促進支援</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 関連ページ -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/industry/sectors/manufacturing.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">製造業</h3>
+            <p class="text-sm text-gray-600">食品加工業との連携</p>
+          </a>
+          <a href="/tourism/food/local-cuisine.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">地元グルメ</h3>
+            <p class="text-sm text-gray-600">農産物を使った郷土料理</p>
+          </a>
+          <a href="/tourism/activities/nature.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">自然体験</h3>
+            <p class="text-sm text-gray-600">観光農園・農業体験</p>
+          </a>
+          <a href="/cities/northern-cities/fukaya.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">深谷市</h3>
+            <p class="text-sm text-gray-600">深谷ねぎの産地</p>
+          </a>
+          <a href="/cities/southern-cities/kawagoe.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">川越市</h3>
+            <p class="text-sm text-gray-600">川越いもと狭山茶</p>
+          </a>
+          <a href="/industry/index.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">産業・経済トップ</h3>
+            <p class="text-sm text-gray-600">産業情報一覧に戻る</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">埼玉について</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/profile/overview.html" class="hover:text-saitama-green transition-colors">埼玉県の概要</a></li>
+            <li><a href="/about/geography/index.html" class="hover:text-saitama-green transition-colors">地理・気候</a></li>
+            <li><a href="/about/history/index.html" class="hover:text-saitama-green transition-colors">歴史・文化</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">観光・レジャー</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/tourism/spots/index.html" class="hover:text-saitama-green transition-colors">観光スポット</a></li>
+            <li><a href="/tourism/events/index.html" class="hover:text-saitama-green transition-colors">イベント</a></li>
+            <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors">グルメ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">生活情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/life/education/index.html" class="hover:text-saitama-green transition-colors">教育</a></li>
+            <li><a href="/life/medical/index.html" class="hover:text-saitama-green transition-colors">医療</a></li>
+            <li><a href="/life/welfare/index.html" class="hover:text-saitama-green transition-colors">福祉</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">サイト情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-sm text-center">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // モバイルメニュートグル
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      // ボタンのラベルを更新
+      this.setAttribute('aria-label', isExpanded ? 'メニューを開く' : 'メニューを閉じる');
+    });
+  </script>
+</body>
+</html>

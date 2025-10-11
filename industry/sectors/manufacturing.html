@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>製造業 - 産業・経済 | 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の製造業に関する情報。製造品出荷額、主要産業、成長セクター、技術力について紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity">埼玉県総合案内</a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-saitama-green font-bold">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+            <li><a href="/site-info/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメインナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-saitama-green font-bold">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+          <li><a href="/site-info/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html" class="text-saitama-blue hover:underline">産業・経済</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html#sectors" class="text-saitama-blue hover:underline">産業セクター</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">製造業</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">埼玉県の製造業</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <p class="text-lg leading-relaxed text-gray-700 mb-4">
+          埼玉県は、全国有数の製造業集積地として発展を続けています。首都圏に位置する地理的優位性と、充実した交通インフラを活かし、多様な産業が集積しています。高度な技術力を持つ企業が多数立地し、日本のものづくりを支える重要な役割を担っています。
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          自動車部品、化学製品、食品加工など、幅広い分野で高い競争力を持ち、国内外の市場で存在感を示しています。近年は、先端技術の導入や環境配慮型製造への転換も進み、持続可能な産業発展を目指しています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="埼玉県内の近代的な製造工場の外観。大規模な工場建屋と整備された敷地、駐車場が広がる工業団地の風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">埼玉県の製造業を支える近代的な工場施設</figcaption>
+      </figure>
+
+      <!-- 製造業の規模 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">製造業の規模</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">製造品出荷額等</h3>
+          <div class="space-y-4">
+            <div class="border-l-4 border-saitama-blue pl-4">
+              <p class="text-3xl font-bold text-saitama-blue mb-2">5兆3,092億円</p>
+              <p class="text-gray-700 leading-relaxed">
+                2023年の埼玉県の製造品出荷額等は5兆3,092億円に達し、全国総額の4.8%を占めています。全国で第9位の規模を誇り、首都圏の製造業を支える重要な拠点となっています。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">産業構造の特徴</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            埼玉県の製造業は、多様な産業がバランスよく発展している点が特徴です。食品製造、輸送用機械、化学工業を中心に、幅広い産業分野で高い付加価値を生み出しています。東京に隣接する立地を活かし、大消費地向けの製品供給基地として機能しています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 主要産業 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要産業の概要</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-3">食品製造業</h3>
+            <p class="text-2xl font-bold text-gray-900 mb-2">17.5%</p>
+            <p class="text-sm text-gray-600 mb-3">県内製造業付加価値額に占める割合</p>
+            <p class="text-gray-700 leading-relaxed text-sm">
+              飲料、調理済み食品、菓子類など、多様な食品製造が盛んです。大消費地・東京に近い立地を活かし、鮮度を重視した製品供給を行っています。地元農産物を活用した食品加工も活発です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-3">輸送用機械器具</h3>
+            <p class="text-2xl font-bold text-gray-900 mb-2">15.7%</p>
+            <p class="text-sm text-gray-600 mb-3">県内製造業付加価値額に占める割合</p>
+            <p class="text-gray-700 leading-relaxed text-sm">
+              自動車部品を中心に、高度な技術を要する製品を製造しています。エンジン部品、電装部品、内装部品など、幅広い分野で国内外の自動車メーカーに供給しています。次世代モビリティ分野への展開も進んでいます。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-3">化学工業</h3>
+            <p class="text-2xl font-bold text-gray-900 mb-2">12.5%</p>
+            <p class="text-sm text-gray-600 mb-3">県内製造業付加価値額に占める割合</p>
+            <p class="text-gray-700 leading-relaxed text-sm">
+              工業用化学品、プラスチック製品、医薬品など、付加価値の高い製品を生産しています。研究開発機能を併設する企業も多く、新素材や高機能製品の開発拠点としても機能しています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="自動車部品製造ラインの様子。ロボットアームが精密部品を組み立てる自動化された生産現場" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">最新技術を導入した自動車部品製造ライン</figcaption>
+      </figure>
+
+      <!-- 主要製品 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要製品・技術</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">自動車部品</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            埼玉県は自動車部品産業の一大集積地です。エンジン関連部品、トランスミッション、電装品、内装部品など、多岐にわたる部品を製造しています。高い品質管理技術と、短納期対応を可能にする生産体制が評価され、国内外の完成車メーカーから信頼を得ています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            近年は電気自動車(EV)や自動運転技術への対応も進み、モーター部品、バッテリー関連部品、センサー類などの新分野でも存在感を高めています。従来の技術を基盤に、次世代モビリティ産業への転換を図っています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">工業用化学製品</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            塗料、接着剤、合成樹脂、工業用ガスなど、様々な産業で使用される化学製品を製造しています。高機能フィルム、電子材料、医薬品原料など、高付加価値製品の生産も盛んです。研究開発機能を持つ企業が多く、新素材の開発拠点としても重要な役割を果たしています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            環境対応型製品の開発にも力を入れており、低VOC塗料、バイオマス由来樹脂、リサイクル可能な材料など、持続可能な社会の実現に貢献する製品開発が進んでいます。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">食品加工製品</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            飲料、冷凍食品、調理済み食品、菓子類など、多様な加工食品を製造しています。大消費地・東京に隣接する地理的優位性を活かし、鮮度と品質を重視した製品供給体制を構築しています。地元産農産物を活用した付加価値の高い製品開発も進んでいます。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            食の安全・安心への関心の高まりに対応し、トレーサビリティシステムの導入、HACCP認証の取得、アレルギー対応製品の開発など、消費者ニーズに応える取り組みを進めています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 技術力と強み -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">埼玉県製造業の技術力と強み</h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+              高度な技術集積
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              長年の製造業の集積により、金属加工、樹脂成形、精密加工など、多様な技術を持つ企業が集まっています。大企業と中小企業が協力し、複雑な製品を高品質で生産できる体制が整っています。技術の相互補完により、単独では実現困難な製品開発も可能にしています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+              充実した産業インフラ
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              関越自動車道、東北自動車道、圏央道など高速道路網が充実し、原材料の調達から製品の出荷まで効率的に行えます。大宮を中心とする鉄道網も発達しており、人材の確保や取引先とのアクセスも良好です。工業用水、電力などの供給も安定しています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+              首都圏立地の優位性
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              東京都心まで1時間圏内という立地は、大消費地へのアクセス、優秀な人材の確保、取引先との密接な連携など、多くのメリットをもたらしています。研究開発機能を首都圏に置きながら、生産拠点として埼玉県を選択する企業も多く、技術開発と生産の効率的な連携が可能です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4</span>
+              産学連携の推進
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              埼玉大学、埼玉工業大学など県内の大学・研究機関と企業の連携が活発です。共同研究や技術相談を通じて、新技術の開発や既存技術の高度化が進んでいます。県の産業技術総合センターも、企業の技術開発を支援し、製造業の競争力強化に貢献しています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="クリーンルーム内で精密部品を検査する技術者。白衣を着た作業員が顕微鏡を使用して品質管理を行う様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">高度な品質管理技術を支える検査体制</figcaption>
+      </figure>
+
+      <!-- 成長分野 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">成長分野と新興産業</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">次世代モビリティ</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              電気自動車(EV)、燃料電池車(FCV)、自動運転車など、次世代モビリティ関連の部品製造が拡大しています。モーター、インバーター、バッテリー関連部品、各種センサーなど、新技術への対応を進める企業が増えています。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              従来の自動車部品製造で培った技術を基盤に、電子制御技術、ソフトウェア開発との融合を図り、新たな市場での競争力確保を目指しています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">医療・ヘルスケア</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              医療機器、医薬品、健康関連製品の製造が成長しています。高齢化社会の進展により需要が拡大しており、精密加工技術や化学技術を活かした製品開発が進んでいます。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              在宅医療機器、検査機器、サプリメント、機能性食品など、多様な製品分野で新規参入や事業拡大が見られます。医療機関との連携も深まっています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">環境・エネルギー</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              太陽光パネル、蓄電池、省エネ機器など、環境・エネルギー関連製品の製造が拡大しています。カーボンニュートラル実現に向けた社会的要請に応え、新技術の開発と製品化が進んでいます。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              リサイクル技術、省資源技術など、製造プロセス自体の環境負荷低減にも取り組み、持続可能な製造業への転換を図っています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">IoT・スマート製造</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              IoT技術を活用したスマートファクトリー化が進んでいます。生産設備のデータ収集・分析により、生産効率の向上、品質管理の高度化、予知保全の実現など、製造現場のデジタル化が加速しています。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              AI、ロボット技術との組み合わせにより、柔軟で効率的な生産体制の構築を目指す企業が増えています。人手不足への対応としても期待されています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 支援制度 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">製造業への支援制度</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">埼玉県産業技術総合センター</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            県内製造業の技術支援拠点として、技術相談、試験・分析、研究開発支援など、幅広いサービスを提供しています。最新の試験・分析機器を保有し、企業の製品開発や品質管理を支援しています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>技術相談・指導（材料、加工、評価など）</li>
+            <li>依頼試験・分析サービス</li>
+            <li>機器開放・利用支援</li>
+            <li>共同研究・受託研究</li>
+            <li>技術セミナー・研修会の開催</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">設備投資・研究開発支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            生産設備の導入、研究開発活動に対する各種助成制度が用意されています。中小企業の設備投資や新製品開発を金融面から支援し、競争力強化を後押ししています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>先端産業創造プロジェクト補助金</li>
+            <li>中小企業設備投資資金融資</li>
+            <li>研究開発型企業支援事業</li>
+            <li>知的財産支援（特許出願費用助成など）</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">人材育成・確保支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            製造業を支える人材の育成と確保のため、各種研修プログラムや就職支援を実施しています。若手技術者の育成から、管理職・経営者向けの研修まで、幅広いニーズに対応しています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>技術者研修プログラム</li>
+            <li>技能検定の実施・支援</li>
+            <li>企業見学会・インターンシップマッチング</li>
+            <li>外国人材受入れ支援</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 関連ページ -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/industry/sectors/agriculture.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">農業</h3>
+            <p class="text-sm text-gray-600">埼玉県の農業と特産品</p>
+          </a>
+          <a href="/industry/companies/major-companies.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">主要企業</h3>
+            <p class="text-sm text-gray-600">県内の上場企業と優良企業</p>
+          </a>
+          <a href="/industry/employment/job-support.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">就労支援</h3>
+            <p class="text-sm text-gray-600">製造業の就職支援情報</p>
+          </a>
+          <a href="/life/education/universities.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">大学・研究機関</h3>
+            <p class="text-sm text-gray-600">産学連携の取り組み</p>
+          </a>
+          <a href="/about/geography/transportation.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">交通アクセス</h3>
+            <p class="text-sm text-gray-600">物流インフラ情報</p>
+          </a>
+          <a href="/industry/index.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">産業・経済トップ</h3>
+            <p class="text-sm text-gray-600">産業情報一覧に戻る</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">埼玉について</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/profile/overview.html" class="hover:text-saitama-green transition-colors">埼玉県の概要</a></li>
+            <li><a href="/about/geography/index.html" class="hover:text-saitama-green transition-colors">地理・気候</a></li>
+            <li><a href="/about/history/index.html" class="hover:text-saitama-green transition-colors">歴史・文化</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">観光・レジャー</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/tourism/spots/index.html" class="hover:text-saitama-green transition-colors">観光スポット</a></li>
+            <li><a href="/tourism/events/index.html" class="hover:text-saitama-green transition-colors">イベント</a></li>
+            <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors">グルメ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">生活情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/life/education/index.html" class="hover:text-saitama-green transition-colors">教育</a></li>
+            <li><a href="/life/medical/index.html" class="hover:text-saitama-green transition-colors">医療</a></li>
+            <li><a href="/life/welfare/index.html" class="hover:text-saitama-green transition-colors">福祉</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">サイト情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-sm text-center">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // モバイルメニュートグル
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      // ボタンのラベルを更新
+      this.setAttribute('aria-label', isExpanded ? 'メニューを開く' : 'メニューを閉じる');
+    });
+  </script>
+</body>
+</html>

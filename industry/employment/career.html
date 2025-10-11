@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>キャリア形成支援 - 産業・経済 | 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県のキャリア形成支援に関する情報。職業訓練、スキルアップ、資格取得支援、リカレント教育について紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity">埼玉県総合案内</a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-saitama-green font-bold">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+            <li><a href="/site-info/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメインナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-saitama-green font-bold">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+          <li><a href="/site-info/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html" class="text-saitama-blue hover:underline">産業・経済</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html#employment" class="text-saitama-blue hover:underline">雇用・就労</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">キャリア形成</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">キャリア形成支援</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <p class="text-lg leading-relaxed text-gray-700 mb-4">
+          埼玉県では、働く人々のキャリアアップと、社会全体の生産性向上を目指し、多様な人材育成・能力開発の機会を提供しています。職業訓練、資格取得支援、リカレント教育など、それぞれのライフステージやキャリア段階に応じた学びの場を整備しています。
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          技術革新やデジタル化が急速に進む中、継続的なスキルアップが不可欠です。新たな知識や技能を習得し、変化する労働市場に対応できる人材の育成を支援しています。生涯にわたって学び続け、成長し続けることができる環境づくりを推進しています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="職業訓練校の実習風景。最新の工作機械を使って技能訓練を受ける訓練生たちと、指導員が丁寧に教えている様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">実践的な技能を身につける職業訓練</figcaption>
+      </figure>
+
+      <!-- 職業訓練 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">公共職業訓練</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">埼玉県立高等技術専門校</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            県内に複数の高等技術専門校があり、就職に必要な技能・知識を習得できる職業訓練を実施しています。未経験者でも基礎から学べるカリキュラムで、実践的な技能を身につけることができます。
+          </p>
+          <div class="grid md:grid-cols-2 gap-6 mb-4">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-3">主な訓練科目</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                <li>機械加工科（NC旋盤、マシニングセンタ等）</li>
+                <li>電気設備科（電気工事、制御技術等）</li>
+                <li>自動車整備科</li>
+                <li>建築科（大工、内装等）</li>
+                <li>情報処理科（プログラミング、ネットワーク等）</li>
+                <li>デザイン科（グラフィック、Web等）</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-3">訓練の特徴</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                <li>訓練期間: 6ヶ月〜2年</li>
+                <li>受講料: 無料（教材費等は実費）</li>
+                <li>企業実習を含む実践的カリキュラム</li>
+                <li>就職支援（求人紹介、面接指導等）</li>
+                <li>資格取得支援</li>
+                <li>就職率90%以上の高実績</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            新規学卒者向けの1〜2年コースと、求職者向けの短期コース（6ヶ月程度）があります。年齢や経歴に応じて選択できます。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">離職者等再就職訓練（委託訓練）</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            民間の教育訓練機関に委託して実施する職業訓練です。事務系、IT系、介護系など、幅広い分野の訓練コースがあり、3ヶ月〜6ヶ月の期間で再就職に必要なスキルを習得できます。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4 mb-4">
+            <h4 class="font-bold text-saitama-blue mb-3">主な訓練分野</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>OA事務科（Word、Excel、PowerPoint等）</li>
+              <li>経理・簿記科</li>
+              <li>Webデザイン・プログラミング科</li>
+              <li>CAD・設計科</li>
+              <li>介護職員初任者研修科</li>
+              <li>医療事務科</li>
+              <li>宅地建物取引士養成科</li>
+            </ul>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            雇用保険受給者は、訓練期間中に基本手当を受給しながら受講できます。条件を満たせば、職業訓練受講給付金（月10万円）を受給できる場合もあります。
+          </p>
+        </div>
+      </section>
+
+      <!-- スキルアップ支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">在職者向けスキルアップ支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">在職者訓練（スキルアップ講習）</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            現在働いている方のスキルアップを支援する短期講習です。夜間や土日に開講するコースもあり、働きながら受講できます。専門的な技能・知識を効率的に習得し、キャリアアップや業務の質向上につなげることができます。
+          </p>
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">機械・製造系</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4 text-sm">
+                <li>NC旋盤技能向上</li>
+                <li>CAD操作技能</li>
+                <li>品質管理手法</li>
+                <li>溶接技術</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">電気・電子系</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4 text-sm">
+                <li>シーケンス制御</li>
+                <li>電気工事技能</li>
+                <li>PLCプログラミング</li>
+                <li>電子回路設計</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">情報・ビジネス系</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4 text-sm">
+                <li>プログラミング言語</li>
+                <li>Webデザイン</li>
+                <li>データベース管理</li>
+                <li>ビジネススキル</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            講習期間は2日〜5日程度が中心です。企業単位での受講も可能で、社員研修としても活用されています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">オーダーメイド型企業研修</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            企業のニーズに応じて、訓練内容・期間をカスタマイズする企業向け研修です。高等技術専門校の指導員が企業に出向いて訓練を実施することも可能です。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            新入社員研修、中堅社員のスキルアップ、新技術・新設備の導入に伴う技能訓練など、企業の人材育成計画に合わせた柔軟な対応が可能です。
+          </p>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="パソコン教室の様子。受講生が集中してプログラミングやデザインソフトの操作を学んでいる風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">IT・デジタルスキルを学ぶ職業訓練</figcaption>
+      </figure>
+
+      <!-- 資格取得支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">資格取得支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">技能検定制度</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            国が定める技能検定制度により、技能の習得レベルを公的に証明する国家資格を取得できます。機械加工、電気工事、建築、調理など、130職種以上の技能検定が実施されています。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4 mb-4">
+            <h4 class="font-bold text-saitama-blue mb-3">主な技能検定職種</h4>
+            <ul class="grid md:grid-cols-2 gap-x-6 list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+              <li>機械加工（普通旋盤、フライス盤等）</li>
+              <li>金属プレス加工</li>
+              <li>電気機器組立て</li>
+              <li>電子機器組立て</li>
+              <li>建築大工</li>
+              <li>とび</li>
+              <li>配管</li>
+              <li>左官</li>
+              <li>調理師</li>
+              <li>美容師・理容師</li>
+              <li>園芸装飾</li>
+              <li>ウェブデザイン</li>
+            </ul>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            各級（1級、2級、3級）があり、実務経験年数に応じて受検できます。高等技術専門校では、技能検定合格に向けた訓練・指導も行っています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">教育訓練給付制度</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            雇用保険の被保険者（または被保険者であった方）が、厚生労働大臣が指定する教育訓練を受講した場合、受講費用の一部が支給される制度です。キャリアアップや再就職に役立つ資格取得を経済的に支援します。
+          </p>
+          <div class="space-y-3">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-2">一般教育訓練給付金</h4>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>支給額:</strong> 受講費用の20%（上限10万円）<br>
+                <strong>対象講座:</strong> 簿記、宅地建物取引士、社会保険労務士、ITパスポート、TOEICなど
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-2">特定一般教育訓練給付金</h4>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>支給額:</strong> 受講費用の40%（上限20万円）<br>
+                <strong>対象講座:</strong> 税理士、社会保険労務士、キャリアコンサルタント、ITSSレベル3以上の情報技術資格など
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-2">専門実践教育訓練給付金</h4>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>支給額:</strong> 受講費用の50〜70%（年間上限56万円、最長4年）<br>
+                <strong>対象講座:</strong> 看護師、介護福祉士、調理師、美容師、専門職大学院など
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">資格取得費用助成（企業向け）</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            従業員の資格取得を支援する企業に対し、費用の一部を助成する制度があります。人材育成に積極的な企業を支援し、県内企業の競争力強化を図ります。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            技能検定受検料、各種国家資格・公的資格の受験料・講習費用などが助成対象となります。詳細は埼玉県産業労働部にお問い合わせください。
+          </p>
+        </div>
+      </section>
+
+      <!-- リカレント教育 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">リカレント教育・生涯学習</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">社会人向け大学・大学院プログラム</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            県内の大学・大学院では、社会人が働きながら学べるプログラムを提供しています。夜間・土日開講の講座、オンライン授業など、仕事と両立しやすい学習環境が整っています。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h4 class="font-bold text-saitama-blue mb-3">主な学習機会</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>社会人向け大学院（MBA、専門職大学院等）</li>
+              <li>公開講座・科目等履修生制度</li>
+              <li>社会人向けリカレント教育プログラム</li>
+              <li>産学連携による専門研修</li>
+              <li>オンライン学習プラットフォーム</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">女性のキャリアアップ支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            出産・育児等でキャリアを中断した女性の再就職・キャリアアップを支援するプログラムです。ブランク期間があっても、スキルを再習得し、自信を持って職場復帰できるよう支援します。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            IT・デジタルスキル講座、マネジメント研修、起業セミナーなど、多様なキャリアパスを支援するプログラムを提供しています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">中高年層のキャリアチェンジ支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            人生100年時代を見据え、中高年層のキャリアチェンジやセカンドキャリア構築を支援します。長年培った経験を活かしながら、新たな分野にチャレンジできるよう、学び直しの機会を提供しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            定年後の起業支援、地域貢献活動への参加支援、趣味を活かした仕事への転換支援など、多様な働き方・生き方を応援します。
+          </p>
+        </div>
+      </section>
+
+      <!-- デジタル人材育成 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">デジタル人材育成</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">DXリスキリング支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            デジタルトランスフォーメーション（DX）の推進に必要なデジタルスキルの習得を支援します。企業のDX推進を担う人材、デジタル技術を活用して業務改善を行う人材の育成を目指します。
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-3">基礎レベル</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                <li>ITリテラシー向上講座</li>
+                <li>データ活用基礎</li>
+                <li>クラウドサービス活用</li>
+                <li>サイバーセキュリティ基礎</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-3">専門レベル</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                <li>AI・機械学習</li>
+                <li>データサイエンス</li>
+                <li>IoT・センサー技術</li>
+                <li>システム開発・プログラミング</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">IT・プログラミング教育</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            IT業界への転職を目指す方、プログラミングスキルを身につけたい方向けの集中講座です。未経験からでも、実務で通用するレベルのスキルを習得できるよう、実践的なカリキュラムを提供しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Java、Python、PHP、Ruby、JavaScript等の言語習得、Webアプリケーション開発、データベース設計など、幅広い内容を学べます。プログラミングスクールとの連携により、質の高い教育を提供しています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 就業支援奨学金 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">奨学金返還支援・学び直し支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">奨学金返還支援制度</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            県内企業に就職した若者の奨学金返還を支援する制度です。企業と県が協力して、若手社員の奨学金返還を援助することで、県内への人材定着を促進します。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h4 class="font-bold text-saitama-blue mb-3">支援の概要</h4>
+            <p class="text-gray-700 leading-relaxed mb-2">
+              対象企業に就職し、一定期間勤務した方の奨学金返還額の一部を、企業と県が共同で補助します。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+              <li>支援期間: 最長6年間</li>
+              <li>支援額: 年間最大18万円程度</li>
+              <li>対象: 日本学生支援機構等の奨学金返還者</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">専門職人材確保支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            看護師、介護福祉士、保育士など、人手不足が深刻な専門職の資格取得を支援する制度です。養成施設での修学資金の貸付や、資格取得費用の一部助成を行っています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            一定期間、県内の施設で勤務することにより、返還が免除される場合もあります。詳細は各職種の所管部署にお問い合わせください。
+          </p>
+        </div>
+      </section>
+
+      <!-- キャリアコンサルティング -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">キャリアコンサルティング</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">専門家による個別相談</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            キャリアコンサルタント等の専門家が、キャリア形成に関する悩みや疑問に個別に対応します。自己分析、キャリアプラン作成、学習計画の立案など、一人ひとりの状況に応じたアドバイスを提供します。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h4 class="font-bold text-saitama-blue mb-3">相談内容の例</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>今後のキャリアパスについて</li>
+              <li>スキルアップのための学習計画</li>
+              <li>転職・キャリアチェンジの相談</li>
+              <li>仕事と家庭の両立</li>
+              <li>職業能力の棚卸し・自己分析</li>
+              <li>資格取得の方向性</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 関連ページ -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/industry/employment/job-support.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">就労支援</h3>
+            <p class="text-sm text-gray-600">職業訓練と就職の連携</p>
+          </a>
+          <a href="/life/education/universities.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">大学・専門学校</h3>
+            <p class="text-sm text-gray-600">高等教育機関での学び</p>
+          </a>
+          <a href="/industry/companies/startups.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">ベンチャー企業</h3>
+            <p class="text-sm text-gray-600">起業家育成プログラム</p>
+          </a>
+          <a href="/industry/sectors/manufacturing.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">製造業</h3>
+            <p class="text-sm text-gray-600">技能者育成情報</p>
+          </a>
+          <a href="/life/welfare/support.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">福祉サービス</h3>
+            <p class="text-sm text-gray-600">学習支援制度</p>
+          </a>
+          <a href="/industry/index.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">産業・経済トップ</h3>
+            <p class="text-sm text-gray-600">産業情報一覧に戻る</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">埼玉について</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/profile/overview.html" class="hover:text-saitama-green transition-colors">埼玉県の概要</a></li>
+            <li><a href="/about/geography/index.html" class="hover:text-saitama-green transition-colors">地理・気候</a></li>
+            <li><a href="/about/history/index.html" class="hover:text-saitama-green transition-colors">歴史・文化</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">観光・レジャー</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/tourism/spots/index.html" class="hover:text-saitama-green transition-colors">観光スポット</a></li>
+            <li><a href="/tourism/events/index.html" class="hover:text-saitama-green transition-colors">イベント</a></li>
+            <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors">グルメ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">生活情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/life/education/index.html" class="hover:text-saitama-green transition-colors">教育</a></li>
+            <li><a href="/life/medical/index.html" class="hover:text-saitama-green transition-colors">医療</a></li>
+            <li><a href="/life/welfare/index.html" class="hover:text-saitama-green transition-colors">福祉</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">サイト情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-sm text-center">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // モバイルメニュートグル
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      // ボタンのラベルを更新
+      this.setAttribute('aria-label', isExpanded ? 'メニューを開く' : 'メニューを閉じる');
+    });
+  </script>
+</body>
+</html>

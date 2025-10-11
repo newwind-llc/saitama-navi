@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主要企業 - 産業・経済 | 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県に本社を置く主要企業の情報。上場企業、県内GDP、代表的な企業について紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity">埼玉県総合案内</a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-saitama-green font-bold">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+            <li><a href="/site-info/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメインナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-saitama-green font-bold">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+          <li><a href="/site-info/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html" class="text-saitama-blue hover:underline">産業・経済</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html#companies" class="text-saitama-blue hover:underline">企業情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">主要企業</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">埼玉県に本社を置く主要企業</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <p class="text-lg leading-relaxed text-gray-700 mb-4">
+          埼玉県には、全国規模で事業を展開する有力企業が多数本社を構えています。製造業、小売業、サービス業など、多様な業種の企業が県内を拠点として成長を遂げており、地域経済の重要な柱となっています。
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          首都圏の立地優位性を活かしながら、各企業が独自の強みを発揮し、全国市場で競争力を持つビジネスを展開しています。これらの企業は、県内での雇用創出、税収確保、取引企業の集積など、地域経済に大きく貢献しています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="さいたま新都心の高層ビル群。近代的なオフィスビルが立ち並ぶビジネス地区の風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">埼玉県の企業活動を支えるビジネス拠点</figcaption>
+      </figure>
+
+      <!-- 県内経済の規模 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">埼玉県経済の規模</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">県内総生産（GDP）</h3>
+            <div class="border-l-4 border-saitama-blue pl-4 mb-4">
+              <p class="text-3xl font-bold text-saitama-blue mb-2">24兆6,656億円</p>
+              <p class="text-sm text-gray-600 mb-2">2022年度（名目）</p>
+              <p class="text-gray-700 leading-relaxed">
+                前年度比<strong>+2.5%</strong>の成長を記録しました。全国の都道府県の中でも上位に位置し、大規模な経済圏を形成しています。
+              </p>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              製造業、卸売・小売業、サービス業などがバランスよく発展し、安定した経済基盤を持っています。首都圏の一角として、東京との経済的な連携も深く、広域的な経済圏の中で重要な役割を果たしています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">上場企業数</h3>
+            <div class="border-l-4 border-saitama-green pl-4 mb-4">
+              <p class="text-3xl font-bold text-saitama-green mb-2">67社</p>
+              <p class="text-sm text-gray-600 mb-2">2025年時点</p>
+              <p class="text-gray-700 leading-relaxed">
+                埼玉県に本社を置く上場企業は67社に達しています。東京証券取引所のプライム市場、スタンダード市場、グロース市場に上場し、安定した経営基盤を持つ企業が多数存在します。
+              </p>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              小売業、製造業、サービス業など、多様な業種の企業が上場しており、県経済の多様性を示しています。これらの企業は、全国規模での事業展開を行い、埼玉県の経済的プレゼンスを高めています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 主要企業 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">代表的な企業</h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-start mb-4">
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-saitama-blue mb-2">株式会社しまむら</h3>
+                <p class="text-sm text-gray-600 mb-3">本社所在地: さいたま市大宮区</p>
+              </div>
+              <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded">小売業</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              「ファッションセンターしまむら」を中心に、全国約1,400店舗を展開する衣料品チェーン最大手です。低価格で品質の良い衣料品を提供するビジネスモデルで成功を収めています。
+            </p>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">事業内容</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+                <li>ファッションセンターしまむら（総合衣料品店）</li>
+                <li>バースデイ（子供用品専門店）</li>
+                <li>アベイル（カジュアル衣料品店）</li>
+                <li>シャンブル（インテリア・生活雑貨店）</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-start mb-4">
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-saitama-blue mb-2">株式会社カインズ</h3>
+                <p class="text-sm text-gray-600 mb-3">本社所在地: 本庄市</p>
+              </div>
+              <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded">小売業</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              全国に200店舗以上を展開するホームセンターチェーンです。DIY用品、園芸用品、生活用品を幅広く取り扱い、大型店舗での豊富な品揃えが特徴です。近年は、独自のPB（プライベートブランド）商品開発にも力を入れています。
+            </p>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">事業の特徴</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+                <li>大型店舗フォーマット（平均売場面積1万㎡超）</li>
+                <li>充実したPB商品ラインナップ</li>
+                <li>DIY工房、園芸相談などサービスの充実</li>
+                <li>オンラインストアとの連携強化</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-start mb-4">
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-saitama-blue mb-2">株式会社ヤオコー</h3>
+                <p class="text-sm text-gray-600 mb-3">本社所在地: 川越市</p>
+              </div>
+              <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded">小売業</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              埼玉県を中心に関東地方で約180店舗を展開するスーパーマーケットチェーンです。生鮮食品の品質にこだわり、「より良い品をより安く」をモットーに、地域密着型の店舗運営を行っています。
+            </p>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">強みと特徴</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+                <li>高品質な生鮮食品（特に精肉・鮮魚）</li>
+                <li>充実した惣菜・ベーカリー</li>
+                <li>地域のニーズに応じた品揃え</li>
+                <li>従業員の接客サービスへのこだわり</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-start mb-4">
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-saitama-blue mb-2">株式会社サイゼリヤ</h3>
+                <p class="text-sm text-gray-600 mb-3">本社所在地: 吉川市（登記上本店: さいたま市大宮区）</p>
+              </div>
+              <span class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded">飲食業</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              イタリアンレストランチェーンとして、全国に約1,000店舗を展開しています。低価格で本格的なイタリア料理を提供するビジネスモデルで成功を収めています。海外にも店舗展開を行っています。
+            </p>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">ビジネスモデルの特徴</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+                <li>セントラルキッチン方式による効率化</li>
+                <li>食材の自社調達・自社栽培</li>
+                <li>ワインの自社輸入</li>
+                <li>低価格ながら本格的な味の追求</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-start mb-4">
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-saitama-blue mb-2">株式会社ベルーナ</h3>
+                <p class="text-sm text-gray-600 mb-3">本社所在地: 上尾市</p>
+              </div>
+              <span class="bg-purple-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded">通販業</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              カタログ通販、インターネット通販を主力事業とする総合通販企業です。衣料品、雑貨、食品など幅広い商品を取り扱い、特にシニア層を中心に支持を集めています。
+            </p>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">事業展開</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4">
+                <li>総合通販（衣料品、インテリア、雑貨）</li>
+                <li>食品通販</li>
+                <li>化粧品・健康食品通販</li>
+                <li>金融サービス（ローン、保険）</li>
+                <li>リゾート事業</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="製造業の工場内部。精密機械を製造する最新設備が稼働し、技術者が品質管理を行っている様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">県内製造業を支える高度な生産技術</figcaption>
+      </figure>
+
+      <!-- 製造業の主要企業 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">製造業の主要企業</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">自動車部品・輸送機器関連</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            埼玉県には自動車部品メーカーが多数立地しています。エンジン部品、電装品、内装部品など、多岐にわたる部品を製造し、国内外の完成車メーカーに供給しています。高い技術力と品質管理能力により、信頼を得ています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            近年は電気自動車(EV)関連部品へのシフトも進んでおり、モーター、インバーター、バッテリー関連部品などの新分野での事業展開も始まっています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">化学工業</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            工業用化学品、医薬品、化粧品、プラスチック製品など、化学関連製品を製造する企業が県内に立地しています。研究開発機能を併設する企業も多く、新素材・高機能製品の開発拠点としても機能しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            環境対応型製品の開発にも力を入れており、バイオマス由来材料、リサイクル可能な素材など、持続可能な社会の実現に貢献する製品開発が進んでいます。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">食品製造業</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            飲料、調理済み食品、菓子類など、多様な食品を製造する企業が県内に工場を構えています。大消費地・東京に近い立地を活かし、鮮度を重視した製品供給を行っています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            地元農産物を活用した商品開発、健康志向の商品開発など、消費者ニーズに応える取り組みも進んでいます。HACCP認証の取得、トレーサビリティの確保など、食の安全・安心への取り組みも徹底されています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 大企業の施設 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">県内に拠点を置く大企業</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">製造拠点・研究開発拠点</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            埼玉県には、本社は他県にあるものの、重要な製造拠点や研究開発拠点を置く大企業が多数あります。これらの企業は、県内での雇用創出、技術集積、関連企業の誘致など、地域経済に大きく貢献しています。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4 mb-4">
+            <h4 class="font-bold text-gray-900 mb-3">主な企業例（本社は県外）</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li><strong>本田技研工業（ホンダ）</strong>: 狭山市、小川町に製造拠点と研究所を設置</li>
+              <li><strong>スズキ</strong>: 川越市に四輪車の開発・生産拠点</li>
+              <li><strong>日立製作所</strong>: 熊谷市など県内各地に研究所・工場</li>
+              <li><strong>ロッテ</strong>: 浦和工場（菓子製造）</li>
+              <li><strong>キリンビバレッジ</strong>: 北本市に飲料製造工場</li>
+            </ul>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            これらの企業は、県内に大規模な製造拠点を持ち、数千人規模の雇用を創出しています。また、部品供給企業、物流企業など、関連企業の集積も促進し、産業クラスターの形成に寄与しています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">物流センター・配送拠点</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            圏央道の整備により、県内には大手企業の物流センターが相次いで開設されています。Amazon、楽天、ヤマト運輸、佐川急便など、EC関連企業や運送会社が大規模物流施設を展開しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            首都圏の物流拠点として、東京、神奈川、千葉など周辺地域への配送を担っており、首都圏の生活・経済を支える重要な役割を果たしています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 企業立地の優位性 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">埼玉県への企業立地の優位性</h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+              首都圏へのアクセス
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              東京都心まで30分〜1時間という立地により、取引先へのアクセスが容易です。営業活動、商談、本社機能との連携など、ビジネス活動を効率的に行えます。新幹線も停車する大宮駅は、全国とのアクセスの拠点となります。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+              コスト優位性
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              東京都心と比較して、オフィス賃料、工場用地価格が低く、コスト面で優位です。従業員の住宅費も比較的抑えられるため、人件費の抑制にもつながります。事業拡大時の用地確保も比較的容易です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+              人材確保
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              730万人を超える県内人口に加え、東京からの通勤も可能な立地のため、優秀な人材の確保がしやすい環境です。埼玉大学、埼玉工業大学など県内の大学・専門学校からの新卒採用も可能です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+              <span class="bg-saitama-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4</span>
+              インフラの充実
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              鉄道網、高速道路網が充実し、物流、人の移動が効率的に行えます。工業用水、電力などの供給も安定しており、製造業の操業環境も良好です。インターネット回線などの情報インフラも整備されています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 企業誘致・支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">企業誘致・支援制度</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">企業誘致優遇制度</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            埼玉県では、企業の新規立地や既存事業所の増設を促進するため、様々な優遇制度を設けています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>不動産取得税の軽減措置</li>
+            <li>固定資産税の減免（市町村による）</li>
+            <li>企業立地促進資金融資</li>
+            <li>工場等設置奨励金</li>
+            <li>雇用促進奨励金</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">企業活動支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            既存企業の事業拡大、新規事業展開を支援する制度も充実しています。
+          </p>
+          <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+            <li>中小企業向け制度融資</li>
+            <li>経営相談・診断サービス</li>
+            <li>販路開拓支援</li>
+            <li>技術開発支援（産業技術総合センター）</li>
+            <li>海外展開支援</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 関連ページ -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/industry/companies/startups.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">ベンチャー企業</h3>
+            <p class="text-sm text-gray-600">スタートアップ支援情報</p>
+          </a>
+          <a href="/industry/sectors/manufacturing.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">製造業</h3>
+            <p class="text-sm text-gray-600">県内製造業の詳細</p>
+          </a>
+          <a href="/industry/employment/job-support.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">就労支援</h3>
+            <p class="text-sm text-gray-600">企業での就職情報</p>
+          </a>
+          <a href="/life/education/universities.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">大学・研究機関</h3>
+            <p class="text-sm text-gray-600">人材育成と産学連携</p>
+          </a>
+          <a href="/about/geography/transportation.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">交通アクセス</h3>
+            <p class="text-sm text-gray-600">企業立地の交通インフラ</p>
+          </a>
+          <a href="/industry/index.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">産業・経済トップ</h3>
+            <p class="text-sm text-gray-600">産業情報一覧に戻る</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">埼玉について</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/profile/overview.html" class="hover:text-saitama-green transition-colors">埼玉県の概要</a></li>
+            <li><a href="/about/geography/index.html" class="hover:text-saitama-green transition-colors">地理・気候</a></li>
+            <li><a href="/about/history/index.html" class="hover:text-saitama-green transition-colors">歴史・文化</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">観光・レジャー</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/tourism/spots/index.html" class="hover:text-saitama-green transition-colors">観光スポット</a></li>
+            <li><a href="/tourism/events/index.html" class="hover:text-saitama-green transition-colors">イベント</a></li>
+            <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors">グルメ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">生活情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/life/education/index.html" class="hover:text-saitama-green transition-colors">教育</a></li>
+            <li><a href="/life/medical/index.html" class="hover:text-saitama-green transition-colors">医療</a></li>
+            <li><a href="/life/welfare/index.html" class="hover:text-saitama-green transition-colors">福祉</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">サイト情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-sm text-center">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // モバイルメニュートグル
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      // ボタンのラベルを更新
+      this.setAttribute('aria-label', isExpanded ? 'メニューを開く' : 'メニューを閉じる');
+    });
+  </script>
+</body>
+</html>

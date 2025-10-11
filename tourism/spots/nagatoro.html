@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>長瀞エリアの観光 - さいたまなび</title>
+    <meta name="description" content="岩畳、荒川ライン下り、宝登山神社など、長瀞エリアの観光スポットをご紹介します。国の天然記念物の景観と川下りが楽しめる自然豊かな観光地です。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">長瀞エリア</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">長瀞エリアの観光</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    国の天然記念物・岩畳の絶景、スリル満点の荒川ライン下り、2,000年以上の歴史を持つ宝登山神社など、自然と歴史が調和する美しい渓谷の町です。
+                </p>
+            </header>
+
+            <!-- Overview -->
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">長瀞エリアとは</h3>
+                    <p class="leading-relaxed mb-4">
+                        長瀞は秩父郡の東部に位置し、荒川が織りなす渓谷美で知られる観光地です。「地球の窓」とも呼ばれる特異な地質景観は、日本地質学発祥の地として国の名勝・天然記念物に指定されています。池袋駅から西武鉄道と秩父鉄道を乗り継いで約90分でアクセスできます。
+                    </p>
+                    <p class="leading-relaxed">
+                        春には桜、夏には新緑とライン下り、秋には紅葉、冬には氷柱と、四季折々の自然美を楽しめます。また、宝登山ロープウェイで標高497メートルの山頂からは、秩父盆地や関東平野を一望できる絶景が広がります。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Main Attractions -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">主な観光スポット</h3>
+
+                <!-- Iwadatami -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">岩畳（いわだたみ）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="岩畳。荒川沿いに広がる結晶片岩の畳を敷き詰めたような地層と清流"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    国の天然記念物・岩畳（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                荒川沿いに約500メートルにわたって広がる、結晶片岩が畳を敷き詰めたように見える特異な地質景観です。約8,000万年前の海底が隆起し、長い年月をかけて侵食されて形成されました。国の名勝・天然記念物に指定されており、地質学的にも極めて貴重な場所です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                岩畳の上を歩くことができ、間近で地層の模様や結晶を観察できます。荒川の清流と岩畳のコントラストは絶景で、特に新緑や紅葉の季節は美しさが際立ちます。対岸には秩父赤壁と呼ばれる赤い岩壁も見られ、自然の造形美に圧倒されます。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">秩父郡長瀞町長瀞</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">秩父鉄道長瀞駅から徒歩5分</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">指定：</dt>
+                                    <dd class="text-gray-700">国指定名勝・天然記念物</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Line Kudari -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">荒川ライン下り</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                長瀞の清流・荒川を和舟で下る人気のアクティビティです。船頭さんの巧みな操船で、岩畳や秩父赤壁などの景勝地を川面から眺めることができます。スリル満点の急流体験と、静かな流れでの景色鑑賞の両方が楽しめます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                コースはAコース（親鼻橋から岩畳まで約3キロ・約20分）とBコース（岩畳から高砂橋まで約3キロ・約20分）があり、両方を楽しむ全コースも人気です。船頭さんの軽快なトークと解説も魅力の一つで、季節ごとに異なる渓谷美を満喫できます。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">料金：</dt>
+                                    <dd class="text-gray-700">大人1,800円、子ども900円（各コース）</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">運行期間：</dt>
+                                    <dd class="text-gray-700">3月上旬～12月上旬（天候・水量により変動）</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所要時間：</dt>
+                                    <dd class="text-gray-700">各コース約20分</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="荒川ライン下り。和舟に乗った観光客が渓谷の景色を楽しむ様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    スリル満点の荒川ライン下り（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Hodosan Shrine -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">宝登山神社（ほどさんじんじゃ）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/800x500"
+                                     alt="宝登山神社。朱塗りの社殿と美しい彫刻が施された拝殿"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    2,000年以上の歴史を持つ宝登山神社（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                創建から2,000年以上の歴史を持つ古社で、火災盗難除け、諸難除けの神様として信仰されています。日本武尊が東征の際、宝登山で山火事に遭った時、巨犬が現れて火を消し止めたという伝説が残っています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                山麓にある本社（里宮）は、彩色彫刻が施された美しい社殿が特徴です。年間100万人以上の参拝者が訪れます。宝登山山頂には奥宮があり、ロープウェイで登ることができます。初詣やロウバイの季節は特に賑わいます。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">所在地：</dt>
+                                    <dd class="text-gray-700">秩父郡長瀞町長瀞1828</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">秩父鉄道長瀞駅から徒歩10分</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">御神徳：</dt>
+                                    <dd class="text-gray-700">火災盗難除、諸難除</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Hodosan Ropeway -->
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">宝登山ロープウェイ</h4>
+                    <div class="prose max-w-none">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            宝登山の麓から山頂まで、全長832メートル、高低差238メートルを約5分で結ぶロープウェイです。標高497メートルの山頂からは、秩父盆地や関東平野、天気の良い日には富士山まで見渡せる絶景が広がります。
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            山頂には宝登山神社奥宮のほか、冬から早春にかけて約3,000本のロウバイが咲く宝登山ロウバイ園があります。また、梅、桜、ツツジなど四季折々の花が楽しめる宝登山小動物公園もあり、家族連れにも人気です。ハイキングコースも整備されており、自然散策を楽しめます。
+                        </p>
+                        <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-800 w-28">料金：</dt>
+                                <dd class="text-gray-700">大人往復980円、片道490円（子ども半額）</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-800 w-28">所要時間：</dt>
+                                <dd class="text-gray-700">約5分</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-800 w-28">見どころ：</dt>
+                                <dd class="text-gray-700">ロウバイ園（1～3月）、梅百花園、関東平野の眺望</dd>
+                            </div>
+                        </dl>
+                    </article>
+            </section>
+
+            <!-- Activities -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">体験・アクティビティ</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">ラフティング・カヤック</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            荒川の急流を利用したラフティングやカヤック体験が人気です。インストラクターが同行するので初心者でも安心。春から秋にかけてツアーが開催されています。
+                        </p>
+                        <p class="text-sm text-gray-600">シーズン：4月～11月</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">岩石採集</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            日本地質学発祥の地として、岩石や化石の観察・採集が楽しめます。地質標本館では長瀞の地質について詳しく学ぶことができます。
+                        </p>
+                        <p class="text-sm text-gray-600">通年楽しめます</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">季節の花めぐり</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            春の桜並木（約3,000本）、初夏の新緑、秋の紅葉、冬の氷柱など、四季折々の自然美を楽しめます。特に桜のトンネルと紅葉のライトアップは見事です。
+                        </p>
+                        <p class="text-sm text-gray-600">通年楽しめます</p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">かき氷</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            長瀞名物の天然氷を使ったかき氷。ふわふわの食感と繊細な味わいが特徴で、夏には多くの店が行列になります。一年中楽しめる店もあります。
+                        </p>
+                        <p class="text-sm text-gray-600">通年（特に夏が人気）</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Access -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">アクセス情報</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">長瀞エリアへのアクセス</h4>
+                    <dl class="space-y-4">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【電車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 池袋駅から西武鉄道で西武秩父駅まで約80分、秩父鉄道に乗り換えて長瀞駅まで約20分</p>
+                                <p>• 熊谷駅から秩父鉄道で約50分（長瀞駅）</p>
+                                <p>• SL「パレオエクスプレス」も運行（土日祝日中心）</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 関越自動車道花園ICから国道140号経由で約30分</p>
+                                <p class="text-sm text-gray-600">※観光シーズンは駐車場が混雑します</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/tourism/spots/chichibu.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            秩父エリアの観光
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/food/local-cuisine.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の郷土料理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            観光・レジャートップ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/geography.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の地理
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

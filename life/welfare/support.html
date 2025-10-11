@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生活支援 - 暮らし - 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の生活支援サービス。障害者支援、生活保護、各種相談窓口など、生活に困った際の支援制度をご紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {theme: {extend: {colors: {'saitama-green': '#00A040', 'saitama-blue': '#0068B7'}}}}</script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-green focus:text-white">本文へスキップ</a>
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green"><a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">埼玉県総合案内</a></div>
+        <nav class="hidden md:block" aria-label="メインメニュー">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
+          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav aria-label="パンくずリスト" class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">ホーム</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><a href="/life/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">暮らし</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><span class="text-gray-700" aria-current="page">生活支援</span></li>
+      </ol>
+    </div>
+  </nav>
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">埼玉県の生活支援</h1>
+        <p class="text-lg text-gray-700 leading-loose">埼玉県では、生活に困難を抱える方々が安心して暮らせるよう、障害者支援サービス、生活保護制度、各種相談窓口など多様な支援体制を整備しています。一人で悩まず、まずは相談することから始めましょう。</p>
+      </header>
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="生活支援に関連する施設のイメージ画像" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">生活支援(イメージ)</figcaption>
+      </figure>
+            <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">障害者福祉サービス</h2>
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">障害者総合支援法に基づき、身体障害、知的障害、精神障害のある方に対し、日常生活や社会参加を支援するサービスを提供しています。</p>
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="text-gray-700 leading-loose">詳細な情報については、お住まいの市町村窓口または県の関連部署にお問い合わせください。</p>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">生活保護制度</h2>
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">生活に困窮している方に、健康で文化的な最低限度の生活を保障し、自立を助長する制度です。</p>
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="text-gray-700 leading-loose">詳細な情報については、お住まいの市町村窓口または県の関連部署にお問い合わせください。</p>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">相談窓口</h2>
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">生活全般の悩みや困りごとに関する相談窓口が、県内各市町村に設置されています。</p>
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="text-gray-700 leading-loose">詳細な情報については、お住まいの市町村窓口または県の関連部署にお問い合わせください。</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="mt-12 pt-8 border-t border-gray-300">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <nav aria-label="関連ページ">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li><a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">暮らし トップ</span><p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p></a></li>
+          </ul>
+        </nav>
+      </aside>
+    </article>
+  </main>
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div><h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2><p class="text-gray-400 text-sm leading-relaxed">埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。</p></div>
+        <div><h2 class="text-lg font-bold mb-4">主要カテゴリー</h2><ul class="space-y-2 text-sm"><li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li><li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li><li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li><li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li><li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li></ul></div>
+        <div><h2 class="text-lg font-bold mb-4">サイト情報</h2><ul class="space-y-2 text-sm"><li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li><li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li><li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li><li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li></ul></div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400"><p>&copy; 2025 埼玉県総合案内. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script>document.getElementById('mobile-menu-toggle').addEventListener('click', function() {const menu = document.getElementById('mobile-menu');const isExpanded = this.getAttribute('aria-expanded') === 'true';this.setAttribute('aria-expanded', !isExpanded);menu.classList.toggle('hidden');this.setAttribute('aria-label', !isExpanded ? 'メニューを閉じる' : 'メニューを開く');});</script>
+</body>
+</html>

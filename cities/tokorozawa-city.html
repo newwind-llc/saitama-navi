@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>所沢市 - さいたまなび</title>
+  <meta name="description" content="所沢市は日本の航空発祥の地として知られ、人口約34万人を擁する埼玉県南西部の中核都市です。航空公園や角川武蔵野ミュージアムなど魅力的な施設があります。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+            さいたまなび
+          </a>
+        </div>
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">所沢市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">所沢市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢市は、埼玉県南西部に位置する中核市で、人口約34万人（2024年）を擁します。面積は72.11平方キロメートルで、東京都心から約30キロメートル圏内に位置し、池袋まで西武池袋線で約25分という交通利便性の高さから、首都圏有数のベッドタウンとして発展してきました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢市の最大の特徴は、「日本の航空発祥の地」であることです。1911年（明治44年）4月5日、この地で日本初の飛行場が開設され、アンリ・ファルマン機による公式飛行が成功しました。この歴史を記念して、現在は所沢航空記念公園が整備され、航空発祥記念館では航空の歴史を学ぶことができます。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          また、プロ野球・西武ライオンズの本拠地であるベルーナドーム（メットライフドーム）があることでも知られています。近年は角川武蔵野ミュージアムなど新たな文化施設も誕生し、文化・スポーツの拠点都市としても注目を集めています。市内には緑地や公園も多く、都市機能と自然環境が調和した住みやすい街です。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="所沢航空記念公園の広大な芝生広場。青空の下、家族連れが憩い、背景には航空発祥記念館の建物が見える風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">所沢航空記念公園 - 日本の航空発祥の地</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">航空のまち・所沢</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">日本初の飛行場</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          1911年、所沢に日本初の飛行場が開設されました。当初は陸軍の臨時軍用気球研究会が設置され、その後、日本最初の飛行訓練が行われました。徳川好敏大尉や日野熊蔵大尉らがフランス製のアンリ・ファルマン機で飛行に成功し、これが日本における動力飛行の始まりとなりました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢飛行場はその後、陸軍航空部隊の中心的な基地として発展し、多くのパイロットがここで訓練を受けました。第二次世界大戦後は米軍に接収されましたが、1978年に返還され、現在の所沢航空記念公園として整備されました。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">所沢航空記念公園・航空発祥記念館</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢航空記念公園は約50ヘクタールの広大な都市公園で、芝生広場、日本庭園、野外ステージなどがあり、市民の憩いの場となっています。公園内には所沢航空発祥記念館があり、実物の航空機やヘリコプターが展示されています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          記念館は大規模改修工事のため2025年9月から2027年3月まで休館予定ですが、リニューアル後はさらに魅力的な施設として生まれ変わる予定です。公園自体は引き続き利用でき、広い芝生や遊具で遊ぶことができます。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要施設・スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">ベルーナドーム（メットライフドーム）</h3>
+            <p class="text-gray-700 leading-relaxed">プロ野球・埼玉西武ライオンズの本拠地。収容人数約33,000人のドーム球場で、野球以外にもコンサートなど多彩なイベントが開催されます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">角川武蔵野ミュージアム</h3>
+            <p class="text-gray-700 leading-relaxed">2020年開館の複合文化施設。隈研吾氏設計の特徴的な外観を持ち、図書館、美術館、博物館が融合した新しいタイプのミュージアムです。本棚劇場は圧巻の空間です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">西武園ゆうえんち</h3>
+            <p class="text-gray-700 leading-relaxed">1950年開園の遊園地。2021年にリニューアルし、昭和の街並みを再現した「夕日の丘商店街」など、レトロな雰囲気が楽しめます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">トトロの森</h3>
+            <p class="text-gray-700 leading-relaxed">所沢市と隣接する狭山丘陵にある自然保護区。スタジオジブリ作品「となりのトトロ」のモデル地の一つとされ、豊かな自然が残されています。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">ところざわサクラタウン</h3>
+            <p class="text-gray-700 leading-relaxed">角川武蔵野ミュージアムを中心とする複合施設。EJアニメミュージアム、ホテル、レストラン、書店などが集積し、新たな文化拠点となっています。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="角川武蔵野ミュージアムの外観。岩のような独特な形状をした現代建築で、多面体の巨大な石の塊のような建物" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">角川武蔵野ミュージアム - 隈研吾氏設計の複合文化施設</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢市は、西武池袋線と西武新宿線が交差する交通の要衝です。所沢駅は両線の乗換駅で、池袋まで約25分、新宿まで約35分と都心へのアクセスが良好です。また、JR武蔵野線の東所沢駅もあり、さいたま市方面へのアクセスも便利です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業施設</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢駅周辺には、西武所沢S.C.、グランエミオ所沢などの大型商業施設があり、買い物環境が充実しています。プロペ通り商店街も賑わいを見せており、地元密着型の店舗が並びます。郊外には大型ショッピングセンターもあり、多様な買い物ニーズに対応しています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">教育・子育て</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には早稲田大学所沢キャンパス、国立障害者リハビリテーションセンター学院などの教育機関があります。公立小中学校も充実しており、子育て支援センターや児童館も各地に整備されています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">自然環境</h3>
+        <p class="text-gray-700 leading-relaxed">
+          所沢市は緑豊かな環境が魅力です。狭山丘陵の一部が市域に含まれ、トトロの森をはじめとする自然保護区があります。市内には多数の公園があり、航空公園、北野総合運動場など、スポーツやレクリエーションを楽しめる施設も充実しています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・経済</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          所沢市は、商業とサービス業が中心の都市です。所沢駅周辺は商業の集積地であり、多くの小売店や飲食店が営業しています。また、西武ライオンズの本拠地やところざわサクラタウンなど、観光・エンターテインメント産業も重要な役割を果たしています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          製造業では、精密機械や電子部品などの工場が立地しています。市内には産業団地もあり、様々な業種の企業が事業を展開しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          農業では、狭山茶の生産地として知られています。所沢は狭山茶の主要産地の一つであり、茶畑が点在する風景も見られます。また、野菜栽培も盛んで、地産地消の取り組みも進められています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">所沢市民フェスティバル（10月）</h3>
+            <p class="text-gray-700 leading-relaxed">市内最大級のイベント。パレードやステージイベント、出店などで賑わいます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">所沢航空記念公園 桜まつり（4月）</h3>
+            <p class="text-gray-700 leading-relaxed">航空公園の桜が満開になる時期に開催。広い芝生で花見を楽しめます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">ところざわまつり（10月）</h3>
+            <p class="text-gray-700 leading-relaxed">山車や神輿が市内を練り歩く伝統的な秋祭り。重松流祭囃子が無形民俗文化財に指定されています。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約34万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">72.11平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">1950年11月3日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">中核市指定</th>
+              <td class="py-3 px-4 text-gray-700">2021年4月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">所沢駅、東所沢駅、西所沢駅</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">所沢駅から池袋駅まで約25分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花・鳥</th>
+              <td class="py-3 px-4 text-gray-700">木：イチョウ、花：ツツジ、鳥：ヒバリ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/tourism/spots/tokorozawa.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              所沢の観光スポット
+            </a>
+          </li>
+          <li>
+            <a href="/tourism/sports.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              スポーツ・アウトドア
+            </a>
+          </li>
+          <li>
+            <a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              交通アクセス
+            </a>
+          </li>
+          <li>
+            <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              埼玉の歴史
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。
+          </p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

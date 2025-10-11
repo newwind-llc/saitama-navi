@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>道路・高速道路 - 交通 - 暮らし - 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の充実した道路ネットワークと高速道路網。圏央道、関越自動車道、東北自動車道など主要高速道路と国道の情報をご紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+  <!-- Skip Link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-green focus:text-white">
+    本文へスキップ
+  </a>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">
+            埼玉県総合案内
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block" aria-label="メインメニュー">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
+          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="パンくずリスト" class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">ホーム</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><a href="/life/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">暮らし</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><span class="text-gray-700" aria-current="page">道路・高速道路</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">埼玉県の道路・高速道路網</h1>
+        <p class="text-lg text-gray-700 leading-loose">
+          埼玉県は首都圏の交通の要衝として、充実した高速道路網と国道ネットワークを有しています。圏央道の4車線化や制限速度引き上げなど、2025年には更なる利便性向上が実現しました。物流・観光・通勤など多様な用途に対応する道路環境が整備されています。
+        </p>
+      </header>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="圏央道の4車線化された高速道路、整備された路面と車線が広がる様子"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          2025年に4車線化が完成した圏央道
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">首都圏中央連絡自動車道(圏央道)</h2>
+
+        <div class="prose max-w-none">
+          <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-3">2025年3月の大幅機能向上</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              2025年3月14日、圏央道の埼玉県内区間である幸手IC(インターチェンジ)から五霞IC間において、待望の4車線化が完成しました。これに伴い、制限速度が従来の時速70キロから時速80キロへ引き上げられ、通行の安全性と効率性が大幅に向上しました。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>4車線化完成区間：</strong>幸手IC〜五霞IC</li>
+              <li><strong>制限速度：</strong>70km/h → 80km/h に引き上げ</li>
+              <li><strong>完成時期：</strong>2025年3月14日</li>
+              <li><strong>効果：</strong>渋滞緩和、所要時間短縮、物流効率化</li>
+            </ul>
+          </div>
+
+          <p class="mb-6 text-gray-700 leading-loose">
+            圏央道(首都圏中央連絡自動車道)は、東京都心から半径約40〜60kmの位置に計画された環状高速道路で、埼玉県内では県西部から県東部を弧を描くように通過しています。首都圏の交通混雑緩和と地域間連携強化を目的として建設され、現在も延伸工事が進められています。
+          </p>
+
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 mt-8">埼玉県内の主要インターチェンジ</h3>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+            <table class="min-w-full divide-y divide-gray-200">
+              <caption class="sr-only">圏央道の埼玉県内主要インターチェンジ</caption>
+              <thead class="bg-saitama-green text-white">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">インターチェンジ名</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">所在地</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">接続路線</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">鶴ヶ島JCT</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">鶴ヶ島市</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">関越自動車道</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">坂戸西スマートIC</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">坂戸市</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">-</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">川島IC</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">川島町</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">国道254号</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">桶川北本IC</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">桶川市・北本市</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">国道17号</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">白岡菖蒲IC</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">白岡市・久喜市</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">国道122号</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">久喜白岡JCT</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">久喜市</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">東北自動車道</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">幸手IC</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">幸手市</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">国道4号</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">五霞IC</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">五霞町</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">国道4号</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">圏央道の役割と効果</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>物流効率化：</strong>東名高速、中央道、関越道、東北道、常磐道などを環状に連絡し、首都圏の物流ネットワークを強化</li>
+              <li><strong>渋滞緩和：</strong>都心を経由しない広域移動が可能となり、首都高速や都内一般道の混雑緩和に貢献</li>
+              <li><strong>観光振興：</strong>県内観光地へのアクセス向上により、観光客の増加と地域経済活性化に寄与</li>
+              <li><strong>企業立地促進：</strong>物流拠点としての利便性向上により、沿線への企業進出が加速</li>
+              <li><strong>災害時の代替路：</strong>首都直下地震などの災害時における緊急輸送路として重要な役割</li>
+            </ul>
+          </div>
+
+          <p class="text-gray-700 leading-loose">
+            圏央道は国道468号として指定されており、埼玉県内では県西部の鶴ヶ島市から県東部の五霞町まで約60kmにわたって整備されています。今後も更なる延伸と機能強化が計画されており、首都圏の大動脈としての役割がますます重要になっていきます。
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要高速道路</h2>
+
+        <div class="prose max-w-none">
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">関越自動車道</h3>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都練馬区の練馬ICから新潟県長岡市へ至る高速道路で、埼玉県内では練馬ICから群馬県沼田市方面へ抜けるルートとして利用されています。県内の主要ICには所沢IC、川越IC、鶴ヶ島IC、坂戸西スマートIC、東松山IC、嵐山小川IC、花園IC、本庄児玉ICなどがあります。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>主な区間：</strong>練馬IC〜沼田IC(埼玉県通過)</li>
+              <li><strong>県内主要IC：</strong>所沢IC、川越IC、東松山IC、花園IC、本庄児玉IC</li>
+              <li><strong>役割：</strong>都心と北関東・上信越方面を結ぶ主要幹線</li>
+              <li><strong>接続：</strong>圏央道(鶴ヶ島JCT)と接続</li>
+            </ul>
+            <p class="text-gray-700 leading-loose mt-4">
+              関越道は通勤・ビジネス・観光など多様な用途に利用されており、特に川越市や東松山市など県西部地域と都心を結ぶ重要な交通路です。週末には群馬・新潟方面へのレジャー客で賑わいます。
+            </p>
+          </div>
+
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 mt-8">東北自動車道</h3>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都足立区の川口JCTから青森県青森市へ至る日本最長クラスの高速道路で、埼玉県内では川口JCTから栃木県方面へ抜ける区間が整備されています。県内の主要ICには浦和IC、岩槻IC、蓮田スマートIC、久喜IC、加須IC、羽生IC、館林IC(群馬県寄り)などがあります。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>主な区間：</strong>川口JCT〜栃木方面(埼玉県通過)</li>
+              <li><strong>県内主要IC：</strong>浦和IC、岩槻IC、久喜IC、加須IC、羽生IC</li>
+              <li><strong>役割：</strong>首都圏と東北地方を結ぶ大動脈</li>
+              <li><strong>接続：</strong>圏央道(久喜白岡JCT)、首都高速川口線(川口JCT)と接続</li>
+            </ul>
+            <p class="text-gray-700 leading-loose mt-4">
+              東北道は首都圏と東北地方を結ぶ最重要幹線として、物流・観光・ビジネスなど幅広く利用されています。特にさいたま市や久喜市など県央・県北地域の交通利便性を大きく向上させています。
+            </p>
+          </div>
+
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 mt-8">常磐自動車道</h3>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都足立区の三郷JCTから福島県いわき市方面へ至る高速道路で、埼玉県内では三郷JCT、三郷IC、吉川ICなどがあります。東京外環自動車道(外環道)や首都高速道路と接続し、千葉県や茨城県へのアクセスを担っています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>主な区間：</strong>三郷JCT〜いわき方面</li>
+              <li><strong>県内主要IC：</strong>三郷JCT、三郷IC、吉川IC</li>
+              <li><strong>役割：</strong>首都圏と常磐地域を結ぶ幹線</li>
+              <li><strong>接続：</strong>東京外環道(三郷JCT)と接続</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="東北自動車道の蓮田サービスエリア、駐車場と施設が整備された休憩施設の全景"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          東北自動車道 蓮田サービスエリア
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要国道ネットワーク</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            埼玉県内には多数の国道が通過しており、高速道路とともに地域間交通を支える重要なインフラとなっています。
+          </p>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">国道4号(日光街道)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都中央区の日本橋から青森県青森市へ至る国道で、埼玉県内では草加市、越谷市、春日部市、久喜市、幸手市などを南北に縦断しています。県東部地域の主要幹線道路として、通勤・物流など多様な用途に利用されています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>通過市町村：</strong>草加市、越谷市、春日部市、久喜市、幸手市など</li>
+              <li><strong>別名：</strong>日光街道(歴史的呼称)</li>
+              <li><strong>特徴：</strong>東京と東北を結ぶ歴史ある幹線道路</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">国道16号(東京環状)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都心から約20〜30kmの位置を環状に結ぶ国道で、埼玉県内では川口市、さいたま市、上尾市、桶川市、鴻巣市などを通過します。首都圏の環状道路として重要な役割を果たしており、沿線には商業施設や工業団地が集積しています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>通過市町村：</strong>川口市、さいたま市、上尾市、桶川市、鴻巣市など</li>
+              <li><strong>特徴：</strong>首都圏を環状に結ぶ主要幹線</li>
+              <li><strong>役割：</strong>都心を経由しない地域間移動を可能にする</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">国道17号(中山道)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都中央区の日本橋から新潟県新潟市へ至る国道で、埼玉県内では戸田市、さいたま市、上尾市、桶川市、鴻巣市、熊谷市、深谷市、本庄市などを通過します。歴史的な中山道のルートを辿る幹線道路として、県内の南北交通を担っています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>通過市町村：</strong>戸田市、さいたま市、上尾市、熊谷市、深谷市、本庄市など</li>
+              <li><strong>別名：</strong>中山道(歴史的呼称)</li>
+              <li><strong>バイパス：</strong>国道17号新大宮バイパス、国道17号上武道路など</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">国道254号(川越街道)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              東京都文京区から長野県松本市へ至る国道で、埼玉県内では和光市、朝霞市、志木市、富士見市、川越市、東松山市、小川町、嵐山町などを通過します。川越市など県西部地域と東京都心を結ぶ重要な幹線道路です。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>通過市町村：</strong>和光市、朝霞市、志木市、川越市、東松山市など</li>
+              <li><strong>別名：</strong>川越街道(東京都内〜川越市)</li>
+              <li><strong>特徴：</strong>観光地・川越へのアクセス路</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">国道468号(首都圏中央連絡自動車道)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              圏央道の国道指定番号で、実質的には高速道路として機能しています。埼玉県内を弧を描くように通過し、広域交通ネットワークの要となっています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">道路整備の将来計画</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            埼玉県では、さらなる交通利便性向上と地域経済の活性化を目指し、継続的な道路整備が進められています。
+          </p>
+
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">進行中の主要プロジェクト</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>圏央道の更なる延伸：</strong>未開通区間の整備推進により、首都圏環状ネットワークの完成を目指す</li>
+              <li><strong>国道バイパス整備：</strong>主要国道の渋滞緩和を目的としたバイパス道路の建設</li>
+              <li><strong>スマートIC増設：</strong>高速道路の利便性向上を図るスマートICの追加設置</li>
+              <li><strong>歩道・自転車道整備：</strong>歩行者・自転車利用者の安全性向上を目的とした道路環境整備</li>
+              <li><strong>橋梁の耐震化：</strong>大規模地震に備えた橋梁の補強・更新工事</li>
+            </ul>
+          </div>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+            <h4 class="text-lg font-bold text-gray-800 mb-3">道路利用上の注意点</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>渋滞情報の確認：</strong>首都圏の主要道路は通勤時間帯や連休時に渋滞が発生しやすいため、出発前に道路交通情報を確認しましょう</li>
+              <li><strong>ETCの活用：</strong>ETC搭載で料金所通過がスムーズになり、各種割引サービスも利用可能です</li>
+              <li><strong>安全運転：</strong>制限速度の遵守、車間距離の確保、適切な車線変更など、安全運転を心がけましょう</li>
+              <li><strong>災害時の対応：</strong>大雨・大雪・地震などの災害時には通行止めや交通規制が実施される場合があります</li>
+            </ul>
+          </div>
+
+          <p class="text-gray-700 leading-loose">
+            埼玉県の道路ネットワークは、首都圏の経済活動と県民の生活を支える重要なインフラです。今後も継続的な整備・維持管理により、安全で快適な道路環境が提供されていきます。
+          </p>
+        </div>
+      </section>
+
+      <!-- Related Pages -->
+      <aside class="mt-12 pt-8 border-t border-gray-300">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <nav aria-label="関連ページ">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li>
+              <a href="/life/transport/railway.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">鉄道網</span>
+                <p class="text-sm text-gray-600 mt-1">埼玉県の鉄道ネットワーク</p>
+              </a>
+            </li>
+            <li>
+              <a href="/life/transport/access.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">都心アクセス</span>
+                <p class="text-sm text-gray-600 mt-1">東京都心への所要時間</p>
+              </a>
+            </li>
+            <li>
+              <a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">暮らし トップ</span>
+                <p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p>
+              </a>
+            </li>
+            <li>
+              <a href="/industry/logistics.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">物流・交通</span>
+                <p class="text-sm text-gray-600 mt-1">埼玉県の物流産業</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。
+          </p>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">主要カテゴリー</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      menu.classList.toggle('hidden');
+
+      if (!isExpanded) {
+        this.setAttribute('aria-label', 'メニューを閉じる');
+      } else {
+        this.setAttribute('aria-label', 'メニューを開く');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# Git関連
+.git
+.gitignore
+
+# ドキュメント
+docs/
+*.md
+CLAUDE.md
+
+# Docker関連
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Claude Code関連
+.claude/
+
+# macOS
+.DS_Store
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ログファイル
+*.log

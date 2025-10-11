@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鉄道網 - 交通 - 暮らし - 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の充実した鉄道ネットワークをご紹介。JR線、東武鉄道、西武鉄道など多様な路線が県内を結び、都心へのアクセスも良好です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+  <!-- Skip Link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-green focus:text-white">
+    本文へスキップ
+  </a>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">
+            埼玉県総合案内
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block" aria-label="メインメニュー">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
+          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="パンくずリスト" class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">ホーム</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><a href="/life/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">暮らし</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><span class="text-gray-700" aria-current="page">鉄道網</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">埼玉県の鉄道網</h1>
+        <p class="text-lg text-gray-700 leading-loose">
+          埼玉県は首都圏有数の鉄道ネットワークを誇り、JR線、東武鉄道、西武鉄道をはじめとする多様な路線が県内を縦横に結んでいます。大宮駅を中心とした交通の要衝として、都心へのアクセスも良好で、通勤・通学・観光に便利な交通環境が整備されています。
+        </p>
+      </header>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="大宮駅のホームに停車する複数の鉄道路線の列車、乗降客で賑わう様子"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          埼玉県の交通の要衝・大宮駅
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">JR東日本の路線網</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            埼玉県内にはJR東日本の主要幹線が多数乗り入れており、東京都心や北関東方面への移動を支えています。特に大宮駅は新幹線と在来線が交差する関東屈指のターミナル駅として機能しています。
+          </p>
+
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 mt-8">主要JR路線</h3>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">JR埼京線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              大宮駅から赤羽駅を経由して新宿・渋谷方面へ直通運転を行う重要路線です。武蔵浦和駅、浦和駅、与野本町駅、北与野駅、戸田公園駅など県内主要駅に停車し、通勤・通学の主力路線となっています。相鉄線との直通運転により、横浜方面へのアクセスも可能になりました。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">JR京浜東北線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              南浦和駅、浦和駅、北浦和駅、与野駅、さいたま新都心駅、大宮駅など、さいたま市の主要駅を結ぶ動脈です。東京駅、品川駅、横浜駅への直通運転により、首都圏の南北を縦断する重要な通勤路線として多くの利用者に支えられています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">JR高崎線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              大宮駅から群馬県高崎市へ至る路線で、県内では熊谷駅、行田駅、鴻巣駅、北本駅、桶川駅、上尾駅、宮原駅などに停車します。東京駅や上野駅への直通運転も多く、北関東と都心を結ぶ大動脈として機能しています。湘南新宿ラインや上野東京ラインの運行により利便性が大幅に向上しました。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">JR宇都宮線(東北本線)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              大宮駅から栃木県宇都宮市方面へ向かう路線で、県内では久喜駅、東鷲宮駅、栗橋駅、古河駅(茨城県寄り)などを経由します。高崎線と同様に上野東京ライン、湘南新宿ラインとして東京駅・品川駅・横浜駅方面への直通運転を行っており、県北部と都心を結ぶ重要な交通手段です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">JR武蔵野線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              府中本町駅(東京都)から西船橋駅(千葉県)を結ぶ環状路線で、県内では新座駅、北朝霞駅、朝霞台駅、武蔵浦和駅、南浦和駅、東浦和駅、東川口駅、吉川駅、吉川美南駅、越谷レイクタウン駅、南越谷駅などに停車します。東京・埼玉・千葉を環状に結ぶことで、都心を経由せずに各地域へアクセスできる利便性の高い路線です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">JR川越線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              大宮駅から川越駅を経て高麗川駅へ至る路線です。川越駅、南古谷駅、西大宮駅、指扇駅、日進駅などに停車し、県西部地域の交通を支えています。埼京線との直通運転により、川越から新宿・渋谷方面への移動もスムーズです。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">東武鉄道の路線網</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            東武鉄道は県東部から都心・浅草方面、および日光方面への交通を担う私鉄大手です。2つの主要路線が県内を縦断し、多くの住民の足となっています。
+          </p>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">東武東上線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              池袋駅から寄居駅へ至る路線で、県内では和光市駅、朝霞駅、朝霞台駅、志木駅、柳瀬川駅、みずほ台駅、鶴瀬駅、ふじみ野駅、上福岡駅、川越駅、川越市駅、坂戸駅、東松山駅、森林公園駅などに停車します。川越市や東松山市など県西部の主要都市を結び、通勤・通学路線として重要な役割を果たしています。急行・準急の運行により所要時間も短縮されています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">東武伊勢崎線(東武スカイツリーライン)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              浅草駅から伊勢崎駅(群馬県)へ至る東武鉄道の主幹線です。県内では草加駅、獨協大学前駅、新田駅、蒲生駅、新越谷駅、越谷駅、北越谷駅、せんげん台駅、春日部駅、北春日部駅、久喜駅などに停車し、県東部地域の大動脈として機能しています。東京メトロ半蔵門線、東急田園都市線との直通運転により、渋谷・表参道方面へのアクセスも便利です。特急「りょうもう」号も運行され、速達性の高い移動が可能です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">西武鉄道の路線網</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            西武鉄道は県南西部から都心・池袋方面、新宿方面、および秩父方面への交通を担う私鉄です。特に所沢駅を中心としたネットワークが充実しています。
+          </p>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">西武池袋線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              池袋駅から飯能駅へ至る主幹線で、県内では清瀬駅、所沢駅、入間市駅、狭山市駅、飯能駅などに停車します。通勤特急「S-TRAIN」や特急「Laview」の運行により、池袋から所沢まで最速約20分でアクセス可能です。東京メトロ有楽町線・副都心線との直通運転により、新木場駅や横浜方面へも乗り換えなしで移動できます。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">西武新宿線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              西武新宿駅から本川越駅へ至る路線で、県内では所沢駅、入曽駅、狭山市駅、本川越駅などに停車します。新宿へのダイレクトアクセスが可能で、通勤・ショッピング・観光に便利です。特急「小江戸」号も運行されており、新宿から本川越まで約45分で結びます。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">西武秩父線</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              飯能駅から西武秩父駅へ至る観光路線で、池袋駅から特急「Laview」で秩父・長瀞方面へアクセスできます。自然豊かな秩父地域への玄関口として、観光客に人気の路線です。芦ヶ久保駅、横瀬駅などの駅も四季折々の景観が楽しめます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="所沢駅前の駅前広場、バスターミナルと複数の路線が交差する交通拠点の様子"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          西武鉄道の主要駅・所沢駅
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">その他の鉄道路線</h2>
+
+        <div class="prose max-w-none">
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">秩父鉄道</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              羽生駅から三峰口駅へ至る地域密着型の私鉄です。熊谷駅、行田市駅、寄居駅、長瀞駅、皆野駅、秩父駅などに停車し、秩父地域の観光と地域住民の生活を支えています。SLパレオエクスプレスの運行でも知られ、観光列車として人気を集めています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">つくばエクスプレス(TX)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              秋葉原駅からつくば駅(茨城県)へ至る路線で、県内では八潮駅、三郷中央駅が設置されています。2005年開業の新しい路線で、最高速度130km/hの高速運転により秋葉原からつくばまで最速45分で結びます。沿線開発も進み、新興住宅地として人気のエリアです。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">埼玉高速鉄道(埼玉スタジアム線)</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              赤羽岩淵駅(東京都)から浦和美園駅へ至る路線で、東京メトロ南北線と直通運転を行っています。戸塚安行駅、新井宿駅、鳩ヶ谷駅、南鳩ヶ谷駅、川口元郷駅などに停車し、川口市南部と東京都心を結びます。浦和美園駅は埼玉スタジアム2002の最寄り駅で、サッカーJリーグの試合開催時には多くのサポーターが利用します。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">埼玉新都市交通ニューシャトル</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              大宮駅から内宿駅へ至る新交通システム(AGT)で、全13駅が設置されています。伊奈町や上尾市の北部地域を結び、県民活動総合センターや埼玉県立がんセンターなど公共施設へのアクセスにも利用されています。ゴムタイヤ式の無人運転車両による快適な移動が特徴です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要ターミナル駅</h2>
+
+        <div class="prose max-w-none">
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">大宮駅</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              埼玉県最大のターミナル駅で、JR東北・上越・北陸新幹線、JR京浜東北線、JR埼京線、JR高崎線、JR宇都宮線、JR川越線、東武野田線(東武アーバンパークライン)、埼玉新都市交通ニューシャトルが乗り入れる関東有数の交通の要衝です。1日の乗降客数は約45万人にのぼり、駅周辺には大規模商業施設や飲食店が集積しています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li>乗り入れ路線：9路線</li>
+              <li>新幹線乗り換え：東北・上越・北陸新幹線</li>
+              <li>周辺施設：ルミネ大宮、そごう大宮店、エキュート大宮</li>
+            </ul>
+          </div>
+
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">さいたま新都心駅</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              JR京浜東北線・JR宇都宮線・JR高崎線が停車する新しいターミナル駅です。さいたまスーパーアリーナやさいたま新都心合同庁舎などの公共施設、オフィスビルが集積し、ビジネス・イベントの拠点として発展しています。
+            </p>
+          </div>
+
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">川越駅</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              JR川越線と東武東上線が乗り入れる川越市の玄関口です。小江戸川越の観光拠点として機能し、蔵造りの町並みへのアクセスポイントでもあります。駅周辺には商業施設が充実し、多くの買い物客で賑わいます。
+            </p>
+          </div>
+
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">所沢駅</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              西武池袋線と西武新宿線が交差する西武鉄道最大の拠点駅です。航空公園や所沢航空発祥記念館へのアクセスポイントでもあり、駅周辺には商業施設「グランエミオ所沢」などが立地しています。
+            </p>
+          </div>
+
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">浦和駅</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              JR京浜東北線が停車し、さいたま市浦和区の中心駅として機能しています。文教エリアとしても知られ、駅周辺には学校や商業施設が集積しています。東京駅まで約25分とアクセスも良好です。
+            </p>
+          </div>
+
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">川口駅</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              JR京浜東北線が停車する川口市の中心駅です。東京都との県境に近く、都心へのアクセスが極めて良好で、東京駅まで約20分、赤羽駅まで約5分です。駅周辺の再開発も進み、高層マンションや商業施設が増えています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600"
+             alt="さいたま新都心駅の駅舎外観、ガラス張りのモダンな建築デザイン"
+             class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+          ビジネス・イベントの拠点、さいたま新都心駅
+        </figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">鉄道を利用した広域移動</h2>
+
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">
+            埼玉県の鉄道網は都心方面だけでなく、群馬県、栃木県、茨城県、千葉県など周辺各県への広域移動にも対応しています。
+          </p>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <table class="min-w-full divide-y divide-gray-200">
+              <caption class="sr-only">主要駅から各方面への所要時間</caption>
+              <thead class="bg-saitama-green text-white">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">出発駅</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">到着駅</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">所要時間(概算)</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">大宮駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">東京駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">約30分</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">川越駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">池袋駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">約30分</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">所沢駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">池袋駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">約25分</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">春日部駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">浅草駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">約35分</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900">大宮駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">高崎駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">約45分</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900">大宮駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">宇都宮駅</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">約50分</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mt-6 text-gray-700 leading-loose">
+            このように、埼玉県の鉄道網は首都圏全域および北関東各地への移動を支える重要なインフラとして機能しており、通勤・通学・ビジネス・観光など幅広い用途に利用されています。
+          </p>
+        </div>
+      </section>
+
+      <!-- Related Pages -->
+      <aside class="mt-12 pt-8 border-t border-gray-300">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <nav aria-label="関連ページ">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li>
+              <a href="/life/transport/highway.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">道路・高速道路</span>
+                <p class="text-sm text-gray-600 mt-1">埼玉県の道路網と高速道路</p>
+              </a>
+            </li>
+            <li>
+              <a href="/life/transport/access.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">都心アクセス</span>
+                <p class="text-sm text-gray-600 mt-1">東京都心への所要時間</p>
+              </a>
+            </li>
+            <li>
+              <a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">暮らし トップ</span>
+                <p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p>
+              </a>
+            </li>
+            <li>
+              <a href="/cities/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
+                <span class="text-saitama-blue font-bold">市町村情報</span>
+                <p class="text-sm text-gray-600 mt-1">各市町村の詳細情報</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。
+          </p>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">主要カテゴリー</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      menu.classList.toggle('hidden');
+
+      if (!isExpanded) {
+        this.setAttribute('aria-label', 'メニューを閉じる');
+      } else {
+        this.setAttribute('aria-label', 'メニューを開く');
+      }
+    });
+  </script>
+</body>
+</html>

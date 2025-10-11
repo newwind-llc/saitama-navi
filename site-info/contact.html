@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="さいたまなびへのお問い合わせページ。ご意見・ご要望・ご質問はこちらからお寄せください。">
+    <title>お問い合わせ - さいたまなび</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <nav class="py-4" role="navigation" aria-label="メインナビゲーション">
+                <div class="flex items-center justify-between mb-4">
+                    <a href="/index.html" class="text-2xl font-bold text-gray-800 hover:text-saitama-blue transition-colors">
+                        さいたまなび
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">メニューを開く</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul id="mobile-menu" class="hidden md:flex md:space-x-6 md:justify-center">
+                    <li><a href="/about/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の概要</a></li>
+                    <li><a href="/tourism/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活・暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="パンくずリスト" class="py-2 text-sm">
+                <ol class="flex flex-wrap space-x-2">
+                    <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+                    <li><span class="mx-2" aria-hidden="true">/</span></li>
+                    <li><a href="/site-info/sitemap.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイト情報</a></li>
+                    <li><span class="mx-2" aria-hidden="true">/</span></li>
+                    <li><span aria-current="page" class="text-gray-600">お問い合わせ</span></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container mx-auto px-4 py-8 max-w-4xl">
+        <article>
+            <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">お問い合わせ</h1>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <p class="text-lg leading-relaxed text-gray-700">
+                    さいたまなびをご利用いただき、ありがとうございます。当サイトに関するご意見、ご要望、ご質問、または掲載内容の誤りなどがございましたら、以下の方法でお問い合わせください。皆様からのフィードバックをお待ちしております。
+                </p>
+            </div>
+
+            <!-- お問い合わせ方法 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">お問い合わせ方法</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="bg-blue-50 border-l-4 border-saitama-blue p-4 mb-4">
+                        <p class="font-semibold text-gray-800 mb-2">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            お問い合わせフォーム（準備中）
+                        </p>
+                        <p class="text-sm text-gray-700">
+                            現在、お問い合わせフォームを準備しております。しばらくお待ちください。
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-saitama-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                メールでのお問い合わせ
+                            </h3>
+                            <p class="text-gray-700 ml-7">
+                                メールアドレス: <span class="text-saitama-blue font-mono">info@saitama-portal.example.com</span>
+                            </p>
+                            <p class="text-sm text-gray-600 ml-7 mt-1">
+                                ※上記は例示用のメールアドレスです。実際の運用時には正式なアドレスに変更されます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- お問い合わせ時の注意事項 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">お問い合わせ時の注意事項</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-saitama-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gray-700">お問い合わせ内容によっては、回答にお時間をいただく場合がございます。</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-saitama-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gray-700">内容によっては、回答できない場合もございます。あらかじめご了承ください。</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-saitama-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gray-700">土日祝日、年末年始は休業日となります。翌営業日以降の対応となりますのでご了承ください。</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-saitama-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gray-700">個人情報の取り扱いについては、<a href="/site-info/privacy.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a>をご確認ください。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- よくある質問 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">よくある質問</h2>
+                <div class="bg-white rounded-lg shadow-md divide-y divide-gray-200">
+                    <details class="p-6">
+                        <summary class="cursor-pointer font-semibold text-gray-800 hover:text-saitama-blue focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            Q. サイトの情報は最新ですか？
+                        </summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed">
+                            A. 当サイトでは、可能な限り最新の情報を掲載するよう努めておりますが、情報の更新には時間がかかる場合がございます。最新の情報については、各自治体の公式サイトや関連機関にご確認いただくことをお勧めします。
+                        </p>
+                    </details>
+
+                    <details class="p-6">
+                        <summary class="cursor-pointer font-semibold text-gray-800 hover:text-saitama-blue focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            Q. 掲載内容に誤りを見つけました
+                        </summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed">
+                            A. 掲載内容に誤りがございましたら、大変お手数ですが、お問い合わせフォームまたはメールにて詳細をお知らせください。確認の上、速やかに訂正させていただきます。
+                        </p>
+                    </details>
+
+                    <details class="p-6">
+                        <summary class="cursor-pointer font-semibold text-gray-800 hover:text-saitama-blue focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            Q. サイトが正しく表示されません
+                        </summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed">
+                            A. 当サイトは最新のブラウザでの閲覧を推奨しております。古いブラウザをお使いの場合、正しく表示されない可能性があります。ブラウザを最新版にアップデートしていただくか、別のブラウザでお試しください。また、アクセシビリティに関するお問い合わせは、<a href="/site-info/accessibility.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a>のページもご参照ください。
+                        </p>
+                    </details>
+
+                    <details class="p-6">
+                        <summary class="cursor-pointer font-semibold text-gray-800 hover:text-saitama-blue focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            Q. サイトの内容を引用・転載したい
+                        </summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed">
+                            A. 当サイトのコンテンツは情報提供を目的としており、個人利用の範囲内での引用は可能です。ただし、商業目的での利用や大量の転載をご希望の場合は、事前にお問い合わせください。引用される際は、出典を明記していただくようお願いいたします。
+                        </p>
+                    </details>
+                </div>
+            </section>
+
+            <!-- その他のお問い合わせ先 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">その他のお問い合わせ先</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4 text-gray-700">
+                        埼玉県や各市町村に関する行政サービスのお問い合わせは、以下の公式サイトをご利用ください。
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-saitama-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-gray-800">埼玉県公式ホームページ</p>
+                                <p class="text-sm text-gray-600">県政全般に関するお問い合わせ</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-saitama-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-gray-800">各市町村公式ホームページ</p>
+                                <p class="text-sm text-gray-600">各自治体のサービスに関するお問い合わせ</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <aside class="bg-blue-50 p-6 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4 text-gray-800">関連情報</h2>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/site-info/accessibility.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            アクセシビリティ方針 - サイトの使いやすさについて
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/site-info/privacy.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            プライバシーポリシー - 個人情報の取り扱いについて
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/site-info/sitemap.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                            </svg>
+                            サイトマップ - サイト全体の構造を確認
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">カテゴリ</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">埼玉県の概要</a></li>
+                        <li><a href="/tourism/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">生活・暮らし</a></li>
+                        <li><a href="/industry/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">市町村情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">主要観光スポット</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/spots/kawagoe.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越エリア</a></li>
+                        <li><a href="/tourism/spots/chichibu.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">秩父エリア</a></li>
+                        <li><a href="/tourism/spots/nagatoro.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">長瀞エリア</a></li>
+                        <li><a href="/tourism/spots/omiya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">大宮エリア</a></li>
+                        <li><a href="/tourism/spots/tokorozawa.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢エリア</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">主要都市</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/cities/saitama-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">さいたま市</a></li>
+                        <li><a href="/cities/kawaguchi.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川口市</a></li>
+                        <li><a href="/cities/kawagoe-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越市</a></li>
+                        <li><a href="/cities/tokorozawa-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢市</a></li>
+                        <li><a href="/cities/koshigaya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">越谷市</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/sitemap.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">サイトマップ</a></li>
+                        <li><a href="/site-info/accessibility.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+                <p>&copy; 2025 さいたまなび. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">このサイトはJIS X 8341-3:2016レベルAAに準拠しています。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

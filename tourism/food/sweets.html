@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>埼玉県の銘菓・スイーツ - さいたまなび</title>
+    <meta name="description" content="草加せんべい、川越の芋菓子、十万石まんじゅうなど、埼玉県の伝統的な銘菓とご当地スイーツをご紹介します。地域の歴史と文化が生んだ味わい深いお菓子です。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">埼玉県の銘菓・スイーツ</li>
+        </ol>
+    </nav>
+
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">埼玉県の銘菓・スイーツ</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    草加せんべい、川越の芋菓子、十万石まんじゅうなど、埼玉県の伝統的な銘菓と、近年人気のご当地スイーツをご紹介します。地域の歴史と文化が生んだ味わい深いお菓子です。
+                </p>
+            </header>
+
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-pink-600 to-rose-800 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">埼玉県の銘菓・スイーツについて</h3>
+                    <p class="leading-relaxed mb-4">
+                        埼玉県は江戸時代から続く老舗の和菓子店が多く、地域に根ざした銘菓が数多く存在します。草加せんべいは江戸時代の旅人向けの携帯食として発展し、川越の芋菓子は「川越いも」の名産地ならではの特産品です。
+                    </p>
+                    <p class="leading-relaxed">
+                        近年では、伝統の味を守りつつ、新しい感覚のスイーツも生まれています。川越の芋ソフトクリームや、各地の地元食材を使った洋菓子など、観光土産としても人気を集めています。埼玉のお菓子は、地域の歴史と現代のセンスが融合した魅力的なラインナップです。
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">代表的な銘菓</h3>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">草加せんべい（そうかせんべい）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="草加せんべい。パリッと焼き上げられた醤油味のせんべいが並ぶ様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    埼玉を代表する草加せんべい（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                草加せんべいは、草加市で作られる醤油味の米菓で、埼玉県を代表する銘菓です。江戸時代、日光街道の宿場町として栄えた草加で、旅人向けの携帯食として発展しました。パリッとした食感と香ばしい醤油の風味が特徴です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                草加せんべいの起源は、江戸時代にさかのぼります。ある茶屋の老婆が、旅人のために団子を平たくつぶして焼き、醤油をつけて売り出したのが始まりとされています。その後、改良が重ねられ、現在の草加せんべいの形になりました。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                草加市内には多くのせんべい店があり、手焼き体験ができる店もあります。伝統的な醤油味のほか、海苔巻き、ザラメ、唐辛子など、様々な味のバリエーションがあります。日持ちがするため、お土産としても人気が高く、埼玉土産の定番となっています。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">特徴：</dt>
+                                    <dd class="text-gray-700">パリッとした食感、香ばしい醤油味</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">産地：</dt>
+                                    <dd class="text-gray-700">草加市</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">歴史：</dt>
+                                    <dd class="text-gray-700">江戸時代から続く伝統菓子</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">川越の芋菓子</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                川越は「川越いも」の産地として知られ、サツマイモを使った様々な菓子が作られています。芋ようかん、芋きんつば、大学いも、スイートポテトなど、多彩な芋菓子が川越の名物となっています。江戸時代から続く老舗の菓子店も多くあります。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                代表的なものに「芋ようかん」があります。川越いもを蒸してすり潰し、砂糖を加えて練り上げたもので、芋本来の素朴な甘さが楽しめます。添加物を使わず、芋の味を生かした昔ながらの製法を守る店が多いのも特徴です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                近年では、芋ソフトクリーム、芋チップス、芋プリンなど、新しいスタイルの芋スイーツも人気です。蔵造りの街並みを散策しながらの食べ歩きグルメとしても楽しまれており、川越観光の定番となっています。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">種類：</dt>
+                                    <dd class="text-gray-700">芋ようかん、スイートポテト、芋ソフトなど多数</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">産地：</dt>
+                                    <dd class="text-gray-700">川越市</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">原料：</dt>
+                                    <dd class="text-gray-700">川越いも（サツマイモ）</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="川越の芋菓子。芋ようかんやスイートポテトなど様々な芋菓子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    川越名物の芋菓子（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">十万石まんじゅう（じゅうまんごくまんじゅう）</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/800x500"
+                                     alt="十万石まんじゅう。薄皮に包まれた上品な饅頭"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    埼玉銘菓・十万石まんじゅう（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                十万石まんじゅうは、行田市に本社を置く十万石ふくさやが製造する饅頭で、埼玉県を代表する銘菓の一つです。「うまい、うますぎる」のキャッチコピーで知られ、埼玉県民には馴染み深い味です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                特徴は、新潟県産のコシヒカリを使った薄い皮と、北海道産小豆の上品な餡です。皮は米の風味がほんのりと感じられ、餡は甘さ控えめで上品な味わいです。一つ一つ丁寧に手作りされており、ふんわりとした食感が楽しめます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                賞味期限が5日間と短いため、できるだけ新鮮なうちに食べるのがおすすめです。埼玉県内の主要駅や高速道路のサービスエリアで購入でき、帰省土産や手土産として人気があります。お茶との相性も良く、日本茶と一緒に楽しむのが定番です。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">特徴：</dt>
+                                    <dd class="text-gray-700">新潟産米の薄皮、北海道産小豆の餡</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">製造元：</dt>
+                                    <dd class="text-gray-700">十万石ふくさや（行田市）</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">賞味期限：</dt>
+                                    <dd class="text-gray-700">5日間</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">その他の銘菓・スイーツ</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">五家宝（ごかぼう）</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            熊谷市の伝統菓子で、200年以上の歴史があります。餅米を細長い棒状に固め、きな粉をまぶしたもので、きな粉の香ばしさと優しい甘さが特徴です。お茶請けとして親しまれてきました。
+                        </p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">雪ぽたる</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            狭山茶を使った和風フィナンシェです。バターの風味と狭山茶の香りが調和した上品な味わいで、お茶の産地・狭山ならではのスイーツです。洋菓子と和菓子の要素を併せ持つ新感覚の菓子です。
+                        </p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">彩果の宝石</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            さいたま市の菓子店が製造する、フルーツゼリーです。宝石のように美しい見た目と、果実本来の味わいを大切にした繊細な味が特徴です。贈答品として人気が高く、見た目の華やかさも魅力です。
+                        </p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">長瀞の天然氷かき氷</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            長瀞で作られる天然氷を使ったかき氷です。ふわふわの食感と繊細な味わいが特徴で、夏の長瀞名物として知られています。イチゴやマンゴーなど、様々なシロップで楽しめます。
+                        </p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">秩父のわらじカツ丼</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            秩父地域のご当地グルメ。わらじのように大きなカツが特徴で、甘辛いタレとの相性が抜群です。ボリューム満点で、観光客にも人気の一品です。
+                        </p>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">ゼリーフライ</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            行田市のB級グルメ。おからとじゃがいもを混ぜて揚げた、コロッケのような食べ物です。ソースをかけて食べる庶民的な味で、「銭富来（ぜにふらい）」が訛って「ゼリーフライ」と呼ばれるようになりました。
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">スイーツめぐりの楽しみ方</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県のスイーツは、各地の観光スポットと合わせて楽しむのがおすすめです。川越では蔵造りの街並みを散策しながら芋菓子を食べ歩き、長瀞では渓谷美を楽しんだ後にかき氷で涼を取る、草加では手焼きせんべい体験をするなど、観光とグルメを組み合わせた旅が楽しめます。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        また、各地の道の駅や観光物産館では、地元の銘菓が一堂に揃っており、食べ比べやお土産選びが楽しめます。季節限定の商品や、その場でしか買えない商品もあるので、訪れる際はチェックしてみてください。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉の銘菓・スイーツは、長い歴史と伝統を持つものから、新しい感覚のものまで多彩です。それぞれの味には、地域の風土と人々の想いが込められています。埼玉を訪れた際は、ぜひ地元の味を楽しんでみてください。
+                    </p>
+                </div>
+            </section>
+
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li><a href="/tourism/food/local-cuisine.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の郷土料理</a></li>
+                    <li><a href="/tourism/food/specialties.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の特産品</a></li>
+                    <li><a href="/tourism/spots/kawagoe.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">川越エリアの観光</a></li>
+                    <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャートップ</a></li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

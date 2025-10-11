@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人口と世帯 - さいたまなび</title>
+    <meta name="description" content="埼玉県の人口統計、世帯数、年齢構成などの最新データをご紹介します。2025年9月時点で約732万人を擁する埼玉県の人口動態を詳しく解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/about/index.html" class="text-saitama-blue hover:underline">埼玉県について</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">人口と世帯</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">人口と世帯</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    埼玉県の人口統計、世帯構成、年齢構造など、最新のデータをご紹介します。
+                </p>
+            </header>
+
+            <!-- Current Population -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">現在の人口</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        2025年9月1日現在、埼玉県の総人口は7,323,374人で、全国第5位の人口規模を誇ります。内訳は男性3,630,194人、女性3,693,179人で、世帯数は3,361,259世帯となっています。
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-6 my-8">
+                        <div class="bg-gradient-to-br from-saitama-blue to-blue-600 text-white p-6 rounded-lg shadow-lg">
+                            <h4 class="text-sm font-semibold mb-2 opacity-90">総人口</h4>
+                            <p class="text-3xl font-bold">7,323,374人</p>
+                            <p class="text-sm mt-2 opacity-90">2025年9月1日現在</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-saitama-green to-green-600 text-white p-6 rounded-lg shadow-lg">
+                            <h4 class="text-sm font-semibold mb-2 opacity-90">世帯数</h4>
+                            <p class="text-3xl font-bold">3,361,259世帯</p>
+                            <p class="text-sm mt-2 opacity-90">1世帯あたり約2.18人</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-6 rounded-lg shadow-lg">
+                            <h4 class="text-sm font-semibold mb-2 opacity-90">全国順位</h4>
+                            <p class="text-3xl font-bold">第5位</p>
+                            <p class="text-sm mt-2 opacity-90">47都道府県中</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">男女別人口（2025年9月1日現在）</h4>
+                        <dl class="space-y-2">
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-24">男性：</dt>
+                                <dd class="text-gray-700">3,630,194人（49.6%）</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-24">女性：</dt>
+                                <dd class="text-gray-700">3,693,179人（50.4%）</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-24">総人口：</dt>
+                                <dd class="text-gray-700">7,323,374人</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Population Trend -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">人口の推移</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の人口は、高度経済成長期から一貫して増加を続けてきました。特に1960年代から1990年代にかけては、東京のベッドタウンとして急速に発展し、人口が大幅に増加しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        2025年4月1日時点では5か月ぶりに人口が増加に転じ、7,321,033人となり、前月比0.01%の増加を記録しました。全体としては緩やかな増加傾向を維持していますが、今後は高齢化の進展により人口減少局面を迎える可能性も指摘されています。
+                    </p>
+
+                    <div class="overflow-x-auto my-6">
+                        <table class="min-w-full bg-white border border-gray-300">
+                            <caption class="text-left font-bold text-gray-800 mb-2 px-2">埼玉県人口の推移（1950年～2025年）</caption>
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">年</th>
+                                    <th scope="col" class="px-4 py-3 text-right border-b border-gray-300 font-semibold">人口（人）</th>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">備考</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">1950年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約2,300,000</td>
+                                    <td class="px-4 py-3 text-gray-700">戦後復興期</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">1970年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約4,000,000</td>
+                                    <td class="px-4 py-3 text-gray-700">高度経済成長期</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">1990年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約6,400,000</td>
+                                    <td class="px-4 py-3 text-gray-700">バブル経済期</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">2000年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約6,900,000</td>
+                                    <td class="px-4 py-3 text-gray-700">人口700万人突破前</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">2010年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約7,190,000</td>
+                                    <td class="px-4 py-3 text-gray-700">安定成長期</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">2020年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約7,340,000</td>
+                                    <td class="px-4 py-3 text-gray-700">人口増加継続</td>
+                                </tr>
+                                <tr class="bg-blue-50">
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">2025年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">7,323,374</td>
+                                    <td class="px-4 py-3 text-gray-700">全国第5位の人口規模</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <figure class="my-6">
+                        <img src="https://via.placeholder.com/800x400"
+                             alt="埼玉県の人口推移を示す折れ線グラフ。1950年から2025年まで右肩上がりに増加している様子"
+                             class="w-full h-auto rounded-lg shadow-md">
+                        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+                            埼玉県の人口推移（1950年～2025年）イメージグラフ
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Age Distribution -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">年齢構成</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の年齢構成は、全国的な少子高齢化の傾向を反映しています。2025年現在、65歳以上の高齢者は約3.7人に1人（約27%）の割合を占め、75歳以上は約7.4人に1人となっています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        一方で、20歳から39歳の女性人口は約771,700人で総人口の10.5%を占めており、5年前と比較して2.3%増加しています。これは、子育て世代の転入が続いていることを示しています。
+                    </p>
+
+                    <div class="bg-green-50 border-l-4 border-saitama-green p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">年齢別人口の特徴（2025年）</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>65歳以上：</strong>約3.7人に1人（約27%）の割合</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>75歳以上：</strong>約7.4人に1人の割合</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>高齢者扶養比率：</strong>現役世代2～3人で高齢者1人を支える構造</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>20～39歳女性：</strong>約771,700人（総人口の10.5%）</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="overflow-x-auto my-6">
+                        <table class="min-w-full bg-white border border-gray-300">
+                            <caption class="text-left font-bold text-gray-800 mb-2 px-2">年齢3区分別人口構成（推計）</caption>
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">年齢区分</th>
+                                    <th scope="col" class="px-4 py-3 text-right border-b border-gray-300 font-semibold">人口割合</th>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">特徴</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">0～14歳（年少人口）</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約11%</td>
+                                    <td class="px-4 py-3 text-gray-700">全国平均とほぼ同水準</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">15～64歳（生産年齢人口）</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約62%</td>
+                                    <td class="px-4 py-3 text-gray-700">全国平均より高い比率</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">65歳以上（老年人口）</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約27%</td>
+                                    <td class="px-4 py-3 text-gray-700">増加傾向が続いている</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Household Statistics -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">世帯の特徴</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        2025年9月現在、埼玉県の世帯数は3,361,259世帯で、1世帯あたりの平均人員は約2.18人となっています。この数字は、核家族化や単独世帯の増加により、徐々に減少傾向にあります。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">世帯構成の変化</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        近年は、単独世帯（一人暮らし）や夫婦のみの世帯が増加しており、伝統的な三世代同居世帯は減少しています。特に高齢者の単独世帯や高齢夫婦のみの世帯が増加傾向にあり、地域コミュニティのあり方が変化しています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">子育て世帯の特徴</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県は東京への通勤圏内にあり、比較的住宅価格が手頃であることから、子育て世代の転入が続いています。さいたま市、川口市、川越市などの都市部を中心に、保育所や学校などの子育て関連施設の需要が高まっています。
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 my-6">
+                        <div class="bg-white border border-gray-300 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">世帯数の推移</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex justify-between border-b border-gray-200 pb-2">
+                                    <span>2000年頃</span>
+                                    <span class="font-semibold">約260万世帯</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-200 pb-2">
+                                    <span>2010年頃</span>
+                                    <span class="font-semibold">約300万世帯</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-200 pb-2">
+                                    <span>2020年頃</span>
+                                    <span class="font-semibold">約330万世帯</span>
+                                </li>
+                                <li class="flex justify-between pt-2">
+                                    <span class="font-bold">2025年</span>
+                                    <span class="font-bold text-saitama-blue">336万世帯</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white border border-gray-300 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">1世帯あたり人員</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex justify-between border-b border-gray-200 pb-2">
+                                    <span>1990年頃</span>
+                                    <span class="font-semibold">約3.0人</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-200 pb-2">
+                                    <span>2000年頃</span>
+                                    <span class="font-semibold">約2.7人</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-200 pb-2">
+                                    <span>2010年頃</span>
+                                    <span class="font-semibold">約2.4人</span>
+                                </li>
+                                <li class="flex justify-between pt-2">
+                                    <span class="font-bold">2025年</span>
+                                    <span class="font-bold text-saitama-blue">約2.18人</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Regional Distribution -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">地域別人口分布</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の人口は、県南部と県央部に集中しています。特にさいたま市（約135万人）は県内最大の都市で、県全体の約18%の人口を擁しています。川口市（約60万人）、川越市（約35万人）がそれに続きます。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        一方、秩父地域などの山間部では人口減少と高齢化が進んでおり、地域間格差が課題となっています。県では、地域の実情に応じた人口対策や定住促進策を実施しています。
+                    </p>
+
+                    <div class="overflow-x-auto my-6">
+                        <table class="min-w-full bg-white border border-gray-300">
+                            <caption class="text-left font-bold text-gray-800 mb-2 px-2">主要市の人口（2024-2025年）</caption>
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">市名</th>
+                                    <th scope="col" class="px-4 py-3 text-right border-b border-gray-300 font-semibold">人口（概数）</th>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">特徴</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">さいたま市</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約135万人</td>
+                                    <td class="px-4 py-3 text-gray-700">県庁所在地、政令指定都市</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">川口市</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約60万人</td>
+                                    <td class="px-4 py-3 text-gray-700">県内第2位、工業都市</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">川越市</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約35万人</td>
+                                    <td class="px-4 py-3 text-gray-700">小江戸、歴史的観光都市</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">所沢市</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約34万人</td>
+                                    <td class="px-4 py-3 text-gray-700">県南西部の中核都市</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">越谷市</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約34万人</td>
+                                    <td class="px-4 py-3 text-gray-700">県東部の商業中心地</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Outlook -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">今後の見通しと課題</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の人口は、これまで一貫して増加してきましたが、今後は高齢化の進展と出生率の低下により、人口減少局面を迎える可能性があります。県では、子育て支援の充実、移住・定住促進、高齢者が活躍できる社会づくりなど、様々な施策を展開しています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        また、地域ごとの人口動態の差異に配慮しながら、都市部の過密と山間部の過疎という課題にバランスよく対応していくことが求められています。持続可能な地域社会の実現に向けて、行政、企業、住民が連携した取り組みが進められています。
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">人口対策の主な取り組み</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-yellow-600 mr-2 font-bold">▸</span>
+                                <span>子育て支援の充実（保育所整備、医療費助成など）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-600 mr-2 font-bold">▸</span>
+                                <span>働きやすい環境づくり（企業誘致、テレワーク推進）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-600 mr-2 font-bold">▸</span>
+                                <span>高齢者の社会参加促進（生涯学習、健康づくり支援）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-600 mr-2 font-bold">▸</span>
+                                <span>地域コミュニティの活性化（地域づくり支援、移住促進）</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Source -->
+            <aside class="mt-8 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">データ出典</h3>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    このページの統計データは、埼玉県統計課の「埼玉県推計人口」（2025年9月1日現在）および総務省統計局の人口推計データに基づいています。最新の詳細なデータは、埼玉県公式ウェブサイトの統計情報ページでご確認いただけます。
+                </p>
+            </aside>
+
+            <!-- Related Pages -->
+            <aside class="mt-8 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/about/geography.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の地理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の歴史
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            市町村情報
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/life/childcare.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            子育て支援
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

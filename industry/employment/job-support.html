@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>就労支援 - 産業・経済 | 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の就労支援に関する情報。ハローワーク、就職支援センター、障害者雇用支援など、求職者向けサービスを紹介します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity">埼玉県総合案内</a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-saitama-green font-bold">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+            <li><a href="/site-info/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメインナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-saitama-green font-bold">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
+          <li><a href="/site-info/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html" class="text-saitama-blue hover:underline">産業・経済</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/industry/index.html#employment" class="text-saitama-blue hover:underline">雇用・就労</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">就労支援</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">埼玉県の就労支援</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <p class="text-lg leading-relaxed text-gray-700 mb-4">
+          埼玉県では、求職者の就職を支援するため、多様な支援サービスを提供しています。ハローワーク（公共職業安定所）を中心に、若者、女性、シニア、障害者など、それぞれの状況に応じた専門的な支援を行っています。
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          職業紹介、職業訓練、キャリアカウンセリング、就職イベントなど、就職活動に必要な様々なサポートを無料で受けることができます。一人ひとりの適性や希望に応じた、きめ細やかな支援を心がけています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="就職相談カウンターの様子。キャリアカウンセラーが求職者と面談し、履歴書を見ながらアドバイスをしている風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">専門スタッフによる就職相談サービス</figcaption>
+      </figure>
+
+      <!-- ハローワーク -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">ハローワーク（公共職業安定所）</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">ハローワークの主なサービス</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            ハローワークは、厚生労働省が運営する公共の職業紹介機関です。全ての求職者が無料で利用でき、求人情報の提供から就職後のフォローアップまで、総合的な就職支援を行っています。
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-3">求職者向けサービス</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                <li>求人情報の検索・閲覧</li>
+                <li>職業相談・キャリアカウンセリング</li>
+                <li>求人への応募手続き支援</li>
+                <li>履歴書・職務経歴書の書き方指導</li>
+                <li>面接対策セミナー</li>
+                <li>職業訓練の案内</li>
+                <li>雇用保険の手続き</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-saitama-blue mb-3">特別な支援</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+                <li>若年者向け就職支援</li>
+                <li>高年齢者向け就職支援</li>
+                <li>障害者向け就職支援</li>
+                <li>母子家庭の母等向け支援</li>
+                <li>外国人向け就職支援</li>
+                <li>就職困難者への個別支援</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">埼玉県内のハローワーク一覧</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            県内各地にハローワークが設置されており、お住まいの地域に関わらず、どのハローワークでも利用できます。
+          </p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">県南部エリア</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4 text-sm">
+                <li>ハローワーク大宮（さいたま市大宮区）</li>
+                <li>ハローワーク川口（川口市）</li>
+                <li>ハローワーク浦和（さいたま市浦和区）</li>
+                <li>ハローワーク川越（川越市）</li>
+                <li>ハローワーク所沢（所沢市）</li>
+                <li>ハローワーク朝霞（朝霞市）</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-2">県北部・東部エリア</h4>
+              <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 ml-4 text-sm">
+                <li>ハローワーク熊谷（熊谷市）</li>
+                <li>ハローワーク本庄（本庄市）</li>
+                <li>ハローワーク大橋（春日部市）</li>
+                <li>ハローワーク行田（行田市）</li>
+                <li>ハローワーク秩父（秩父市）</li>
+                <li>ハローワーク草加（草加市）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 若者向け支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">若者向け就職支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">ヤングキャリアセンター埼玉</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            概ね45歳未満の若年求職者を対象に、就職活動の段階に応じた支援サービスを提供しています。個別カウンセリング、セミナー、企業説明会など、若者のキャリア形成を総合的にサポートします。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h4 class="font-bold text-saitama-blue mb-3">主なサービス内容</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>キャリアカウンセリング（予約制・個別相談）</li>
+              <li>職業適性診断・自己分析サポート</li>
+              <li>応募書類の添削指導</li>
+              <li>模擬面接・面接トレーニング</li>
+              <li>ビジネスマナー講座</li>
+              <li>企業説明会・マッチングイベント</li>
+              <li>職場体験・インターンシップの紹介</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">新卒応援ハローワーク</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            大学・短大・専門学校などの学生や、卒業後概ね3年以内の既卒者を対象とした専門的な就職支援窓口です。学卒求人情報の提供、就職活動の進め方相談など、新卒者特有のニーズに対応しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            担当制による継続的なサポート、企業見学会や合同企業説明会の開催など、内定獲得まで伴走型の支援を行っています。
+          </p>
+        </div>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="就職セミナーの様子。講師が前でプレゼンテーションを行い、多くの求職者が真剣にメモを取っている研修室の風景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">スキルアップを支援する各種セミナー</figcaption>
+      </figure>
+
+      <!-- 女性向け支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">女性向け就職支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">マザーズハローワーク</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            子育て中の方など、仕事と家庭の両立を目指す女性の就職を支援する専門窓口です。キッズコーナーを備え、お子様連れでも安心して相談できる環境を整えています。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4 mb-4">
+            <h4 class="font-bold text-saitama-blue mb-3">サービス内容</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>子育てと両立しやすい求人情報の提供</li>
+              <li>仕事と育児の両立に関する相談</li>
+              <li>保育施設情報の提供</li>
+              <li>再就職準備セミナー</li>
+              <li>パソコン講習（ワード・エクセル等）</li>
+              <li>キャリアブランク克服支援</li>
+            </ul>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            担当者制による継続的なサポートで、個々の状況に応じたきめ細やかな支援を行っています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">女性再就職支援プログラム</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            結婚・出産・育児等で離職し、再就職を希望する女性を対象とした支援プログラムです。ブランク期間があっても安心して再就職できるよう、実践的なトレーニングを提供しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            企業とのマッチング支援、職場体験の機会提供など、スムーズな職場復帰をサポートします。短時間勤務、在宅勤務など、柔軟な働き方ができる求人の紹介にも力を入れています。
+          </p>
+        </div>
+      </section>
+
+      <!-- シニア向け支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">シニア向け就職支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">生涯現役支援窓口</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            55歳以上の求職者を対象に、豊富な経験やスキルを活かせる仕事の紹介を行っています。高年齢者雇用に理解のある企業とのマッチングを重視し、生きがいを持って働き続けられる就職を支援します。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h4 class="font-bold text-saitama-blue mb-3">支援内容</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>高齢者向け求人情報の提供</li>
+              <li>職業相談・キャリアカウンセリング</li>
+              <li>再就職セミナー</li>
+              <li>シニア向け合同企業説明会</li>
+              <li>技能講習・資格取得支援</li>
+              <li>シルバー人材センターとの連携</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">シルバー人材センター</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            60歳以上の方を対象に、臨時的・短期的な仕事や、軽易な仕事を提供する組織です。県内各市町村にセンターがあり、地域に密着した就業機会を提供しています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            清掃、施設管理、庭木の手入れ、軽作業、事務補助など、多様な仕事があります。生きがいづくり、社会参加、健康維持の観点からも注目されています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 障害者向け支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">障害者向け就職支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">ハローワーク専門援助部門</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            障害のある方の就職を専門的にサポートする窓口です。障害の種類や程度に応じた職業相談、職業紹介を行い、障害者雇用に積極的な企業とのマッチングを図ります。
+          </p>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h4 class="font-bold text-saitama-blue mb-3">サービス内容</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-4">
+              <li>障害特性を考慮した職業相談</li>
+              <li>障害者向け求人情報の提供</li>
+              <li>職場適応支援（ジョブコーチ制度）</li>
+              <li>障害者トライアル雇用の活用</li>
+              <li>職業訓練・職業リハビリテーション</li>
+              <li>就職後の定着支援</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">障害者就業・生活支援センター</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            障害者の就業面と生活面の一体的な支援を行う機関です。就職の準備段階から、就職後の職場定着まで、長期的な支援を提供します。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            生活習慣の形成、健康管理、金銭管理など、安定した職業生活を送るために必要な生活面の支援も行います。関係機関と連携し、総合的なサポート体制を構築しています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 就職イベント -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">就職イベント・マッチング支援</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">合同企業説明会</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              多数の企業が一堂に会し、求職者と直接面談できるイベントです。業界研究、企業研究の機会として、また、採用担当者と直接話せる貴重な場として活用できます。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              新卒者向け、中途採用者向け、業界別など、様々なテーマで定期的に開催されています。参加企業の採用意欲も高く、その場で面接が設定されることもあります。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">企業見学会・職場体験</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              実際に企業を訪問し、職場の雰囲気や仕事内容を体験できる機会を提供しています。求人票だけでは分からない企業の実態を知ることができます。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              短期のインターンシップや、トライアル雇用制度の活用により、実際に働いてから正式に採用を決めることも可能です。ミスマッチの防止にも効果的です。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">面接会・マッチングイベント</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              企業の採用担当者と求職者が直接面接できるイベントです。書類選考なしで面接に進めるケースが多く、効率的な就職活動が可能です。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              業種・職種を絞ったテーマ別の面接会、地域密着型の面接会など、様々な形式で開催されています。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-4">オンライン就職支援</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              オンラインでの企業説明会、Web面接、オンラインセミナーなど、インターネットを活用した就職支援も充実しています。
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              場所や時間の制約が少なく、遠方の企業への応募や、仕事をしながらの転職活動にも便利です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- その他の支援 -->
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">その他の就労支援</h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">生活困窮者自立支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            経済的に困窮している方の自立を支援するため、就労支援員が個別に相談に応じます。ハローワークと連携し、就職活動のサポートから、就職後の定着支援まで行います。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            住居確保給付金の支給、家計相談支援、子どもの学習支援など、生活全般の支援と一体的に就労支援を実施しています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">外国人向け就職支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            外国人求職者向けに、多言語での職業相談、通訳サービスなどを提供しています。在留資格に応じた就労可能な職種の案内、日本の労働慣行の説明なども行っています。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            ハローワークには外国人雇用サービスコーナーが設置されており、英語、中国語、ポルトガル語などで対応可能です。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text="gray-900 mb-4">ひとり親家庭支援</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            母子家庭の母、父子家庭の父を対象に、就業と自立を支援するプログラムを提供しています。職業訓練の受講支援、資格取得支援、就業相談などを行います。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            子育てとの両立がしやすい仕事の紹介、保育サービスの情報提供など、ひとり親家庭特有のニーズに対応した支援を実施しています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 関連ページ -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/industry/employment/career.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">キャリア形成</h3>
+            <p class="text-sm text-gray-600">職業訓練・スキルアップ</p>
+          </a>
+          <a href="/industry/companies/major-companies.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">主要企業</h3>
+            <p class="text-sm text-gray-600">県内の雇用企業情報</p>
+          </a>
+          <a href="/life/welfare/support.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">福祉サービス</h3>
+            <p class="text-sm text-gray-600">生活支援との連携</p>
+          </a>
+          <a href="/life/education/universities.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">大学・専門学校</h3>
+            <p class="text-sm text-gray-600">学生の就職支援</p>
+          </a>
+          <a href="/cities/central-cities/saitama.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">さいたま市</h3>
+            <p class="text-sm text-gray-600">市の就職支援施設</p>
+          </a>
+          <a href="/industry/index.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <h3 class="font-bold text-saitama-blue mb-2">産業・経済トップ</h3>
+            <p class="text-sm text-gray-600">産業情報一覧に戻る</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">埼玉について</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/profile/overview.html" class="hover:text-saitama-green transition-colors">埼玉県の概要</a></li>
+            <li><a href="/about/geography/index.html" class="hover:text-saitama-green transition-colors">地理・気候</a></li>
+            <li><a href="/about/history/index.html" class="hover:text-saitama-green transition-colors">歴史・文化</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">観光・レジャー</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/tourism/spots/index.html" class="hover:text-saitama-green transition-colors">観光スポット</a></li>
+            <li><a href="/tourism/events/index.html" class="hover:text-saitama-green transition-colors">イベント</a></li>
+            <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors">グルメ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">生活情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/life/education/index.html" class="hover:text-saitama-green transition-colors">教育</a></li>
+            <li><a href="/life/medical/index.html" class="hover:text-saitama-green transition-colors">医療</a></li>
+            <li><a href="/life/welfare/index.html" class="hover:text-saitama-green transition-colors">福祉</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">サイト情報</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-sm text-center">
+        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // モバイルメニュートグル
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      // ボタンのラベルを更新
+      this.setAttribute('aria-label', isExpanded ? 'メニューを開く' : 'メニューを閉じる');
+    });
+  </script>
+</body>
+</html>

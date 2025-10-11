@@ -1,0 +1,92 @@
+# プロジェクト内部ファイル（公開不要）
+CLAUDE.md
+.claude/
+docs/
+COMPLETION_SUMMARY.txt
+
+# OS固有ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# エディタ・IDE設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ログファイル
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# 一時ファイル
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# Node.js（将来使用する可能性のため）
+node_modules/
+package-lock.json
+yarn.lock
+
+# ビルド成果物（将来使用する可能性のため）
+dist/
+build/
+*.min.js
+*.min.css
+
+# 環境変数ファイル
+.env
+.env.local
+.env.*.local
+
+# Docker関連（実行時に生成されるファイル）
+*.pid
+*.seed
+*.pid.lock
+
+# バックアップファイル
+*.bak
+*.backup
+*~
+
+# macOSメタデータ
+.DocumentRevisions-V100/
+.fseventsd/
+.TemporaryItems/
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDouble
+.LSOverride
+
+# Windowsサムネイルキャッシュ
+*.stackdump
+
+# Linux
+.directory
+
+# カバレッジレポート（テストを追加する場合）
+coverage/
+*.coverage
+.nyc_output/
+
+# 圧縮ファイル（一時的なもの）
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z

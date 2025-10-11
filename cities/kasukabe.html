@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>春日部市 - さいたまなび</title>
+  <meta name="description" content="春日部市は人口約23万人の都市で、「クレヨンしんちゃん」の舞台として全国的に知られています。日光街道の宿場町の歴史を持つ、埼玉県東部の主要都市です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+            さいたまなび
+          </a>
+        </div>
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">春日部市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">春日部市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          春日部市は、埼玉県東部に位置する市で、人口約23万人（2024年）を擁します。面積は66.00平方キロメートルで、東武伊勢崎線（東武スカイツリーライン）と東武野田線（東武アーバンパークライン）が交差する交通の要衝として発展してきました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          春日部市は、人気アニメ・漫画「クレヨンしんちゃん」の舞台として全国的に知られています。作者の臼井儀人さんが春日部市在住だったことから、作品の舞台として描かれるようになり、多くのファンが聖地巡礼に訪れます。駅前には「クレヨンしんちゃん」のキャラクター像が設置され、市のイメージキャラクターとしても活用されています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          江戸時代には日光街道（日光道中）の宿場町「粕壁宿」として栄えた歴史があり、現在も古い寺社や歴史的建造物が残っています。東京都心から約40キロメートル圏内に位置し、住宅都市として発展しながら、農業地帯も残る、都市と自然が調和した街です。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="春日部駅東口の駅前広場。クレヨンしんちゃんのキャラクター像が設置され、駅ビルや商業施設が立ち並ぶ賑やかな都市景観" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">春日部駅 - クレヨンしんちゃんの舞台の街</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">クレヨンしんちゃんの街</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">作品の舞台</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          「クレヨンしんちゃん」は1990年に連載が始まり、アニメ化もされて国民的人気作品となりました。主人公の野原しんのすけ一家が暮らす「埼玉県春日部市」という設定で、作品には春日部の地名や風景が随所に登場します。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          春日部市はこの作品とのつながりを活かし、まちづくりに活用しています。春日部駅にはしんちゃんとシロの銅像が設置され、記念撮影スポットとして人気です。また、市内各所にキャラクターのパネルや看板が設置され、ファンが楽しめる街歩きコースも整備されています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">クレヨンしんちゃんイベント</h3>
+        <p class="text-gray-700 leading-relaxed">
+          市では「クレヨンしんちゃん」関連のイベントも開催されており、春日部藤まつりなど市の主要イベントにもキャラクターが登場します。市のPR活動にもクレヨンしんちゃんが活用され、春日部市の知名度向上に貢献しています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">歴史と文化</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">日光街道粕壁宿</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          江戸時代、春日部は日光街道（日光道中）の4番目の宿場町「粕壁宿」として栄えました。日光東照宮への参詣客や物資輸送で賑わい、多くの旅籠や商店が軒を連ねていました。現在も旧街道沿いには歴史的な建造物が残り、往時の面影を感じることができます。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">春日部の桐箪笥</h3>
+        <p class="text-gray-700 leading-relaxed">
+          春日部は「桐箪笥（きりたんす）」の産地として知られています。江戸時代から続く伝統工芸で、軽くて丈夫、調湿性に優れた桐を使った高級家具です。春日部の桐箪笥は「春日部桐箱」とも呼ばれ、国の伝統的工芸品に指定されています。現在も職人が伝統技術を守り続けています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要施設・スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">春日部駅周辺</h3>
+            <p class="text-gray-700 leading-relaxed">東武線2路線が交差するターミナル駅。駅ビルや商業施設が充実し、クレヨンしんちゃんのモニュメントがあります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">首都圏外郭放水路</h3>
+            <p class="text-gray-700 leading-relaxed">世界最大級の地下放水路。治水施設として洪水を防ぎつつ、見学ツアーも実施され、巨大な地下神殿のような空間が人気です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">牛島の藤</h3>
+            <p class="text-gray-700 leading-relaxed">樹齢1,200年以上と推定される特別天然記念物の大藤。4月下旬から5月上旬にかけて、見事な藤の花が咲き誇ります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">春日部市郷土資料館</h3>
+            <p class="text-gray-700 leading-relaxed">市の歴史や文化を紹介する資料館。桐箪笥の製作工程や宿場町時代の資料などが展示されています。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="牛島の藤。樹齢1200年以上の巨大な藤の木から、淡い紫色の花房が幾重にも垂れ下がり、藤棚全体を覆う壮大な光景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">牛島の藤 - 特別天然記念物、樹齢1200年以上の大藤</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          春日部市は、東武伊勢崎線（東武スカイツリーライン）と東武野田線（東武アーバンパークライン）が交差する交通の要衝です。春日部駅から浅草まで約35分、北千住まで約25分でアクセスでき、都心への通勤にも便利です。特急列車も停車し、利便性の高い駅です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業施設</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          春日部駅周辺には駅ビルや商業施設があり、日常の買い物に便利です。イトーヨーカドーやララガーデン春日部などの大型商業施設もあり、ファッション、グルメ、エンターテインメントなど幅広いニーズに対応しています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">住環境</h3>
+        <p class="text-gray-700 leading-relaxed">
+          市内は住宅地が広がり、戸建て住宅やマンションが充実しています。駅周辺は都市的な環境ですが、少し離れると田園風景も残り、自然を身近に感じられる住環境です。公園や緑地も多く、子育て世帯にも人気のエリアです。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・経済</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          春日部市は、商業・サービス業が中心の都市です。春日部駅周辺には小売店や飲食店が集積し、市の商業の中心を担っています。また、伝統産業である桐箪笥の製造も続けられており、高い技術を持つ職人が活躍しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          製造業では、食品加工や金属製品などの工場があります。市内には工業団地も整備され、多様な業種の企業が立地しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          農業では、米や野菜の栽培が行われています。特に梨の栽培が盛んで、「春日部の梨」として地域ブランドになっています。都市近郊農業として、直売所での販売も行われています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">春日部藤まつり（4月下旬～5月上旬）</h3>
+            <p class="text-gray-700 leading-relaxed">特別天然記念物「牛島の藤」の開花時期に合わせて開催。ライトアップも実施され、夜の藤も楽しめます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">春日部夏まつり（7月）</h3>
+            <p class="text-gray-700 leading-relaxed">市内最大の夏祭り。神輿や山車のパレード、阿波踊りなどで盛り上がります。クレヨンしんちゃんも登場します。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">春日部大凧あげ祭り（5月）</h3>
+            <p class="text-gray-700 leading-relaxed">江戸時代から続く伝統行事。大凧（おおだこ）を揚げる勇壮な祭りで、市の無形民俗文化財に指定されています。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約23万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">66.00平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">1954年7月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">春日部駅、武里駅、一ノ割駅</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">春日部駅から浅草駅まで約35分、北千住駅まで約25分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花</th>
+              <td class="py-3 px-4 text-gray-700">木：桐、花：藤</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/life/housing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              住まい・住環境
+            </a>
+          </li>
+          <li>
+            <a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              交通アクセス
+            </a>
+          </li>
+          <li>
+            <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              埼玉の歴史
+            </a>
+          </li>
+          <li>
+            <a href="/tourism/culture.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              歴史・文化
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。
+          </p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

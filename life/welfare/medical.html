@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>医療施設 - 福祉 - 暮らし - 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の充実した医療体制。埼玉医科大学総合医療センターをはじめとする高度医療機関と、県内に300以上の病院、3,500以上のクリニックが県民の健康を支えています。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-green focus:text-white">本文へスキップ</a>
+
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">埼玉県総合案内</a>
+        </div>
+        <nav class="hidden md:block" aria-label="メインメニュー">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
+          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="パンくずリスト" class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">ホーム</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><a href="/life/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">暮らし</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><span class="text-gray-700" aria-current="page">医療施設</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">埼玉県の医療施設</h1>
+        <p class="text-lg text-gray-700 leading-loose">
+          埼玉県は県内全域に充実した医療体制を整備しており、高度医療を提供する大学病院から地域密着型のクリニックまで、多様な医療施設が県民の健康を支えています。2025年現在、県内には300以上の病院と3,500以上のクリニックが存在し、24時間体制の救急医療や最新医療技術による治療が提供されています。
+        </p>
+      </header>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="埼玉医科大学総合医療センターの外観、白い近代的な建物で高度医療機器を備えた総合病院" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">埼玉医科大学総合医療センター(川越市)</figcaption>
+      </figure>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主要医療機関</h2>
+        <div class="prose max-w-none">
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-green mb-3">埼玉医科大学総合医療センター(川越市)</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              埼玉県内で最も高度な救急医療を提供する三次救急医療機関です。高度救命救急センターを併設し、年間1,000人以上の重症患者を受け入れています。救急搬送される患者の約80%が重症外傷や重篤な疾患を抱えており、24時間365日体制で命を救う最前線の医療を提供しています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>診療科：</strong>30以上の専門診療科</li>
+              <li><strong>病床数：</strong>1,000床以上</li>
+              <li><strong>救急搬送受入：</strong>年間1,000人以上(重症患者中心)</li>
+              <li><strong>手術件数：</strong>年間1,200件以上</li>
+              <li><strong>特色：</strong>重症外傷症例の約80%を対応</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-green mb-3">埼玉医科大学病院(毛呂山町)</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              24時間体制の救急センターを運営し、二次救急医療機関として地域医療を支えています。夜間・休日の急病にも対応しており、紹介状なしの初診患者には時間外加算として8,800円が別途必要となります。がん治療、循環器疾患、脳神経外科など多様な専門医療を提供しています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>救急体制：</strong>24時間救急センター</li>
+              <li><strong>時間外初診料：</strong>8,800円(紹介状なしの場合)</li>
+              <li><strong>特色：</strong>がん診療連携拠点病院指定</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-green mb-3">獨協医科大学埼玉医療センター(越谷市)</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              越谷市に位置する高度医療機関で、救命救急センターを備えています。紹介状なしでの初診の場合、特定療養費として9,900円が別途必要となります。心臓血管外科、脳神経外科、産科・周産期医療などに強みを持ち、地域の中核病院として機能しています。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>所在地：</strong>越谷市</li>
+              <li><strong>初診時特定療養費：</strong>9,900円(紹介状なしの場合)</li>
+              <li><strong>特色：</strong>救命救急センター、周産期医療センター</li>
+            </ul>
+          </div>
+
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-blue mb-3">その他の主要病院</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>さいたま市立病院：</strong>さいたま市の中核病院</li>
+              <li><strong>埼玉県立がんセンター：</strong>がん専門病院(伊奈町)</li>
+              <li><strong>埼玉県立小児医療センター：</strong>小児専門病院(さいたま市)</li>
+              <li><strong>川口市立医療センター：</strong>川口市の地域中核病院</li>
+              <li><strong>深谷赤十字病院：</strong>県北地域の救急医療拠点</li>
+              <li><strong>済生会川口総合病院：</strong>高度医療提供病院</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">救急医療体制</h2>
+        <div class="prose max-w-none">
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">救急相談ダイヤル #7119</h3>
+            <p class="text-gray-700 leading-loose mb-4">
+              埼玉県では、急な病気やけがで救急車を呼ぶべきか迷った際に相談できる「#7119」救急電話相談を24時間365日提供しています。看護師が症状を聞き取り、救急車の必要性や適切な対応方法をアドバイスします。また、AIによる救急相談チャットサービスも導入され、文字でのやり取りでも相談可能です。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>電話番号：</strong>#7119(24時間365日対応)</li>
+              <li><strong>相談員：</strong>看護師が対応</li>
+              <li><strong>サービス内容：</strong>救急車の要否判断、医療機関案内</li>
+              <li><strong>新サービス：</strong>AIチャット相談も利用可能</li>
+            </ul>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-red-600 mb-3">三次救急医療</h4>
+              <p class="text-sm text-gray-700 leading-loose mb-3">重篤な救急患者に対応する高度救命救急センター</p>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>埼玉医科大学総合医療センター</li>
+                <li>獨協医科大学埼玉医療センター</li>
+                <li>さいたま赤十字病院</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-orange-600 mb-3">二次救急医療</h4>
+              <p class="text-sm text-gray-700 leading-loose mb-3">入院・手術が必要な救急患者に対応</p>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>地域の総合病院</li>
+                <li>各市町村の中核病院</li>
+                <li>輪番制による24時間体制</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-yellow-600 mb-3">初期救急医療</h4>
+              <p class="text-sm text-gray-700 leading-loose mb-3">軽症の救急患者に対応</p>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>夜間・休日診療所</li>
+                <li>在宅当番医制度</li>
+                <li>各市町村の急患センター</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">医療施設の概要</h2>
+        <div class="prose max-w-none">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+            <table class="min-w-full divide-y divide-gray-200">
+              <caption class="sr-only">埼玉県内の医療施設数</caption>
+              <thead class="bg-saitama-green text-white">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">施設種類</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">施設数</th>
+                  <th scope="col" class="px-6 py-3 text-left text-sm font-bold">主な役割</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900 font-bold">病院</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">300施設以上</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">入院治療・高度医療</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900 font-bold">一般診療所</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">3,500施設以上</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">外来診療・かかりつけ医</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-900 font-bold">歯科診療所</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">3,000施設以上</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">歯科治療・口腔ケア</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="px-6 py-4 text-sm text-gray-900 font-bold">薬局</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">2,500施設以上</td>
+                  <td class="px-6 py-4 text-sm text-gray-900">調剤・服薬指導</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-gray-700 leading-loose mb-6">
+            埼玉県では、県内全域に医療施設が適切に配置されており、どの地域に住んでいても必要な医療を受けられる体制が整備されています。また、各市町村には保健センターが設置されており、健康診断や予防接種、健康相談など地域住民の健康増進活動を支援しています。
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">医療機関の利用方法</h2>
+        <div class="prose max-w-none">
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">かかりつけ医を持つことの重要性</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              日常的な健康管理や軽症の病気については、まず地域のかかりつけ医(診療所やクリニック)を受診しましょう。かかりつけ医は患者の健康状態を継続的に把握し、必要に応じて専門病院への紹介状を作成してくれます。
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li>日常的な健康相談・健康管理</li>
+              <li>軽症疾患の治療</li>
+              <li>専門病院への紹介</li>
+              <li>予防接種・健康診断</li>
+            </ul>
+          </div>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6">
+            <h4 class="text-lg font-bold text-gray-800 mb-3">大病院受診時の注意点</h4>
+            <p class="text-gray-700 leading-loose mb-4">
+              紹介状なしで大病院を初診で受診する場合、通常の診療費に加えて「特定療養費」または「選定療養費」として数千円〜1万円程度が追加で必要となります。まずはかかりつけ医を受診し、必要に応じて紹介状を作成してもらうことをお勧めします。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="mt-12 pt-8 border-t border-gray-300">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <nav aria-label="関連ページ">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li><a href="/life/welfare/elderly-care.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">高齢者福祉</span><p class="text-sm text-gray-600 mt-1">介護保険制度と高齢者支援</p></a></li>
+            <li><a href="/life/welfare/support.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">生活支援</span><p class="text-sm text-gray-600 mt-1">各種生活支援サービス</p></a></li>
+            <li><a href="/life/education/childcare.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">子育て支援</span><p class="text-sm text-gray-600 mt-1">医療費助成制度など</p></a></li>
+            <li><a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">暮らし トップ</span><p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p></a></li>
+          </ul>
+        </nav>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。</p>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">主要カテゴリー</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li>
+            <li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400"><p>&copy; 2025 埼玉県総合案内. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-label', !isExpanded ? 'メニューを閉じる' : 'メニューを開く');
+    });
+  </script>
+</body>
+</html>

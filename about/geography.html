@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>埼玉県の地理 - さいたまなび</title>
+    <meta name="description" content="埼玉県の地形、河川、気候などの地理的特徴を詳しくご紹介します。西部の2,000メートル級の山々から東部の低地まで多様な地形を持つ埼玉県の自然環境について解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/about/index.html" class="text-saitama-blue hover:underline">埼玉県について</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">地理</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">埼玉県の地理</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    西部の山岳地帯から東部の平野部まで、多様な地形を持つ埼玉県の自然環境をご紹介します。
+                </p>
+            </header>
+
+            <!-- Location and Area -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">位置と面積</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県は、関東地方の中部から西部にかけて位置する内陸県です。東は茨城県・千葉県、西は長野県・山梨県、南は東京都、北は群馬県・栃木県と接しており、1都6県に囲まれています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        総面積は約3,798km²で、日本の国土の約1%を占めており、47都道府県の中では39番目の大きさです。東西約103km、南北約52kmの広がりを持ち、海に面していない内陸県の一つです。
+                    </p>
+
+                    <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">埼玉県の基本データ</h4>
+                        <dl class="space-y-2">
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-32">総面積：</dt>
+                                <dd class="text-gray-700">3,797.75km²</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-32">東西の長さ：</dt>
+                                <dd class="text-gray-700">約103km</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-32">南北の長さ：</dt>
+                                <dd class="text-gray-700">約52km</dd>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <dt class="font-semibold text-gray-700 w-32">接する都県：</dt>
+                                <dd class="text-gray-700">1都6県（東京都、群馬県、栃木県、茨城県、千葉県、長野県、山梨県）</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Topography -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">地形の特徴</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の地形は、西部から東部にかけて大きく変化する特徴を持っています。西部には2,000メートル級の山岳地帯が広がり、そこから東に向かって丘陵、台地、低地へと段階的に標高が下がっていきます。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">西部山岳地帯</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        西部の山岳地帯は関東山地（別名：秩父山地）に属し、県の最高峰である三宝山（2,483m）をはじめ、甲武信ヶ岳（2,475m）、雲取山（2,017m）などの2,000メートル級の山々が連なっています。この地域には秩父盆地と呼ばれる山間盆地も形成されています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">中部丘陵・台地</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        中央部には比企丘陵や狭山丘陵などの丘陵地帯が広がり、大宮台地、武蔵野台地などの台地が発達しています。これらの台地は、古い河川の堆積作用によって形成されたもので、比較的平坦な地形が特徴です。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">東部低地</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        東部は関東平野の一部を成す低地で、標高が低く平坦な地形が広がっています。この地域は利根川、荒川、江戸川などの河川によって形成された沖積平野で、肥沃な土壌が広がり、水田地帯として利用されてきました。
+                    </p>
+
+                    <figure class="my-6">
+                        <img src="https://via.placeholder.com/800x500"
+                             alt="埼玉県の地形断面図。西部の秩父山地から東部の平野部まで、標高が徐々に下がっていく様子を示した図"
+                             class="w-full h-auto rounded-lg shadow-md">
+                        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+                            西部から東部へと段階的に標高が下がる埼玉県の地形（イメージ図）
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Rivers -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">河川</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県内には多くの河川が流れており、県民の生活や産業に重要な役割を果たしています。主要な河川として、利根川、荒川、江戸川、中川などがあります。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">荒川</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        荒川は秩父山地に源を発し、県内を流れて東京湾に注ぐ一級河川です。鴻巣市と吉見町の間にある御成橋付近では、川幅が日本最大の2,537メートルに達します。この広大な河川敷は、スポーツや憩いの場として多くの県民に利用されています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">利根川</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        利根川は「坂東太郎」の異名を持つ日本有数の大河で、県の北部・東部を流れています。流域面積は日本最大規模を誇り、関東平野の水がめとして重要な役割を果たしています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">江戸川・中川</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        江戸川は県の東端を流れ、千葉県との境界を形成しています。中川は県東部を南北に流れる河川で、低地を潤す重要な水系です。これらの河川は古くから水運や農業用水として利用されてきました。
+                    </p>
+
+                    <div class="bg-green-50 border-l-4 border-saitama-green p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">埼玉県の主要河川</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2">●</span>
+                                <span><strong>荒川：</strong>川幅日本最大（2,537m）、秩父山地から東京湾へ</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2">●</span>
+                                <span><strong>利根川：</strong>流域面積日本最大級、県北部・東部を流れる</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2">●</span>
+                                <span><strong>江戸川：</strong>千葉県との境界、利根川から分流</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2">●</span>
+                                <span><strong>中川：</strong>県東部の低地を流れる</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Climate -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">気候</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の気候は太平洋岸気候に属し、四季の変化がはっきりとしています。海に面していない内陸県のため、夏と冬、昼と夜の気温差が比較的大きいという特徴があります。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">冬の気候</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        冬季は北西からの季節風が強く、晴天の日が多く空気が乾燥します。山岳部を除けば降雪は比較的少なく、晴れた日が続くことが特徴です。熊谷市などでは冬の乾燥した空気と快晴の日が多いことで知られています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">夏の気候</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        夏季は日中の気温が高くなり、特に熊谷市は日本有数の高温地として知られています。内陸特有のフェーン現象により、猛暑日が観測されることがあります。また、夏の午後には雷雨や雹が発生することもあります。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">梅雨と台風</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        梅雨期には曇りや雨の日が多くなりますが、台風の影響は比較的少ないとされています。ただし、大型台風が接近した際には大雨による河川の増水などに注意が必要です。
+                    </p>
+
+                    <div class="overflow-x-auto my-6">
+                        <table class="min-w-full bg-white border border-gray-300">
+                            <caption class="text-left font-bold text-gray-800 mb-2 px-2">埼玉県の季節別気候の特徴</caption>
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">季節</th>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">主な特徴</th>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">注意点</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">春</th>
+                                    <td class="px-4 py-3 text-gray-700">温暖で過ごしやすい、桜の開花</td>
+                                    <td class="px-4 py-3 text-gray-700">花粉の飛散、春の嵐</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">夏</th>
+                                    <td class="px-4 py-3 text-gray-700">高温多湿、午後に雷雨が発生</td>
+                                    <td class="px-4 py-3 text-gray-700">熱中症、雷・雹に注意</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">秋</th>
+                                    <td class="px-4 py-3 text-gray-700">爽やかで過ごしやすい、紅葉が美しい</td>
+                                    <td class="px-4 py-3 text-gray-700">台風、秋雨前線</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">冬</th>
+                                    <td class="px-4 py-3 text-gray-700">晴天が多い、空気が乾燥</td>
+                                    <td class="px-4 py-3 text-gray-700">乾燥、霜・結氷</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Natural Features -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">自然環境の特色</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県は、内陸県でありながら多様な自然環境を有しています。西部の山岳地帯には豊かな森林が広がり、東部の平野部には広大な河川敷や農地が広がっています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        秩父地域には石灰岩地帯が発達し、鍾乳洞や特異な地形が見られます。また、荒川の田島ヶ原には国の特別天然記念物に指定されているサクラソウの自生地があり、貴重な自然が保護されています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        海なし県である埼玉県ですが、河川や湖沼、緑地が豊富にあり、都市部においても比較的自然に恵まれた環境が保たれています。これらの自然環境は、レクリエーションや環境学習の場としても活用されています。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の歴史
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/population.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            人口と世帯
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/nagatoro.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            長瀞の自然景観
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/chichibu.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            秩父の観光スポット
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

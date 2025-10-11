@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>越谷市 - さいたまなび</title>
+  <meta name="description" content="越谷市は人口約34万人を擁する中核市で、日本最大級のショッピングモール「越谷レイクタウン」で知られる埼玉県東部の商業都市です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+            さいたまなび
+          </a>
+        </div>
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">越谷市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">越谷市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷市は、埼玉県南東部に位置する中核市で、人口約34万人（2024年）を擁します。面積は60.24平方キロメートルで、東京都心から約25キロメートル圏内に位置し、JR武蔵野線や東武伊勢崎線（東武スカイツリーライン）が通る交通の要衝として発展してきました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷市の最大の特徴は、日本最大級のショッピングモール「越谷レイクタウン」があることです。2008年にオープンしたこの大型商業施設は、店舗面積約24.5万平方メートルを誇り、年間約5,000万人が訪れる一大ショッピングスポットとなっています。レイクタウン駅周辺には計画的に整備された新しい住宅地が広がり、大きな湖を中心とした水辺の街並みが形成されています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          江戸時代には日光街道の宿場町として栄えた歴史があり、現在も古い神社仏閣が点在しています。伝統的な「越谷だるま」の生産地としても知られ、毎年1月にはだるま市が開催されます。都市的な発展と歴史・文化が調和した、埼玉県東部の中心都市です。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="越谷レイクタウンの大相模調節池。広大な人工湖を中心に、周囲には遊歩道や公園が整備され、背景にショッピングモールの建物が見える水辺の景観" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">越谷レイクタウン - 日本最大級のショッピングモールと水辺の街</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">越谷レイクタウン</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">日本最大級のショッピングモール</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷レイクタウンは、「イオンレイクタウンkaze」「イオンレイクタウンmori」「レイクタウンアウトレット」の3つの商業施設から構成され、合計約710店舗が出店する巨大ショッピングモールです。ファッション、グルメ、エンターテインメント、スポーツなど、あらゆるジャンルの店舗が揃い、一日中楽しめる施設となっています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          中心には大相模調節池（通称：大相模湖）があり、面積約37ヘクタールの広大な水辺空間が広がります。この調節池は治水施設としての役割を持ちながら、市民の憩いの場、レクリエーションの場としても活用されています。湖畔には遊歩道が整備され、ウォーキングやジョギングを楽しむ人々の姿が見られます。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">環境共生のまちづくり</h3>
+        <p class="text-gray-700 leading-relaxed">
+          レイクタウン地区は、「人と環境にやさしい魅力あるまちづくり」をコンセプトに開発されました。豊かな水辺環境を活かし、緑地や公園が多く配置されています。太陽光発電や雨水利用など環境配慮型の設備も導入され、持続可能な都市のモデルケースとして注目されています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">歴史と文化</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">日光街道の宿場町</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷は江戸時代、日光街道（奥州街道）の3番目の宿場町として栄えました。日光街道は江戸と日光東照宮を結ぶ重要な街道で、多くの旅人が行き交いました。現在も旧街道沿いには歴史的建造物や神社仏閣が残り、往時の面影を偲ぶことができます。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">越谷だるま</h3>
+        <p class="text-gray-700 leading-relaxed">
+          越谷は「だるまの町」としても知られています。江戸時代から続く伝統工芸品「越谷だるま」は、顔が丸く福々しい表情が特徴です。毎年1月には越ヶ谷久伊豆神社でだるま市が開催され、多くの参拝者で賑わいます。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要施設・スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">イオンレイクタウン</h3>
+            <p class="text-gray-700 leading-relaxed">日本最大級のショッピングモール。kaze、mori、アウトレットの3施設で約710店舗が出店。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">越ヶ谷久伊豆神社</h3>
+            <p class="text-gray-700 leading-relaxed">約1,500年の歴史を持つ古社。藤の名所としても知られ、5月には樹齢200年以上の大藤が見事に咲き誇ります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">キャンベルタウン野鳥の森</h3>
+            <p class="text-gray-700 leading-relaxed">オーストラリアの姉妹都市にちなんだ野鳥の森。オーストラリア産の鳥類を中心に飼育・展示しています。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">越谷市立図書館</h3>
+            <p class="text-gray-700 leading-relaxed">市内各地に図書館が配置され、蔵書数も充実。市民の読書・学習活動を支えています。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="越ヶ谷久伊豆神社の大藤。樹齢200年以上の藤の木から、紫色の花房が幾重にも垂れ下がる見事な光景" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">越ヶ谷久伊豆神社 - 樹齢200年以上の大藤</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷市は、JR武蔵野線と東武伊勢崎線（東武スカイツリーライン）が利用でき、複数方面へのアクセスが良好です。レイクタウン駅はJR武蔵野線の駅で、南越谷駅・新越谷駅は両線の乗換駅となっており、非常に便利です。東京駅や新宿駅へは約30～40分でアクセスでき、通勤・通学に適しています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業・買い物</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷レイクタウンがあるため、買い物環境は県内でもトップクラスです。越谷駅周辺にも商業施設や商店街があり、日常の買い物にも困りません。大型スーパーやホームセンターも各地に点在しており、生活利便性は非常に高い街です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">教育・子育て</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には文教大学があり、教育環境も整っています。公立小中学校も充実しており、子育て支援センターや児童館も各地域に配置されています。レイクタウン地区には新しい学校も整備され、若い世代のファミリー層が多く暮らしています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">医療・福祉</h3>
+        <p class="text-gray-700 leading-relaxed">
+          獨協医科大学埼玉医療センターをはじめ、総合病院や診療所が充実しており、医療体制は安心です。高齢者福祉施設も整備され、すべての世代が暮らしやすい環境が整っています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・経済</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          越谷市は商業都市としての性格が強く、越谷レイクタウンをはじめとする大型商業施設が市の経済を支えています。小売業やサービス業が盛んで、多くの雇用を生み出しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          また、市内には工業団地もあり、製造業も一定の割合を占めています。食品製造、機械金属など多様な業種の企業が立地しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          農業では、ネギやクワイ（慈姑）の栽培が盛んです。特に越谷ねぎは県内有数の生産量を誇り、ブランド野菜として人気があります。クワイは正月料理に使われる伝統野菜で、越谷が全国有数の産地です。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">越谷花火大会（7月）</h3>
+            <p class="text-gray-700 leading-relaxed">葛西用水中土手公園で開催される夏の風物詩。約5,000発の花火が夏の夜空を彩ります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">だるま市（1月）</h3>
+            <p class="text-gray-700 leading-relaxed">越ヶ谷久伊豆神社で開催される伝統行事。多くの参拝者が縁起物のだるまを求めて訪れます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">こしがや産業フェスタ（11月）</h3>
+            <p class="text-gray-700 leading-relaxed">市内産業を紹介するイベント。特産品の販売やステージイベントで賑わいます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約34万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">60.24平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">1958年11月3日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">中核市指定</th>
+              <td class="py-3 px-4 text-gray-700">2015年4月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">越谷駅、南越谷駅、新越谷駅、レイクタウン駅、越谷レイクタウン駅</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">南越谷駅から東京駅まで約30分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花・鳥</th>
+              <td class="py-3 px-4 text-gray-700">木：ケヤキ、花：キク、鳥：シラコバト</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/life/housing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              住まい・住環境
+            </a>
+          </li>
+          <li>
+            <a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              交通アクセス
+            </a>
+          </li>
+          <li>
+            <a href="/industry/commerce.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              商業
+            </a>
+          </li>
+          <li>
+            <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              埼玉の歴史
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。
+          </p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

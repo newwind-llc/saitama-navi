@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>川口市 - さいたまなび</title>
+  <meta name="description" content="川口市は人口約60万人の中核市で、東京都に隣接する埼玉県南部の主要都市です。鋳物産業の伝統を持ちながら、住宅都市として発展を続けています。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+            さいたまなび
+          </a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">川口市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">川口市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川口市は、埼玉県の南端に位置し、荒川を挟んで東京都と接する中核市です。人口は約60万人（2024年）で、県内ではさいたま市に次ぐ第2位の人口を誇ります。面積は61.95平方キロメートルで、東京23区に隣接する立地から、首都圏有数のベッドタウンとして発展してきました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          江戸時代から鋳物（いもの）の町として栄え、400年以上の歴史を持つ鋳物産業は川口市の伝統産業として今も受け継がれています。川口駅周辺には高層マンションが立ち並び、都市化が進む一方で、伝統的な職人技術や下町の雰囲気も残る、新旧が調和した魅力ある都市です。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          東京都心へのアクセスが良好で、JR京浜東北線で東京駅まで約20分、埼玉高速鉄道や東京メトロ南北線も利用でき、通勤・通学の利便性が高いことから、若い世代を中心に人気の住宅エリアとなっています。近年は再開発も進み、商業施設や文化施設も充実してきています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="川口駅東口のペデストリアンデッキから見た高層マンション群。駅前広場を中心に複数の高層ビルが立ち並ぶ都市的な景観" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">川口駅周辺 - 再開発が進む都心に近い住宅都市</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">川口の歴史と伝統産業</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">鋳物のまち</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川口市の鋳物産業は、江戸時代初期の1600年代に始まったとされ、約400年の歴史を誇ります。荒川の水運を利用した原材料の調達や製品の輸送に適していたこと、江戸（東京）という巨大な消費地に近かったことから、鋳物産業が大きく発展しました。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          最盛期には全国の鋳物生産量の約4割を占め、「鋳物のまち・川口」として知られました。梵鐘（ぼんしょう）、鍋、釜などの日用品から、機械部品、マンホール蓋まで、幅広い製品を生産してきました。現在も市内には鋳物工場が点在し、伝統技術を受け継ぐ職人たちが高度な鋳造技術を守り続けています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">川口市立鋳物資料館</h3>
+        <p class="text-gray-700 leading-relaxed">
+          川口の鋳物産業の歴史と技術を伝える施設です。実際に使われていた鋳物工場を保存・活用しており、キュポラ（溶解炉）や鋳造道具などが展示されています。鋳物づくりの工程を学ぶことができ、川口の産業史を知る貴重な資料館となっています。
+        </p>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="川口市立鋳物資料館の展示室。巨大なキュポラ（溶解炉）や鋳型、完成品の鋳物製品が展示されている産業遺産の空間" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">川口市立鋳物資料館 - 400年の鋳物産業の歴史を伝える</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">抜群の交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川口市の最大の魅力は、東京都心への近さです。JR京浜東北線の川口駅からは、東京駅まで約20分、品川駅まで約30分でアクセスできます。また、埼玉高速鉄道（地下鉄南北線直通）も市内を通り、赤羽岩淵駅で東京メトロ南北線に接続し、永田町や六本木方面へのアクセスも便利です。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には川口駅、西川口駅、蕨駅、戸田公園駅など複数の駅があり、鳩ヶ谷駅や南鳩ヶ谷駅などの埼玉高速鉄道の駅も利用できます。道路網も充実しており、首都高速川口線、東京外環自動車道が通り、車での移動も便利です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">住宅環境と再開発</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川口駅周辺では大規模な再開発が進み、高層マンションが次々と建設されています。駅前には商業施設も充実し、ショッピングやグルメを楽しめる環境が整っています。一方で、駅から少し離れた住宅地には落ち着いた雰囲気の戸建て住宅やアパートも多く、様々なライフスタイルに対応できる住環境があります。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">子育て・教育</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には多数の保育園、幼稚園、小中学校があり、子育て世帯も安心して暮らせる環境です。川口市立高等学校、県立川口高校など公立高校も複数あります。市は子育て支援にも力を入れており、子育て世代包括支援センターなどの施設も整備されています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業施設</h3>
+        <p class="text-gray-700 leading-relaxed">
+          川口駅周辺にはアリオ川口、川口駅前キュポ・ラなどの大型商業施設があり、日常の買い物から休日のショッピングまで楽しめます。西川口駅周辺にも商店街や飲食店が集積し、活気ある商業エリアを形成しています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要施設・スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">SKIPシティ</h3>
+            <p class="text-gray-700 leading-relaxed">NHKアーカイブスや映像ミュージアム、科学館などが集まる複合施設。映像制作体験や科学の実験ショーなど、子どもから大人まで楽しめる施設です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川口市立アートギャラリー・アトリア</h3>
+            <p class="text-gray-700 leading-relaxed">現代美術を中心とした展示や、市民参加型のワークショップを開催する美術館。アートを身近に感じられる文化施設です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川口市立グリーンセンター</h3>
+            <p class="text-gray-700 leading-relaxed">約15ヘクタールの広大な植物園。大温室、バラ園、日本庭園、芝生広場などがあり、四季折々の自然を楽しめる憩いの場です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川口オートレース場</h3>
+            <p class="text-gray-700 leading-relaxed">1950年開設の歴史あるオートレース場。スピード感あふれるレースが楽しめるエンターテインメント施設です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">イイナパーク川口</h3>
+            <p class="text-gray-700 leading-relaxed">2021年にオープンした赤山歴史自然公園内の複合施設。カフェ、レストラン、ショップなどがあり、自然の中でゆったり過ごせます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="SKIPシティの外観。ガラス張りのモダンな建物が並び、広場には家族連れや観光客が行き交う様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">SKIPシティ - 映像・科学の複合施設</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・経済</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          川口市の産業は、伝統的な鋳物産業を基盤としながら、機械金属工業へと発展してきました。現在も市内には多数の製造業事業所があり、精密機械部品や金型製作などの高度な技術を持つ企業が集積しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          近年は住宅都市化が進み、商業・サービス業の比重が高まっています。川口駅周辺の再開発により、オフィスビルも増加し、多様な産業が共存する都市へと変化しています。また、東京に隣接する立地を活かし、物流拠点としての機能も担っています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          市は「ものづくり」の技術を次世代に継承するため、技術者育成や産学連携にも力を入れています。伝統と革新が融合した産業都市として、さらなる発展を目指しています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">たたら祭り（8月）</h3>
+            <p class="text-gray-700 leading-relaxed">川口市最大の夏祭り。鋳物産業を象徴する「たたら」の名を冠し、神輿や山車のパレード、阿波踊りなどで盛り上がります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川口市産品フェア（10月）</h3>
+            <p class="text-gray-700 leading-relaxed">市内の特産品や工業製品を紹介するイベント。鋳物製品や地元の食品などが販売され、川口の産業を身近に感じられます。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">川口マラソン大会（11月）</h3>
+            <p class="text-gray-700 leading-relaxed">市民参加型のマラソン大会。ハーフマラソンや10km、5kmなど様々な種目があり、多くのランナーが川口の街を駆け抜けます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約60万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">61.95平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">1933年4月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">中核市指定</th>
+              <td class="py-3 px-4 text-gray-700">2018年4月1日</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">川口駅、西川口駅、蕨駅、鳩ヶ谷駅、南鳩ヶ谷駅など</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">川口駅から東京駅まで約20分、品川駅まで約30分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花・鳥</th>
+              <td class="py-3 px-4 text-gray-700">木：サザンカ、花：テッポウユリ、鳥：カワセミ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/life/housing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              住まい・住環境
+            </a>
+          </li>
+          <li>
+            <a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              交通アクセス
+            </a>
+          </li>
+          <li>
+            <a href="/industry/manufacturing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              製造業
+            </a>
+          </li>
+          <li>
+            <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              埼玉の歴史
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。
+          </p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- モバイルメニュー制御スクリプト -->
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

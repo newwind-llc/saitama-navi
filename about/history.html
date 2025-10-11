@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>埼玉県の歴史 - さいたまなび</title>
+    <meta name="description" content="1871年の埼玉県成立から現在に至るまでの歴史を詳しくご紹介します。明治時代の県域形成、戦後の発展、さいたま市誕生までの経緯を解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/about/index.html" class="text-saitama-blue hover:underline">埼玉県について</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">歴史</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">埼玉県の歴史</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    1871年の埼玉県成立から現在に至るまでの発展の歴史をご紹介します。
+                </p>
+            </header>
+
+            <!-- Ancient to Edo Period -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">古代から江戸時代まで</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉の地は、古代から武蔵国の一部として発展してきました。「埼玉」という名称は、古代の埼玉郡に由来し、行田市の埼玉古墳群には5世紀から7世紀にかけて造られた大型古墳が集中しており、この地域が古代から重要な地域であったことを物語っています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        中世には鎌倉街道が整備され、武蔵武士団の活躍の舞台となりました。戦国時代には北条氏の支配下に入り、江戸時代には中山道や日光街道などの主要街道が整備され、宿場町として川越、岩槻、浦和などが発展しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        特に川越は江戸の北の守りとして重視され、江戸時代を通じて城下町として繁栄しました。「小江戸」と呼ばれ、商業・文化の中心地として栄えた歴史は、現在も蔵造りの町並みとして残されています。
+                    </p>
+
+                    <figure class="my-6">
+                        <img src="https://via.placeholder.com/800x500"
+                             alt="川越の蔵造りの町並み。江戸時代から残る黒漆喰の重厚な建物が立ち並ぶ歴史的な街道の様子"
+                             class="w-full h-auto rounded-lg shadow-md">
+                        <figcaption class="text-sm text-gray-600 mt-2 text-center">
+                            「小江戸」川越の蔵造りの町並み（イメージ）
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Meiji Era: Formation of Saitama Prefecture -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">埼玉県の成立（明治時代）</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        明治維新後の1871年（明治4年）11月14日、廃藩置県により忍県、岩槻県、浦和県の3県が合併し、埼玉県が誕生しました。県名は、当初県庁を埼玉郡岩槻町（現在のさいたま市岩槻区）に置く予定だったことから「埼玉県」と名付けられました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        しかし、岩槻には適当な建物がなかったため、実際には足立郡浦和宿（現在のさいたま市浦和区）にあった旧浦和県の庁舎を使用することになり、浦和が県庁所在地となりました。1876年（明治9年）には旧入間県の一部が編入され、ほぼ現在の県域が確定しました。
+                    </p>
+
+                    <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">埼玉県成立の経緯</h4>
+                        <dl class="space-y-3">
+                            <div>
+                                <dt class="font-semibold text-gray-800">1871年（明治4年）11月14日</dt>
+                                <dd class="text-gray-700 mt-1">忍県、岩槻県、浦和県が合併し埼玉県成立</dd>
+                            </div>
+                            <div>
+                                <dt class="font-semibold text-gray-800">県名の由来</dt>
+                                <dd class="text-gray-700 mt-1">当初予定された県庁所在地・岩槻町が埼玉郡に属していたため</dd>
+                            </div>
+                            <div>
+                                <dt class="font-semibold text-gray-800">実際の県庁所在地</dt>
+                                <dd class="text-gray-700 mt-1">適当な建物がなかったため浦和宿（現・さいたま市浦和区）に設置</dd>
+                            </div>
+                            <div>
+                                <dt class="font-semibold text-gray-800">1876年（明治9年）</dt>
+                                <dd class="text-gray-700 mt-1">旧入間県の一部を編入、ほぼ現在の県域が確定</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        明治時代には鉄道が整備され、1883年（明治16年）に上野～熊谷間が開通しました。これにより東京との交通が便利になり、県内各地の近代化が進みました。浦和は県庁所在地として、行政・教育・文化の中心地として発展していきました。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Taisho to Early Showa Period -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">大正・昭和初期の発展</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        大正時代から昭和初期にかけて、鉄道網のさらなる整備により、県内各地で市街地が形成されました。1922年（大正11年）には川口市が、1933年（昭和8年）には川越市が市制を施行しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        また、東京の人口増加に伴い、多くの人々が埼玉県に移り住むようになり、住宅地や工場が次々と建設されました。大宮は鉄道の要所として発展し、商業都市としての地位を確立していきました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        昭和初期には浦和が「文教都市」として、大宮が「商業都市」として、それぞれ独自の発展を遂げました。この時期に形成された都市の性格は、後のさいたま市誕生時にも大きな影響を与えることになります。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Post-War Development -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">戦後の急速な発展</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        第二次世界大戦後、埼玉県は高度経済成長期に東京のベッドタウンとして急速に発展しました。1960年代から1970年代にかけて、多くの団地や住宅地が開発され、人口が爆発的に増加しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        1964年の東京オリンピックや1985年の筑波万博などの大規模イベントに伴い、交通インフラが整備されました。東北新幹線、上越新幹線、関越自動車道、東北自動車道などが開通し、県内の交通の便が大幅に向上しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        また、製造業の発展により、川口、川越、熊谷などの都市では工業地帯が形成され、県の産業構造が農業中心から工業・商業へと大きく転換しました。
+                    </p>
+
+                    <div class="overflow-x-auto my-6">
+                        <table class="min-w-full bg-white border border-gray-300">
+                            <caption class="text-left font-bold text-gray-800 mb-2 px-2">埼玉県の人口推移（戦後～現代）</caption>
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">年代</th>
+                                    <th scope="col" class="px-4 py-3 text-right border-b border-gray-300 font-semibold">人口（万人）</th>
+                                    <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">主な出来事</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">1950年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約230万人</td>
+                                    <td class="px-4 py-3 text-gray-700">戦後復興期</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">1970年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約400万人</td>
+                                    <td class="px-4 py-3 text-gray-700">高度経済成長期、団地開発</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">1990年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約640万人</td>
+                                    <td class="px-4 py-3 text-gray-700">バブル経済期</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">2001年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約690万人</td>
+                                    <td class="px-4 py-3 text-gray-700">さいたま市誕生</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 font-semibold text-gray-800">2025年</th>
+                                    <td class="px-4 py-3 text-gray-700 text-right">約732万人</td>
+                                    <td class="px-4 py-3 text-gray-700">現在、全国5位の人口規模</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Saitama City Formation -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">さいたま市の誕生</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        2001年（平成13年）5月1日、浦和市、大宮市、与野市の3市が合併し、「さいたま市」が誕生しました。人口約105万人を擁する大都市として出発し、2003年（平成15年）には政令指定都市に移行しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        さいたま市は、内陸県で唯一の政令指定都市として、県の中心的な役割を担っています。浦和の文教都市、大宮の商業都市、与野の住宅都市という3つの性格を併せ持ち、バランスの取れた発展を続けています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        2005年（平成17年）には岩槻市を編入し、現在の10区体制となりました。さいたま新都心の開発により、業務・商業・文化の拠点が形成され、首都圏における重要な都市としての地位を確立しています。
+                    </p>
+
+                    <div class="bg-green-50 border-l-4 border-saitama-green p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">さいたま市誕生の経緯</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>2001年5月1日：</strong>浦和市、大宮市、与野市が合併、さいたま市誕生（人口約105万人）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>2003年4月1日：</strong>政令指定都市に移行（内陸県で唯一）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>2005年4月1日：</strong>岩槻市を編入、10区体制に</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-saitama-green mr-2 font-bold">●</span>
+                                <span><strong>現在：</strong>人口約135万人、県の政治・経済・文化の中心</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Developments -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">近年の発展</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        2000年代以降も、埼玉県は着実な発展を続けています。さいたま新都心の整備、圏央道の開通、各種商業施設の開発など、インフラと都市機能の充実が図られてきました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        また、歴史的な町並みを活かした観光振興にも力を入れており、川越の蔵造りの町並み、秩父の祭りなどが国内外から注目を集めています。2019年にはラグビーワールドカップの試合が熊谷で開催され、国際的な知名度も向上しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        現在、埼玉県は人口約732万人を擁する全国第5位の都道府県として、東京圏の重要な一翼を担っています。豊かな自然と都市機能が調和した、住みやすい地域づくりを目指し、さらなる発展を続けています。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Historical Landmarks -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県内の歴史的遺産</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県内には、長い歴史を物語る多くの文化財や史跡が残されています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">埼玉古墳群</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        行田市にある埼玉古墳群は、5世紀から7世紀にかけて築造された9基の大型古墳群で、2020年に「古代東国文化発祥の地」として、日本遺産に認定されました。特に稲荷山古墳から出土した鉄剣には、115文字の銘文が刻まれており、国宝に指定されています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">川越の蔵造りの町並み</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        川越市の一番街周辺には、江戸時代から明治時代にかけての蔵造りの商家が立ち並んでいます。重要伝統的建造物群保存地区に選定されており、「小江戸」と呼ばれる歴史的な景観が保たれています。
+                    </p>
+
+                    <h4 class="text-xl font-bold text-gray-800 mt-6 mb-3">秩父神社</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        秩父市にある秩父神社は、2000年以上の歴史を持つとされる古社で、毎年12月に行われる秩父夜祭は、京都の祇園祭、飛騨の高山祭とともに日本三大曳山祭の一つに数えられ、ユネスコ無形文化遺産に登録されています。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/about/geography.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の地理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/symbols.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            県のシンボル
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/kawagoe.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            川越の歴史的町並み
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cities/saitama-city.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            さいたま市の情報
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

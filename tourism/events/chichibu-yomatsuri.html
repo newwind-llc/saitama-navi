@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秩父夜祭 - さいたまなび</title>
+    <meta name="description" content="ユネスコ無形文化遺産に登録された秩父夜祭。毎年12月2日・3日に開催される日本三大曳山祭の一つで、豪華絢爛な屋台と笠鉾が街を彩ります。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">秩父夜祭</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">秩父夜祭</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    ユネスコ無形文化遺産に登録された、日本三大曳山祭の一つ。豪華絢爛な屋台と笠鉾が冬の夜空を彩る、300年以上の伝統を持つ壮大な祭りです。
+                </p>
+            </header>
+
+            <!-- Overview -->
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-purple-600 to-purple-900 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">秩父夜祭とは</h3>
+                    <p class="leading-relaxed mb-4">
+                        秩父夜祭は、秩父神社の例大祭として毎年12月2日・3日に開催される冬の祭りです。京都の祇園祭、飛騨の高山祭とともに「日本三大曳山祭」の一つに数えられ、2016年にはユネスコ無形文化遺産「山・鉾・屋台行事」の一つとして登録されました。
+                    </p>
+                    <p class="leading-relaxed">
+                        祭りの起源は江戸時代中期の寛文年間（1661～1673年）まで遡り、300年以上の歴史を持ちます。豪華絢爛な装飾を施した2基の笠鉾と4基の屋台が、秩父屋台囃子の音色とともに市街地を曳き回される様子は圧巻です。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Festival Highlights -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">祭りの見どころ</h3>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">豪華絢爛な屋台と笠鉾</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="秩父夜祭の屋台。金色の装飾と提灯で飾られた豪華な屋台が夜の街を進む様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    絢爛豪華な装飾の屋台（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                秩父夜祭の主役は、重量最大20トンにも及ぶ2基の笠鉾（かさぼこ）と4基の屋台です。これらは国の重要有形民俗文化財に指定されており、金箔や彫刻、刺繍などで装飾された豪華絢爛な姿が特徴です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                屋台の上では、秩父屋台囃子が演奏されます。笛、太鼓、鉦の音色が冬の夜空に響き渡り、祭りの雰囲気を一層盛り上げます。屋台囃子は国の重要無形民俗文化財に指定されています。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                各屋台・笠鉾は地区ごとに管理されており、それぞれに特徴的な装飾が施されています。提灯の明かりに照らされた姿は幻想的で、写真撮影スポットとしても人気です。
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">クライマックス「団子坂曳き上げ」</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                12月3日の夜、祭りは最大の見せ場を迎えます。重量20トンの屋台・笠鉾を、最大傾斜25度の急坂「団子坂」を人力で曳き上げる「団子坂曳き上げ」です。この勇壮な姿を一目見ようと、毎年20万人以上の観客が集まります。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                数百人の曳き手が「ホーリャイ、ホーリャイ」の掛け声とともに力を合わせて坂を登る様子は、まさに圧巻です。夜空に上がる冬花火とともに、祭りは最高潮に達します。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                団子坂の上には秩父神社の仮宮があり、そこで屋台・笠鉾が勢揃いします。提灯に照らされた6基の山車が並ぶ光景は、この祭りでしか見られない絶景です。
+                            </p>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="団子坂曳き上げ。急坂を数百人で屋台を曳き上げる勇壮な場面"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    祭りのクライマックス・団子坂曳き上げ（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">冬花火</h4>
+                    <div class="prose max-w-none">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            12月3日の夜、祭りを彩るもう一つの主役が花火です。冬の澄んだ夜空に打ち上げられる約7,000発の花火は、日本でも珍しい冬の花火大会として知られています。スターマインや尺玉など、様々な種類の花火が打ち上げられます。
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            花火は19時30分頃から約2時間半にわたって打ち上げられ、屋台・笠鉾の曳き回しと同時に楽しむことができます。冬の冷たく澄んだ空気の中で見る花火は格別で、夏の花火とは異なる美しさがあります。
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Event Schedule -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">開催日程・イベント情報</h3>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">開催日時</h4>
+                    <dl class="space-y-3">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-1">開催日：</dt>
+                            <dd class="text-gray-700 ml-4">毎年12月2日（宵宮）・3日（大祭）</dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-1">12月2日：</dt>
+                            <dd class="text-gray-700 ml-4">
+                                <p>• 午前：屋台・笠鉾の準備、飾り付け</p>
+                                <p>• 昼～夕方：市内曳き回し</p>
+                                <p>• 夕方～夜：提灯点灯、屋台囃子の競演</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-1">12月3日：</dt>
+                            <dd class="text-gray-700 ml-4">
+                                <p>• 昼：御神幸行列、市内曳き回し</p>
+                                <p>• 19時頃：団子坂への曳き込み開始</p>
+                                <p>• 19時30分～22時頃：冬花火打ち上げ、団子坂曳き上げ</p>
+                                <p>• 23時頃：祭り終了</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">観覧のポイント</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>団子坂周辺は大変混雑するため、早めの場所取りが必要です（有料観覧席もあり）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>12月初旬の夜は非常に寒いため、防寒対策をしっかりと行ってください</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>公共交通機関の利用を強く推奨します（臨時列車も運行）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <span>祭り期間中は約20万人が訪れるため、早めの行動を心がけてください</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- History -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">祭りの歴史と由来</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        秩父夜祭の起源は、寛文年間（1661～1673年）まで遡ります。秩父神社の祭神である女神・妙見菩薩と、武甲山の男神が年に一度会うという伝説が祭りの由来とされています。この伝説から、秩父夜祭は「冬の恋物語」とも呼ばれています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        江戸時代には、秩父地域の主要産業であった絹織物の市が開かれる時期と重なり、商人たちが豪華な屋台を作って競い合ったことから、現在のような絢爛豪華な祭りへと発展しました。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        明治時代以降も地域の人々に守り継がれ、1979年には国の重要無形民俗文化財に指定、2016年にはユネスコ無形文化遺産に登録されるなど、その文化的価値が国内外で認められています。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Access -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">アクセス情報</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">秩父神社・祭り会場へのアクセス</h4>
+                    <dl class="space-y-4">
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【電車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 池袋駅から西武鉄道特急レッドアロー号で約80分（西武秩父駅下車、徒歩15分）</p>
+                                <p>• 祭り当日は臨時列車も運行されます</p>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-gray-800 mb-2">【車】</dt>
+                            <dd class="text-gray-700 ml-4 space-y-1">
+                                <p>• 関越自動車道花園ICから国道140号経由で約50分</p>
+                                <p class="text-sm text-red-600 font-semibold">※祭り当日は交通規制があり、駐車場も満車になるため、公共交通機関の利用を強く推奨します</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/tourism/spots/chichibu.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            秩父エリアの観光
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/events/kawagoe-matsuri.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            川越まつり
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/food/local-cuisine.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の郷土料理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            観光・レジャートップ
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

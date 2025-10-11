@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>県のシンボル - さいたまなび</title>
+    <meta name="description" content="埼玉県のシンボルである県章、県木（ケヤキ）、県花（サクラソウ）、県鳥（シラコバト）、県の蝶（ミドリシジミ）、県の魚（ムサシトミヨ）について詳しくご紹介します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/about/index.html" class="text-saitama-blue hover:underline">埼玉県について</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">県のシンボル</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">県のシンボル</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    埼玉県を象徴する県章、県木、県花、県鳥、県の蝶、県の魚をご紹介します。
+                </p>
+            </header>
+
+            <!-- Overview -->
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-saitama-blue to-saitama-green text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">埼玉県のシンボル一覧</h3>
+                    <p class="leading-relaxed mb-4">
+                        埼玉県には、県を象徴する6つのシンボルがあります。県章は1964年に制定され、その後1960年代から1990年代にかけて、県木、県花、県鳥、県の蝶、県の魚が順次指定されました。これらのシンボルは、埼玉県の自然、歴史、文化を表現しています。
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-white bg-opacity-20 rounded-md p-4">
+                            <p class="font-bold mb-1">県章</p>
+                            <p class="text-sm">1964年制定</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-md p-4">
+                            <p class="font-bold mb-1">県木・県花・県鳥</p>
+                            <p class="text-sm">1965～1971年指定</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-md p-4">
+                            <p class="font-bold mb-1">県の蝶・県の魚</p>
+                            <p class="text-sm">1991年指定</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prefectural Emblem -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県章（けんしょう）</h3>
+                <div class="prose max-w-none">
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <figure class="bg-white border border-gray-300 rounded-lg p-8 flex items-center justify-center h-64">
+                                <img src="https://via.placeholder.com/300x300"
+                                     alt="埼玉県章。16個の勾玉を円形に配置したデザイン"
+                                     class="max-h-full w-auto">
+                            </figure>
+                            <figcaption class="text-sm text-gray-600 mt-2 text-center">
+                                埼玉県章（イメージ）
+                            </figcaption>
+                        </div>
+                        <div>
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">制定日</dt>
+                                    <dd class="text-gray-700">1964年（昭和39年）9月1日</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">デザイン</dt>
+                                    <dd class="text-gray-700">16個の勾玉（まがたま）を円形に並べたもの</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">意味</dt>
+                                    <dd class="text-gray-700">勾玉は古代から日本で装飾品や儀式に使われてきた神聖な形です。16個の勾玉を円形に配置することで、県民の団結と調和、そして未来への発展を象徴しています。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">由来</dt>
+                                    <dd class="text-gray-700">埼玉県は古墳が多く、特に行田市の埼玉古墳群では多数の勾玉が出土しています。この歴史的背景から、勾玉が県章のモチーフとして採用されました。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prefectural Tree -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県の木：ケヤキ</h3>
+                <div class="prose max-w-none">
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="ケヤキの大木。広く張り出した枝に緑の葉が茂り、美しい樹形を形成している様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    ケヤキの大木（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">指定日</dt>
+                                    <dd class="text-gray-700">1966年（昭和41年）9月5日</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">学名</dt>
+                                    <dd class="text-gray-700">Zelkova serrata（ニレ科の落葉高木）</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">特徴</dt>
+                                    <dd class="text-gray-700">春に淡い緑色の小さな花を咲かせる落葉樹で、美しい樹形と強靭な材質を持ちます。秋には黄色から赤褐色に紅葉します。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">県内での分布</dt>
+                                    <dd class="text-gray-700">県内各地の公園、街路樹、神社仏閣などで見ることができます。特に埼玉大学通りのケヤキ並木や各地の巨木が天然記念物に指定されています。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">利用</dt>
+                                    <dd class="text-gray-700">材木としても優れており、建築材、家具材として古くから使われてきました。力強く美しい姿は、県民の力強い発展を象徴しています。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prefectural Flower -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県の花：サクラソウ</h3>
+                <div class="prose max-w-none">
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="サクラソウの花。ハート型の淡いピンク色の花びらが5枚、茎の先に複数咲いている様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    サクラソウの花（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">指定日</dt>
+                                    <dd class="text-gray-700">1971年（昭和46年）11月5日</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">学名</dt>
+                                    <dd class="text-gray-700">Primula sieboldii（サクラソウ科の多年草）</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">特徴</dt>
+                                    <dd class="text-gray-700">春（4月～5月）に、ハート型の淡いピンク色の花を咲かせます。花びらは5枚で、桜に似ていることから「サクラソウ」と名付けられました。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">自生地</dt>
+                                    <dd class="text-gray-700">さいたま市桜区の荒川河川敷にある田島ヶ原は、サクラソウの自生地として国の特別天然記念物に指定されています。約100万株のサクラソウが自生し、日本最大級の規模を誇ります。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">生育環境</dt>
+                                    <dd class="text-gray-700">河川敷や湿った草地に生育します。江戸時代から観賞用として栽培され、多くの園芸品種が作られてきました。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-saitama-green p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">田島ヶ原のサクラソウ</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            さいたま市桜区の田島ヶ原サクラソウ自生地は、1920年（大正9年）に国の天然記念物に、1952年（昭和27年）には国の特別天然記念物に指定されました。約4.1ヘクタールの自生地に約100万株のサクラソウが自生し、毎年4月には「さくらそう祭り」が開催されます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prefectural Bird -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県民の鳥：シラコバト</h3>
+                <div class="prose max-w-none">
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="シラコバト。淡い褐色の羽毛を持ち、首に黒い横線が入った小型のハトが枝に止まっている様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    シラコバト（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">指定日</dt>
+                                    <dd class="text-gray-700">1965年（昭和40年）11月3日</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">学名</dt>
+                                    <dd class="text-gray-700">Streptopelia decaocto（ハト科）</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">特徴</dt>
+                                    <dd class="text-gray-700">体長約30cm程度の小型のハトで、淡い褐色の羽毛を持ち、首に黒い横線（襟状の模様）があるのが特徴です。「ホッホー、ホッホー」と低い声で鳴きます。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">保護の状況</dt>
+                                    <dd class="text-gray-700">シラコバトは国の天然記念物に指定されており、主に県東部地域に生息しています。かつては全国的に分布していましたが、現在は埼玉県が主要な生息地となっています。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">生態</dt>
+                                    <dd class="text-gray-700">農耕地や住宅地周辺の樹林地に生息し、種子や穀物を餌とします。越谷市など県東部の市では、シラコバトの保護活動が行われています。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prefectural Butterfly -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県の蝶：ミドリシジミ</h3>
+                <div class="prose max-w-none">
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="ミドリシジミ。羽を広げると金属光沢のある緑色に輝く、小型のシジミチョウ"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    ミドリシジミ（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">指定日</dt>
+                                    <dd class="text-gray-700">1991年（平成3年）11月14日</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">学名</dt>
+                                    <dd class="text-gray-700">Neozephyrus japonicus（シジミチョウ科）</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">特徴</dt>
+                                    <dd class="text-gray-700">翅を開いた長さは約4cm程度の小型のチョウです。雄の翅の表面は金属光沢のある美しい緑色に輝き、夏の夕暮れ時に特に鮮やかに見えます。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">生態</dt>
+                                    <dd class="text-gray-700">幼虫はハンノキの葉を食べて成長します。成虫は6月から7月にかけて出現し、樹上で生活します。湿地や河川敷のハンノキ林に生息しています。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">県内での分布</dt>
+                                    <dd class="text-gray-700">県内各地のハンノキが生育する湿地や河川敷で見られますが、近年は生息環境の減少により個体数が減っています。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prefectural Fish -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">県の魚：ムサシトミヨ</h3>
+                <div class="prose max-w-none">
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="ムサシトミヨ。体長4～6cmの小型の淡水魚で、背中に棘がある細長い魚"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    ムサシトミヨ（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">指定日</dt>
+                                    <dd class="text-gray-700">1991年（平成3年）11月14日</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">学名</dt>
+                                    <dd class="text-gray-700">Pungitius sp.（トゲウオ科）</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">特徴</dt>
+                                    <dd class="text-gray-700">体長4～6cm程度の小型の淡水魚で、背中に複数の棘（とげ）があります。きれいな湧水にしか生息できない、環境の変化に敏感な魚です。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">生態</dt>
+                                    <dd class="text-gray-700">雄が水草などで巣を作り、卵を守り育てるという興味深い習性を持っています。きれいな湧水のある水路や小川に生息します。</dd>
+                                </div>
+                                <div>
+                                    <dt class="font-bold text-gray-800 mb-1">現在の生息状況</dt>
+                                    <dd class="text-gray-700">かつては県内各地の湧水に生息していましたが、現在は熊谷市の元荒川上流域のみに生息しています。国の天然記念物および絶滅危惧種に指定されており、地域をあげて保護活動が行われています。</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-6">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">ムサシトミヨの保護活動</h4>
+                        <p class="text-gray-700 leading-relaxed mb-3">
+                            ムサシトミヨは県内では熊谷市の元荒川上流域のみに生息する貴重な魚です。1974年に国の天然記念物に指定され、現在は熊谷市立荒川中学校内の「ムサシトミヨ保護センター」を中心に、保護と繁殖活動が行われています。
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            生息環境を守るため、湧水の保全や水質管理が行われており、地域住民、学校、行政が一体となって保護に取り組んでいます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Summary Table -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-saitama-green">シンボル一覧</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-300">
+                        <caption class="text-left font-bold text-gray-800 mb-2 px-2 sr-only">埼玉県のシンボル一覧表</caption>
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">シンボル</th>
+                                <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">名称</th>
+                                <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">制定・指定日</th>
+                                <th scope="col" class="px-4 py-3 text-left border-b border-gray-300 font-semibold">主な特徴</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <th scope="row" class="px-4 py-3 font-semibold text-gray-800">県章</th>
+                                <td class="px-4 py-3 text-gray-700">まが玉16個の円形デザイン</td>
+                                <td class="px-4 py-3 text-gray-700">1964年9月1日</td>
+                                <td class="px-4 py-3 text-gray-700">県民の団結と調和を象徴</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="px-4 py-3 font-semibold text-gray-800">県の木</th>
+                                <td class="px-4 py-3 text-gray-700">ケヤキ</td>
+                                <td class="px-4 py-3 text-gray-700">1966年9月5日</td>
+                                <td class="px-4 py-3 text-gray-700">美しい樹形、強靭な材質</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="px-4 py-3 font-semibold text-gray-800">県の花</th>
+                                <td class="px-4 py-3 text-gray-700">サクラソウ</td>
+                                <td class="px-4 py-3 text-gray-700">1971年11月5日</td>
+                                <td class="px-4 py-3 text-gray-700">田島ヶ原が国の特別天然記念物</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="px-4 py-3 font-semibold text-gray-800">県民の鳥</th>
+                                <td class="px-4 py-3 text-gray-700">シラコバト</td>
+                                <td class="px-4 py-3 text-gray-700">1965年11月3日</td>
+                                <td class="px-4 py-3 text-gray-700">国の天然記念物、県東部に生息</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="px-4 py-3 font-semibold text-gray-800">県の蝶</th>
+                                <td class="px-4 py-3 text-gray-700">ミドリシジミ</td>
+                                <td class="px-4 py-3 text-gray-700">1991年11月14日</td>
+                                <td class="px-4 py-3 text-gray-700">金属光沢の緑色、夏の夕暮れに輝く</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="px-4 py-3 font-semibold text-gray-800">県の魚</th>
+                                <td class="px-4 py-3 text-gray-700">ムサシトミヨ</td>
+                                <td class="px-4 py-3 text-gray-700">1991年11月14日</td>
+                                <td class="px-4 py-3 text-gray-700">国の天然記念物、熊谷市に生息</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Related Pages -->
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の歴史
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/geography.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県の地理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            観光・レジャー
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            埼玉県について（トップ）
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/geography.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">地理</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                        <li><a href="/about/symbols.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県のシンボル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/events.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">イベント・祭り</a></li>
+                        <li><a href="/tourism/food.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

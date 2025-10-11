@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: saitama-website
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      # リアルタイム更新：ローカルファイルをコンテナにマウント
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./about:/usr/share/nginx/html/about:ro
+      - ./tourism:/usr/share/nginx/html/tourism:ro
+      - ./life:/usr/share/nginx/html/life:ro
+      - ./industry:/usr/share/nginx/html/industry:ro
+      - ./cities:/usr/share/nginx/html/cities:ro
+      - ./site-info:/usr/share/nginx/html/site-info:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro

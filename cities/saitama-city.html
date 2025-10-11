@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>さいたま市 - さいたまなび</title>
+  <meta name="description" content="さいたま市は埼玉県の県庁所在地であり、人口約135万人を擁する政令指定都市です。埼玉新都心、大宮、浦和など多彩な顔を持つ、首都圏北部の中核都市です。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'saitama-green': '#00A040',
+            'saitama-blue': '#0068B7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- スキップリンク -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">
+    メインコンテンツへスキップ
+  </a>
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green">
+          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+            さいたまなび
+          </a>
+        </div>
+
+        <!-- デスクトップナビゲーション -->
+        <nav class="hidden md:block" aria-label="メインナビゲーション">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="sr-only">メニューを開く</span>
+        </button>
+      </div>
+
+      <!-- モバイルナビゲーション -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/cities/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-gray-700">さいたま市</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">さいたま市</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">概要</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          さいたま市は、埼玉県の南東部に位置する県庁所在地であり、人口約135万人（2024年）を擁する政令指定都市です。2001年に浦和市、大宮市、与野市の3市が合併して誕生し、2003年には政令指定都市に移行しました。関東内陸部唯一の政令指定都市として、埼玉県の政治・経済・文化の中心を担っています。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市域は217.43平方キロメートルで、西区、北区、大宮区、見沼区、中央区、桜区、浦和区、南区、緑区、岩槻区の10区で構成されています。東京都心から20～30キロメートル圏内に位置し、JR各線や私鉄、地下鉄が市内を縦横に走る交通の要衝です。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          埼玉新都心を中心とする業務地区、大宮の商業地区、浦和の文化・教育地区など、地域ごとに異なる特色を持ち、それぞれが調和しながら発展を遂げています。スポーツも盛んで、サッカーJ1の浦和レッズ、大宮アルディージャの本拠地としても知られています。
+        </p>
+      </div>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="さいたま新都心の高層ビル群と広場の風景。複数の超高層オフィスビルが立ち並び、中央には広々とした公共空間が広がっている様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">さいたま新都心 - 埼玉県の新たな都市拠点</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">市の特徴と主要エリア</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">埼玉新都心エリア</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          埼玉新都心は、1995年に旧大宮操車場跡地に開発された新しい都市拠点です。埼玉スーパーアリーナをはじめ、国の合同庁舎、さいたま市役所、民間企業のオフィスビルが集積し、業務・コンベンション機能を担っています。けやきひろばには商業施設も充実し、都市的な賑わいを創出しています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">大宮エリア</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          大宮駅周辺は県内最大級の商業地区です。複数の百貨店や大型商業施設が立ち並び、年間を通じて多くの買い物客で賑わいます。また、鉄道博物館があり、鉄道ファンにとっての聖地としても知られています。氷川神社は2000年以上の歴史を持つ武蔵一宮で、初詣には多くの参拝者が訪れます。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">浦和エリア</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          浦和エリアは「文教都市」として発展してきた歴史があり、県庁や多くの公共施設が集積しています。埼玉県立近代美術館、埼玉会館などの文化施設も充実し、落ち着いた住宅地としても人気が高い地域です。浦和駅周辺には商業施設も整備されており、利便性の高い生活環境が整っています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">岩槻エリア</h3>
+        <p class="text-gray-700 leading-relaxed">
+          2005年に合併した岩槻区は、城下町としての歴史を持ち、人形の町として全国的に知られています。毎年開催される「人形のまち岩槻まつり」には多くの観光客が訪れます。市内の中でも歴史的な雰囲気を残すエリアとして、独自の魅力を発信しています。
+        </p>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="大宮氷川神社の参道。朱色の鳥居をくぐり、両側に樹齢数百年の巨木が立ち並ぶ長い参道が続く様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">武蔵一宮 氷川神社 - 2000年以上の歴史を持つ古社</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">生活環境</h2>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">交通アクセス</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          さいたま市は首都圏屈指の交通結節点です。JR東北本線、高崎線、埼京線、京浜東北線、武蔵野線、川越線、東北・上越新幹線が市内を通り、東武野田線、埼玉高速鉄道も利用できます。大宮駅は北関東・東北方面への玄関口として、1日の乗降客数は埼玉県内最多です。東京駅まで約30分、新宿駅まで約25分とアクセスが良好で、通勤・通学に便利です。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">教育環境</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には埼玉大学をはじめとする高等教育機関があり、県立浦和高校、市立浦和高校など進学実績の高い高校も多数あります。小中学校も充実しており、子育て世帯にとって魅力的な教育環境が整っています。また、図書館や公民館などの生涯学習施設も各区に配置されています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">医療・福祉</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          市内には埼玉県立小児医療センター、さいたま赤十字病院など高度医療を提供する病院があります。各区には地域医療を支えるクリニックや診療所も多く、安心して暮らせる医療体制が整っています。高齢者福祉施設や子育て支援施設も充実しています。
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">商業・買い物</h3>
+        <p class="text-gray-700 leading-relaxed">
+          大宮駅周辺には大型百貨店や専門店が集積し、県内最大級のショッピングエリアを形成しています。浦和駅周辺、さいたま新都心駅周辺にも商業施設があり、日常の買い物には各地域のスーパーマーケットや商店街が利用できます。あらゆる買い物ニーズに対応できる商業環境が整っています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">主要施設・観光スポット</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">埼玉スーパーアリーナ</h3>
+            <p class="text-gray-700 leading-relaxed">最大収容人数37,000人を誇る多目的アリーナ。コンサート、スポーツイベント、展示会など年間を通じて多彩なイベントが開催されています。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">鉄道博物館</h3>
+            <p class="text-gray-700 leading-relaxed">JR東日本が運営する鉄道の総合博物館。実物車両の展示やシミュレーター体験など、子どもから大人まで楽しめる施設です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">武蔵一宮 氷川神社</h3>
+            <p class="text-gray-700 leading-relaxed">約2,400年の歴史を持つとされる古社。2キロメートルにも及ぶ参道は、緑豊かで散策にも最適です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">大宮公園</h3>
+            <p class="text-gray-700 leading-relaxed">67ヘクタールの広大な都市公園。桜の名所として知られ、春には多くの花見客で賑わいます。小動物園や博物館も併設されています。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">埼玉県立近代美術館</h3>
+            <p class="text-gray-700 leading-relaxed">モネ、シャガール、ピカソなど海外の巨匠から日本の現代美術まで、幅広いコレクションを収蔵する美術館です。</p>
+          </li>
+          <li class="border-l-4 border-saitama-green pl-4">
+            <h3 class="font-bold text-lg text-gray-900">浦和レッズ・大宮アルディージャ</h3>
+            <p class="text-gray-700 leading-relaxed">J1リーグに所属する2つのプロサッカーチームの本拠地。埼玉スタジアム2002やNACK5スタジアム大宮で熱戦が繰り広げられます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/1200x600" alt="鉄道博物館の展示ホール。歴代の蒸気機関車や新幹線など、実物の鉄道車両が多数展示されている広大な空間" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">鉄道博物館 - 日本の鉄道の歴史を体感</figcaption>
+      </figure>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">産業・経済</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          さいたま市は、埼玉県の経済の中心として多様な産業が集積しています。埼玉新都心には国の機関や大企業のオフィスが集まり、業務機能の拠点となっています。大宮駅周辺は商業の中心地として、小売業やサービス業が盛んです。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          製造業では、精密機械、電気機械などの先端技術産業が立地しており、研究開発型企業も多く進出しています。また、東京に近接する立地を活かし、物流業も発展しています。
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          市は「スマートシティさいたまモデル」の構築を進めており、IoTやAIを活用した都市づくりを推進しています。起業支援や企業誘致にも積極的で、新たなビジネスの創出を後押ししています。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">イベント・祭り</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">大宮夏まつり（7月）</h3>
+            <p class="text-gray-700 leading-relaxed">中山道まつりとスパークカーニバルが同時開催される夏の一大イベント。神輿や山車のパレード、東京ディズニーリゾートのパレードも登場します。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">浦和よさこい（5月）</h3>
+            <p class="text-gray-700 leading-relaxed">浦和駅周辺で開催されるよさこい祭り。全国から多数のチームが参加し、華やかな演舞を披露します。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">さいたま市花火大会（8月）</h3>
+            <p class="text-gray-700 leading-relaxed">岩槻文化公園で開催される花火大会。約5,000発の花火が夏の夜空を彩ります。</p>
+          </li>
+          <li class="border-l-4 border-saitama-blue pl-4">
+            <h3 class="font-bold text-lg text-gray-900">十日市（12月）</h3>
+            <p class="text-gray-700 leading-relaxed">大宮の氷川神社周辺で開催される伝統的な年末の市。熊手や正月飾りを求める人々で賑わいます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">基本情報</h2>
+        <table class="w-full border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">人口</th>
+              <td class="py-3 px-4 text-gray-700">約135万人（2024年）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">面積</th>
+              <td class="py-3 px-4 text-gray-700">217.43平方キロメートル</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市制施行</th>
+              <td class="py-3 px-4 text-gray-700">2001年5月1日（合併）、2003年4月1日（政令指定都市移行）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">行政区</th>
+              <td class="py-3 px-4 text-gray-700">10区（西区、北区、大宮区、見沼区、中央区、桜区、浦和区、南区、緑区、岩槻区）</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">主要駅</th>
+              <td class="py-3 px-4 text-gray-700">大宮駅、浦和駅、さいたま新都心駅、武蔵浦和駅、南浦和駅など</td>
+            </tr>
+            <tr class="border-b">
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">東京都心へのアクセス</th>
+              <td class="py-3 px-4 text-gray-700">大宮駅から東京駅まで約30分、新宿駅まで約25分</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-3 px-4 bg-gray-50 font-bold text-gray-900">市の木・花・鳥</th>
+              <td class="py-3 px-4 text-gray-700">木：ケヤキ、花：サクラソウ、鳥：シラコバト</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/about/overview.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              埼玉県の概要
+            </a>
+          </li>
+          <li>
+            <a href="/life/housing.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              住まい・住環境
+            </a>
+          </li>
+          <li>
+            <a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              交通アクセス
+            </a>
+          </li>
+          <li>
+            <a href="/tourism/sports.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              スポーツ・アウトドア
+            </a>
+          </li>
+          <li>
+            <a href="/industry/overview.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+              産業の概要
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。
+          </p>
+        </div>
+        <nav aria-label="フッターナビゲーション">
+          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
+            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
+            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
+            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
+            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
+        <p>&copy; 2024 さいたまなび All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- モバイルメニュー制御スクリプト -->
+  <script>
+    (function() {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="埼玉県の観光スポット、イベント・祭り、グルメ・特産品の情報を網羅。川越、秩父、長瀞など魅力的な観光地を紹介します。">
+    <title>観光・レジャー - さいたまなび</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- スキップリンク -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <!-- ヘッダー -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <nav class="py-4" role="navigation" aria-label="メインナビゲーション">
+                <!-- ロゴ -->
+                <div class="flex items-center justify-between mb-4">
+                    <a href="/index.html" class="text-2xl font-bold text-gray-800 hover:text-saitama-blue transition-colors">
+                        さいたまなび
+                    </a>
+                    <!-- モバイルメニューボタン -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">メニューを開く</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- ナビゲーションメニュー -->
+                <ul id="mobile-menu" class="hidden md:flex md:space-x-6 md:justify-center">
+                    <li><a href="/about/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の概要</a></li>
+                    <li><a href="/tourism/index.html" class="block py-2 px-3 rounded-md bg-saitama-blue text-white font-semibold" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活・暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+                </ul>
+            </nav>
+
+            <!-- パンくずリスト -->
+            <nav aria-label="パンくずリスト" class="py-2 text-sm">
+                <ol class="flex flex-wrap space-x-2">
+                    <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+                    <li><span class="mx-2" aria-hidden="true">/</span></li>
+                    <li><span aria-current="page" class="text-gray-600">観光・レジャー</span></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <!-- ページタイトル -->
+            <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">観光・レジャー</h1>
+
+            <!-- カテゴリ説明 -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    埼玉県は、東京都心から90分でアクセスできる自然豊かな観光地として人気を集めています。江戸の面影を残す川越の蔵造りの街並み、標高1,100mに位置する秩父の三峯神社、国の天然記念物に指定された長瀞の岩畳など、多彩な観光スポットが点在しています。
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    ユネスコ無形文化遺産に登録された秩父夜祭、川越まつりなどの伝統行事、地域の特産品を活かしたグルメも魅力です。このカテゴリでは、埼玉県の観光スポット、イベント、グルメ情報を詳しくご紹介します。
+                </p>
+            </div>
+
+            <!-- 埼玉県観光の特徴 -->
+            <section class="bg-gradient-to-r from-saitama-blue to-saitama-green text-white rounded-lg p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-6">埼玉県観光の魅力</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            都心から好アクセス
+                        </h3>
+                        <p class="leading-relaxed">
+                            秩父・長瀞エリアへも池袋から特急で約80分。日帰りで四季折々の自然を満喫できます。
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            歴史と文化
+                        </h3>
+                        <p class="leading-relaxed">
+                            川越「小江戸」の街並み、秩父神社、さきたま古墳群など、歴史遺産が豊富に残ります。
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            多彩な体験
+                        </h3>
+                        <p class="leading-relaxed">
+                            ラフティング、いちご狩り、酒蔵見学など、アクティビティが充実。家族連れにも人気です。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- サブカテゴリ一覧 -->
+            <section class="mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">カテゴリ内のページ</h2>
+
+                <!-- 観光スポット -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-saitama-blue border-l-4 border-saitama-blue pl-3">観光スポット</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- 秩父エリア -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=秩父エリア"
+                                     alt="秩父エリアのイメージ。標高1100mの三峯神社と豊かな山々の自然風景"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/spots/chichibu.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        秩父エリア
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                                    三峯神社、秩父神社などのパワースポット、長瀞ライン下り、羊山公園の芝桜など、自然と歴史が融合した観光地。
+                                </p>
+                                <a href="/tourism/spots/chichibu.html" class="text-saitama-blue font-semibold hover:underline text-sm focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                    詳しく見る →
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- 川越エリア -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=川越エリア"
+                                     alt="川越エリアのイメージ。蔵造りの街並みと時の鐘が立ち並ぶ小江戸の風景"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/spots/kawagoe.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        川越エリア
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                                    江戸の面影を残す蔵造りの街並み、時の鐘、菓子屋横丁など、情緒あふれる「小江戸」として人気の観光地。
+                                </p>
+                                <a href="/tourism/spots/kawagoe.html" class="text-saitama-blue font-semibold hover:underline text-sm focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                    詳しく見る →
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- 大宮エリア -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=大宮エリア"
+                                     alt="大宮エリアのイメージ。鉄道博物館の展示車両と大宮盆栽村の風景"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/spots/omiya.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        大宮エリア
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                                    鉄道博物館、大宮盆栽村、氷川神社など、鉄道文化と伝統文化が共存する交通の要衝。
+                                </p>
+                                <a href="/tourism/spots/omiya.html" class="text-saitama-blue font-semibold hover:underline text-sm focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                    詳しく見る →
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- 長瀞エリア -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=長瀞エリア"
+                                     alt="長瀞エリアのイメージ。荒川の清流と国の天然記念物の岩畳"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/spots/nagatoro.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        長瀞エリア
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                                    国の天然記念物「岩畳」、ライン下り、宝登山神社など、自然美とアクティビティが楽しめる渓谷の町。
+                                </p>
+                                <a href="/tourism/spots/nagatoro.html" class="text-saitama-blue font-semibold hover:underline text-sm focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                    詳しく見る →
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- 所沢エリア -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=所沢エリア"
+                                     alt="所沢エリアのイメージ。所沢航空記念公園と航空発祥記念館"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/spots/tokorozawa.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        所沢エリア
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                                    日本の航空発祥の地。所沢航空記念公園、メットライフドーム、角川武蔵野ミュージアムなど現代的な魅力も。
+                                </p>
+                                <a href="/tourism/spots/tokorozawa.html" class="text-saitama-blue font-semibold hover:underline text-sm focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                    詳しく見る →
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- イベント・祭り -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-saitama-blue border-l-4 border-saitama-blue pl-3">イベント・祭り</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- 秩父夜祭 -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=秩父夜祭"
+                                     alt="秩父夜祭のイメージ。豪華絢爛な笠鉾と屋台が夜空に映える冬の祭典"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        秩父夜祭
+                                    </a>
+                                </h4>
+                                <p class="text-sm text-gray-500 mb-2">12月2日・3日</p>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    ユネスコ無形文化遺産。日本三大曳山祭の一つで、豪華絢爛な笠鉾・屋台が秩父の街を巡行します。
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- 川越まつり -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=川越まつり"
+                                     alt="川越まつりのイメージ。江戸の風情ある山車が蔵造りの街並みを練り歩く"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/events/kawagoe-matsuri.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        川越まつり
+                                    </a>
+                                </h4>
+                                <p class="text-sm text-gray-500 mb-2">10月第3土曜・日曜</p>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    370年の歴史を持つ伝統行事。精巧な人形を乗せた山車が小江戸川越を彩ります。
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- 花火大会 -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=花火大会"
+                                     alt="埼玉県の花火大会のイメージ。夜空を彩る大輪の花火"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/events/hanabi.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        花火大会
+                                    </a>
+                                </h4>
+                                <p class="text-sm text-gray-500 mb-2">夏季（7月～8月）</p>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    熊谷花火大会、鴻巣花火大会など、県内各地で開催される夏の風物詩をご紹介します。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- グルメ・特産品 -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-saitama-blue border-l-4 border-saitama-blue pl-3">グルメ・特産品</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- 郷土料理 -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=郷土料理"
+                                     alt="埼玉県の郷土料理のイメージ。冷や汁うどんや煮ぼうとうなどの伝統料理"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        郷土料理
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    武蔵野うどん、秩父そば、川越いも料理、煮ぼうとうなど、地域の食文化を受け継ぐ郷土料理をご紹介。
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- 特産品 -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=特産品"
+                                     alt="埼玉県の特産品のイメージ。深谷ねぎ、狭山茶、加須うどんなどの名産品"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/food/specialties.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        特産品
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    深谷ねぎ、狭山茶、秩父の酒、川越いもなど、埼玉県が誇る農産物や加工品を詳しくご紹介します。
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- 銘菓・スイーツ -->
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=銘菓・スイーツ"
+                                     alt="埼玉県の銘菓・スイーツのイメージ。川越の芋菓子や草加せんべいなど"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/tourism/food/sweets.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        銘菓・スイーツ
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    草加せんべい、川越の芋菓子、十万石まんじゅうなど、お土産に人気の埼玉県の銘菓をご紹介。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 関連情報 -->
+            <aside class="bg-blue-50 p-6 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4 text-gray-800">関連カテゴリ</h2>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/cities/kawagoe-city.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            川越市 - 小江戸の詳細情報
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cities/chichibu-city.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            秩父市 - 秩父夜祭の街
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/life/transport/access.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            都心アクセス - 交通情報
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/history.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            歴史・文化 - 埼玉県の歴史
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- カテゴリリンク -->
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">カテゴリ</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">埼玉県の概要</a></li>
+                        <li><a href="/tourism/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">生活・暮らし</a></li>
+                        <li><a href="/industry/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">市町村情報</a></li>
+                    </ul>
+                </div>
+
+                <!-- 観光スポット -->
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">主要観光スポット</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/spots/kawagoe.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越エリア</a></li>
+                        <li><a href="/tourism/spots/chichibu.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">秩父エリア</a></li>
+                        <li><a href="/tourism/spots/nagatoro.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">長瀞エリア</a></li>
+                        <li><a href="/tourism/spots/omiya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">大宮エリア</a></li>
+                        <li><a href="/tourism/spots/tokorozawa.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢エリア</a></li>
+                    </ul>
+                </div>
+
+                <!-- 市町村 -->
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">主要都市</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/cities/saitama-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">さいたま市</a></li>
+                        <li><a href="/cities/kawaguchi.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川口市</a></li>
+                        <li><a href="/cities/kawagoe-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越市</a></li>
+                        <li><a href="/cities/tokorozawa-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢市</a></li>
+                        <li><a href="/cities/koshigaya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">越谷市</a></li>
+                    </ul>
+                </div>
+
+                <!-- サイト情報 -->
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/sitemap.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">サイトマップ</a></li>
+                        <li><a href="/site-info/accessibility.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+                <p>&copy; 2025 さいたまなび. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">
+                    このサイトはJIS X 8341-3:2016レベルAAに準拠しています。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // モバイルメニュー開閉
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+
+                    // アイコン変更
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

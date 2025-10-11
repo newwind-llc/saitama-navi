@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="埼玉県の産業構造、主要企業、就労支援の情報を網羅。製造業、農業、商業など多様な産業が発展する埼玉県の経済を紹介します。">
+    <title>産業・経済 - さいたまなび</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <nav class="py-4" role="navigation" aria-label="メインナビゲーション">
+                <div class="flex items-center justify-between mb-4">
+                    <a href="/index.html" class="text-2xl font-bold text-gray-800 hover:text-saitama-blue transition-colors">
+                        さいたまなび
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">メニューを開く</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul id="mobile-menu" class="hidden md:flex md:space-x-6 md:justify-center">
+                    <li><a href="/about/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の概要</a></li>
+                    <li><a href="/tourism/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活・暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block py-2 px-3 rounded-md bg-saitama-blue text-white font-semibold" aria-current="page">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="パンくずリスト" class="py-2 text-sm">
+                <ol class="flex flex-wrap space-x-2">
+                    <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
+                    <li><span class="mx-2" aria-hidden="true">/</span></li>
+                    <li><span aria-current="page" class="text-gray-600">産業・経済</span></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">産業・経済</h1>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    埼玉県は、製造業を中心に多様な産業が発展する経済圏です。輸送機器、化学工業、食料品製造などの製造業に加え、深谷ねぎや狭山茶などの農業、そして東京都心へのアクセスを活かした商業・サービス業が盛んです。県内には多数の大手企業や成長企業が拠点を構え、雇用の場も豊富に提供されています。
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    このカテゴリでは、埼玉県の産業構造、主要企業、就労支援制度について詳しくご紹介します。
+                </p>
+            </div>
+
+            <section class="bg-gradient-to-r from-saitama-blue to-saitama-green text-white rounded-lg p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-6">埼玉県経済の特徴</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">多様な製造業</h3>
+                        <p class="leading-relaxed">輸送機器、化学、食品など幅広い製造業が集積。高い技術力を持つ企業が多数立地しています。</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">ブランド農産物</h3>
+                        <p class="leading-relaxed">深谷ねぎ、狭山茶、川越いもなど、全国に誇るブランド農産物を生産しています。</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">充実した就労支援</h3>
+                        <p class="leading-relaxed">ハローワークや就業支援センターなど、就職・転職をサポートする体制が整っています。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">カテゴリ内のページ</h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-saitama-blue border-l-4 border-saitama-blue pl-3">産業分野</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=製造業"
+                                     alt="埼玉県の製造業。輸送機器や化学工業などの工場施設"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/sectors/manufacturing.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        製造業
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    輸送機器、化学、食品など多様な製造業の集積地。県内製造業の現状と特徴を紹介します。
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=農業"
+                                     alt="埼玉県の農業。深谷ねぎや狭山茶などの農産物栽培"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/sectors/agriculture.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        農業
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    深谷ねぎ、狭山茶、川越いもなど、全国ブランドの農産物を生産する埼玉県の農業を紹介。
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=商業・サービス"
+                                     alt="埼玉県の商業・サービス業。商業施設や物流拠点"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/sectors/commerce.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        商業・サービス
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    大型商業施設、物流拠点など、都心へのアクセスを活かした商業・サービス業の発展。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-saitama-blue border-l-4 border-saitama-blue pl-3">企業情報</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=主要企業"
+                                     alt="埼玉県の主要企業。大手企業の本社や工場"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/companies/major-companies.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        主要企業
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    県内に本社・拠点を置く主要企業を紹介。製造業、サービス業など幅広い分野の企業が集積。
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=ベンチャー"
+                                     alt="埼玉県のベンチャー企業。成長企業や起業支援"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/companies/startups.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        ベンチャー
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    成長著しいベンチャー企業、起業支援制度、ビジネスインキュベーション施設を紹介。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-saitama-blue border-l-4 border-saitama-blue pl-3">就労・キャリア</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/0068B7/ffffff?text=就労支援"
+                                     alt="埼玉県の就労支援。ハローワークや就業支援センター"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/employment/job-support.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        就労支援
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    ハローワーク、就業支援センター、職業訓練など、就職・転職を支援する制度を紹介。
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <figure>
+                                <img src="https://via.placeholder.com/600x300/00A040/ffffff?text=キャリア形成"
+                                     alt="埼玉県のキャリア形成支援。職業訓練や資格取得支援"
+                                     class="w-full h-48 object-cover">
+                            </figure>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold mb-2 text-gray-800">
+                                    <a href="/industry/employment/career.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                                        キャリア形成
+                                    </a>
+                                </h4>
+                                <p class="text-gray-600 leading-relaxed text-sm">
+                                    職業訓練、資格取得支援、キャリアカウンセリングなど、スキルアップを応援します。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="bg-blue-50 p-6 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4 text-gray-800">関連カテゴリ</h2>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/cities/index.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            市町村情報 - 各都市の産業特性
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/life/education/schools.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                            教育機関 - 人材育成の基盤
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/population.html" class="text-saitama-blue hover:underline inline-flex items-center focus:outline-none focus:ring-2 focus:ring-saitama-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                            人口・統計データ - 経済指標
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">カテゴリ</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">埼玉県の概要</a></li>
+                        <li><a href="/tourism/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">生活・暮らし</a></li>
+                        <li><a href="/industry/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">市町村情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">主要観光スポット</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/spots/kawagoe.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越エリア</a></li>
+                        <li><a href="/tourism/spots/chichibu.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">秩父エリア</a></li>
+                        <li><a href="/tourism/spots/nagatoro.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">長瀞エリア</a></li>
+                        <li><a href="/tourism/spots/omiya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">大宮エリア</a></li>
+                        <li><a href="/tourism/spots/tokorozawa.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢エリア</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">主要都市</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/cities/saitama-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">さいたま市</a></li>
+                        <li><a href="/cities/kawaguchi.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川口市</a></li>
+                        <li><a href="/cities/kawagoe-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越市</a></li>
+                        <li><a href="/cities/tokorozawa-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢市</a></li>
+                        <li><a href="/cities/koshigaya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">越谷市</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-lg">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/sitemap.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">サイトマップ</a></li>
+                        <li><a href="/site-info/accessibility.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/privacy.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">プライバシーポリシー</a></li>
+                        <li><a href="/site-info/contact.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+                <p>&copy; 2025 さいたまなび. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">このサイトはJIS X 8341-3:2016レベルAAに準拠しています。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

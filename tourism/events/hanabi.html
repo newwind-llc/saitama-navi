@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>埼玉県の花火大会 - さいたまなび</title>
+    <meta name="description" content="熊谷花火大会、鴻巣花火大会をはじめ、埼玉県内で開催される夏の花火大会情報をご紹介します。尺玉やスターマインなど、迫力ある花火が夜空を彩ります。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saitama-green': '#00A040',
+                        'saitama-blue': '#0068B7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
+        メインコンテンツへスキップ
+    </a>
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    <a href="/index.html" class="text-saitama-blue hover:text-saitama-green transition-colors">
+                        さいたまなび
+                    </a>
+                </h1>
+                <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <nav class="hidden md:block" aria-label="メインナビゲーション">
+                    <ul class="flex space-x-6">
+                        <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">埼玉県について</a></li>
+                        <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors" aria-current="page">観光・レジャー</a></li>
+                        <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">暮らし</a></li>
+                        <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">産業・経済</a></li>
+                        <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-blue font-medium transition-colors">市町村情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="モバイルメニュー">
+                <ul class="space-y-2">
+                    <li><a href="/about/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">埼玉県について</a></li>
+                    <li><a href="/tourism/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md" aria-current="page">観光・レジャー</a></li>
+                    <li><a href="/life/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">暮らし</a></li>
+                    <li><a href="/industry/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">産業・経済</a></li>
+                    <li><a href="/cities/index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">市町村情報</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="パンくずリスト" class="container mx-auto px-4 py-3 text-sm">
+        <ol class="flex flex-wrap items-center space-x-2">
+            <li><a href="/index.html" class="text-saitama-blue hover:underline">ホーム</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline">観光・レジャー</a></li>
+            <li aria-hidden="true">&gt;</li>
+            <li aria-current="page" class="text-gray-600">埼玉県の花火大会</li>
+        </ol>
+    </nav>
+
+    <main id="main" class="container mx-auto px-4 py-8">
+        <article>
+            <header class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">埼玉県の花火大会</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    熊谷花火大会、鴻巣花火大会など、埼玉県内では夏を中心に様々な花火大会が開催されます。尺玉、スターマイン、ナイアガラなど、迫力ある花火が夜空を彩ります。
+                </p>
+            </header>
+
+            <section class="mb-10">
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-800 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">埼玉県の花火大会について</h3>
+                    <p class="leading-relaxed mb-4">
+                        埼玉県では、7月から8月にかけて県内各地で花火大会が開催されます。荒川や利根川などの河川敷を会場とする大規模な花火大会から、地域に根ざした温かみのある花火大会まで、多彩なイベントが楽しめます。
+                    </p>
+                    <p class="leading-relaxed">
+                        特に熊谷花火大会と鴻巣花火大会は県を代表する花火大会として知られ、毎年多くの観客で賑わいます。尺玉やスターマイン、音楽とシンクロした創作花火など、花火師の技術と芸術性が光る演出が見どころです。
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">主な花火大会</h3>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">熊谷花火大会</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="熊谷花火大会。荒川の河川敷から打ち上げられる大輪の花火が夜空を彩る様子"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    荒川の夜空を彩る熊谷花火大会（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                熊谷花火大会は、例年8月第2土曜日に開催される、埼玉県内でも有数の規模を誇る花火大会です。荒川河川敷の熊谷大橋付近を会場に、約1万発の花火が打ち上げられます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                大会の見どころは、尺玉やスターマインの連続打ち上げです。特にフィナーレのスターマインは圧巻で、夜空一面が花火の光に包まれます。音楽とシンクロした創作花火「ミュージックスターマイン」も人気のプログラムです。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                荒川の広い河川敷を利用しているため、比較的ゆったりと観覧できるのも魅力です。有料観覧席のほか、無料で観覧できるエリアも広く確保されています。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">開催時期：</dt>
+                                    <dd class="text-gray-700">8月第2土曜日（例年）</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">打ち上げ数：</dt>
+                                    <dd class="text-gray-700">約10,000発</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">会場：</dt>
+                                    <dd class="text-gray-700">荒川河畔（熊谷大橋付近）</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">アクセス：</dt>
+                                    <dd class="text-gray-700">JR・秩父鉄道熊谷駅から徒歩約15分</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">鴻巣花火大会</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="prose max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                鴻巣花火大会は、例年10月に開催される、世界最大級の打ち上げ花火「四尺玉」が見られることで有名な花火大会です。糸満花火として知られる鴻巣市は、江戸時代から続く花火の産地であり、その伝統技術を活かした迫力ある花火が特徴です。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                大会最大の見どころは、直径約800メートルまで開く「四尺玉」（重量約420キログラム）の打ち上げです。打ち上げ時の轟音と、夜空いっぱいに広がる巨大な花火は圧倒的な迫力です。正四尺玉を複数打ち上げる花火大会は世界的にも珍しく、国内外から多くの観客が訪れます。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                また、全長約2キロメートルにわたる「鳳凰乱舞（ほうおうらんぶ）」と呼ばれる超大型スターマインも見どころです。荒川の広い河川敷を最大限に活用した、ダイナミックな花火の競演が楽しめます。
+                            </p>
+                            <dl class="bg-gray-100 p-4 rounded-md space-y-2 text-sm">
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">開催時期：</dt>
+                                    <dd class="text-gray-700">10月（例年）</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">打ち上げ数：</dt>
+                                    <dd class="text-gray-700">約15,000発以上</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">名物：</dt>
+                                    <dd class="text-gray-700">世界最大級・四尺玉、鳳凰乱舞</dd>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <dt class="font-semibold text-gray-800 w-28">会場：</dt>
+                                    <dd class="text-gray-700">荒川河川敷（鴻巣市糠田）</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div>
+                            <figure class="mb-4">
+                                <img src="https://via.placeholder.com/600x400"
+                                     alt="鴻巣花火大会の四尺玉。直径800メートルもの巨大な花火が夜空一面に広がる圧巻の光景"
+                                     class="w-full h-auto rounded-lg shadow-md">
+                                <figcaption class="text-sm text-gray-600 mt-2">
+                                    世界最大級・四尺玉が見られる鴻巣花火大会（イメージ）
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-10">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">その他の主な花火大会</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <article class="bg-white p-6 rounded-lg shadow-md">
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">さいたま市花火大会（大和田公園会場）</h5>
+                            <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                                さいたま市見沼区の大和田公園で開催される花火大会。約5,000発の花火が打ち上げられ、スターマインや音楽花火が楽しめます。市街地に近く、アクセスしやすいのが特徴です。
+                            </p>
+                            <p class="text-sm text-gray-600">開催時期：7月下旬～8月上旬（例年）</p>
+                        </article>
+
+                        <article class="bg-white p-6 rounded-lg shadow-md">
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">川口たたら祭り花火大会</h5>
+                            <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                                川口市のオートレース場で開催される花火大会。川口市の夏の風物詩として親しまれており、約10,000発の花火が打ち上げられます。スターマインの連続打ち上げが見どころです。
+                            </p>
+                            <p class="text-sm text-gray-600">開催時期：8月上旬（例年）</p>
+                        </article>
+
+                        <article class="bg-white p-6 rounded-lg shadow-md">
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">久喜市提灯祭り「天王様」花火</h5>
+                            <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                                230年以上の伝統を持つ久喜提灯祭りの一環として開催される花火大会。祭りの雰囲気と相まって、地域の伝統文化を感じながら花火を楽しめます。
+                            </p>
+                            <p class="text-sm text-gray-600">開催時期：7月12日・18日（固定）</p>
+                        </article>
+
+                        <article class="bg-white p-6 rounded-lg shadow-md">
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">長瀞船玉まつり花火大会</h5>
+                            <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                                長瀞の荒川河川敷で開催される、水上安全祈願祭と花火大会。岩畳を背景に打ち上げられる花火は風情があり、川面に映る花火も美しいです。約3,000発が打ち上げられます。
+                            </p>
+                            <p class="text-sm text-gray-600">開催時期：8月15日（固定）</p>
+                        </article>
+                    </div>
+                </article>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">花火大会観覧のポイント</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <div>
+                                <span class="font-semibold">公共交通機関の利用を推奨：</span>
+                                <span>駐車場は限られており、周辺道路も大変混雑します。電車やバスの利用が便利です。</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <div>
+                                <span class="font-semibold">早めの場所取り：</span>
+                                <span>人気の観覧スポットは早い時間から混雑します。有料観覧席の購入も検討しましょう。</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <div>
+                                <span class="font-semibold">暑さ・虫対策：</span>
+                                <span>夏の夜は蒸し暑く、蚊も多いです。虫除けスプレー、うちわ、飲み物を持参しましょう。</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <div>
+                                <span class="font-semibold">雨天延期・中止情報：</span>
+                                <span>天候により延期または中止となる場合があります。公式サイトで最新情報を確認してください。</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-saitama-blue font-bold mr-2">•</span>
+                            <div>
+                                <span class="font-semibold">ゴミは持ち帰り：</span>
+                                <span>会場や周辺にゴミを残さず、マナーを守って楽しみましょう。</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-saitama-green">花火大会の歴史と文化</h3>
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県、特に鴻巣市は江戸時代から続く花火の産地として知られています。鴻巣の花火は「糸満花火」とも呼ばれ、その技術は代々受け継がれてきました。現在も鴻巣市には複数の花火製造業者があり、全国各地の花火大会に花火を供給しています。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        埼玉県の花火大会は、単なる娯楽だけでなく、地域の伝統文化や祭りと結びついているものも多くあります。川の安全を祈願する船玉祭りや、地域の夏祭りと一体となった花火大会など、それぞれに歴史と物語があります。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        近年では、音楽とシンクロした創作花火や、コンピューター制御による精密な打ち上げなど、伝統技術と最新技術を融合した新しい花火の楽しみ方も広がっています。
+                    </p>
+                </div>
+            </section>
+
+            <aside class="mt-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">関連ページ</h3>
+                <ul class="space-y-2">
+                    <li><a href="/tourism/events/chichibu-yomatsuri.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">秩父夜祭</a></li>
+                    <li><a href="/tourism/events/kawagoe-matsuri.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">川越まつり</a></li>
+                    <li><a href="/tourism/spots/nagatoro.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">長瀞エリアの観光</a></li>
+                    <li><a href="/tourism/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャートップ</a></li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">埼玉県について</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">県の概要</a></li>
+                        <li><a href="/about/history.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">歴史</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">観光情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tourism/index.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光スポット</a></li>
+                        <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">グルメ情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">サイト情報</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">アクセシビリティ方針</a></li>
+                        <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-sm text-center text-gray-400">
+                <p>&copy; 2025 さいたまなび All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (menuButton && menu) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+                    const icon = this.querySelector('svg path');
+                    if (!expanded) {
+                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
+                    } else {
+                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        this.querySelector('.sr-only').textContent = 'メニューを開く';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

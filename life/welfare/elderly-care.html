@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高齢者福祉 - 福祉 - 暮らし - 埼玉県総合案内</title>
+  <meta name="description" content="埼玉県の高齢者福祉制度。介護保険サービス、特別養護老人ホーム、デイサービス、在宅介護支援など、高齢者が安心して暮らせる環境を整備しています。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {theme: {extend: {colors: {'saitama-green': '#00A040', 'saitama-blue': '#0068B7'}}}}</script>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-green focus:text-white">本文へスキップ</a>
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="text-xl md:text-2xl font-bold text-saitama-green"><a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">埼玉県総合案内</a></div>
+        <nav class="hidden md:block" aria-label="メインメニュー">
+          <ul class="flex space-x-6">
+            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
+            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
+            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
+            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
+            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
+        <ul class="space-y-2">
+          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
+          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
+          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
+          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
+          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav aria-label="パンくずリスト" class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">ホーム</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><a href="/life/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-green rounded">暮らし</a></li>
+        <li aria-hidden="true" class="text-gray-400">&gt;</li>
+        <li><span class="text-gray-700" aria-current="page">高齢者福祉</span></li>
+      </ol>
+    </div>
+  </nav>
+  <main id="main" class="container mx-auto px-4 py-8">
+    <article>
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">埼玉県の高齢者福祉</h1>
+        <p class="text-lg text-gray-700 leading-loose">埼玉県では、高齢者が住み慣れた地域で安心して暮らし続けられるよう、介護保険制度を中心とした充実した福祉サービスを提供しています。特別養護老人ホーム、デイサービス、訪問介護など多様なサービスで、高齢者とその家族の生活を支援しています。</p>
+      </header>
+      <figure class="my-8">
+        <img src="https://via.placeholder.com/800x600" alt="デイサービスセンターで体操をする高齢者と介護スタッフ、明るく広い活動室の様子" class="w-full h-auto rounded-lg shadow-md">
+        <figcaption class="text-sm text-gray-600 mt-2 text-center">地域のデイサービスセンター(イメージ)</figcaption>
+      </figure>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">介護保険制度</h2>
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">介護保険制度は、40歳以上の全国民が加入し保険料を納め、介護が必要になったときにサービスを利用できる社会保険制度です。埼玉県内の全市町村で実施されており、要介護認定を受けることでサービスが利用できます。</p>
+          <div class="bg-blue-50 border-l-4 border-saitama-blue p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-blue mb-3">介護保険の対象者</h3>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>第1号被保険者：</strong>65歳以上の方(原因を問わず要介護認定を受ければ利用可能)</li>
+              <li><strong>第2号被保険者：</strong>40〜64歳の医療保険加入者(特定疾病が原因で要介護認定を受けた場合に利用可能)</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-green mb-3">要介護認定の段階</h3>
+            <p class="text-gray-700 leading-loose mb-4">介護が必要な状態の程度に応じて、要支援1・2、要介護1〜5の7段階に分類されます。認定段階に応じて利用できるサービスの種類や支給限度額が異なります。</p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>要支援1・2：</strong>日常生活に一部支援が必要</li>
+              <li><strong>要介護1・2：</strong>軽度〜中程度の介護が必要</li>
+              <li><strong>要介護3・4・5：</strong>重度の介護が必要</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">主な介護サービス</h2>
+        <div class="prose max-w-none">
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold text-saitama-green mb-3">施設サービス</h3>
+              <ul class="text-gray-700 leading-loose space-y-3">
+                <li><strong>特別養護老人ホーム：</strong>要介護3以上の方が入所できる施設。終身利用が可能で、食事・入浴・排泄などの日常生活全般の介護を提供</li>
+                <li><strong>介護老人保健施設：</strong>リハビリを中心とした介護を提供し、在宅復帰を目指す施設</li>
+                <li><strong>介護医療院：</strong>長期療養が必要な方のための医療と介護を一体的に提供する施設</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold text-saitama-green mb-3">在宅サービス</h3>
+              <ul class="text-gray-700 leading-loose space-y-3">
+                <li><strong>訪問介護(ホームヘルプ)：</strong>ホームヘルパーが自宅を訪問し、食事・入浴・排泄などの身体介護や生活援助を提供</li>
+                <li><strong>訪問看護：</strong>看護師が自宅を訪問し、医療的ケアや健康管理を実施</li>
+                <li><strong>デイサービス(通所介護)：</strong>施設に通い、入浴・食事・レクリエーションなどのサービスを受ける</li>
+                <li><strong>ショートステイ：</strong>短期間施設に宿泊し、介護サービスを受ける</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-green mb-3">福祉用具貸与・住宅改修</h4>
+            <p class="text-gray-700 leading-loose mb-4">介護保険では、車いす、介護ベッド、歩行器などの福祉用具のレンタルや、手すりの取り付け、段差解消などの住宅改修費用の一部も支給されます。</p>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">高齢者向け福祉施設</h2>
+        <div class="prose max-w-none">
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-green mb-3">老人福祉センター</h3>
+            <p class="text-gray-700 leading-loose mb-4">県内各市町村には老人福祉センターや老人憩の家が設置されており、60歳以上の高齢者が無料または低額で利用できます。趣味の教室、健康相談、入浴施設、娯楽室などが提供され、地域の高齢者の憩いの場となっています。</p>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li>趣味活動・サークル活動</li>
+              <li>健康づくり・体操教室</li>
+              <li>入浴サービス</li>
+              <li>相談窓口</li>
+              <li>レクリエーション活動</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-bold text-saitama-green mb-3">シルバー人材センター</h3>
+            <p class="text-gray-700 leading-loose">60歳以上の高齢者に就業機会を提供する公益法人で、県内の各市町村に設置されています。軽作業、清掃、公園管理、家事援助など多様な仕事を紹介し、高齢者の社会参加と生きがいづくりを支援しています。</p>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">地域包括支援センター</h2>
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">地域包括支援センターは、高齢者が住み慣れた地域で安心して生活できるよう、保健師・社会福祉士・主任ケアマネジャーなどの専門職が配置され、総合的な相談・支援を行う拠点です。</p>
+          <div class="bg-blue-50 rounded-lg p-6 mb-6">
+            <h4 class="text-lg font-bold text-saitama-blue mb-3">主な役割</h4>
+            <ul class="list-disc list-inside text-gray-700 leading-loose space-y-2">
+              <li><strong>総合相談支援：</strong>介護・医療・福祉・生活全般に関する相談に対応</li>
+              <li><strong>介護予防ケアマネジメント：</strong>要支援者や介護予防が必要な方へのケアプラン作成</li>
+              <li><strong>権利擁護：</strong>高齢者虐待の早期発見・対応、成年後見制度の活用支援</li>
+              <li><strong>包括的・継続的ケアマネジメント：</strong>地域のケアマネジャーへの支援</li>
+            </ul>
+          </div>
+          <p class="text-gray-700 leading-loose">地域包括支援センターは、県内の各市町村に複数設置されており、担当地域の高齢者とその家族を支援しています。相談は無料で、電話や来所、訪問による相談が可能です。</p>
+        </div>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-saitama-green">健康づくり・介護予防</h2>
+        <div class="prose max-w-none">
+          <p class="mb-6 text-gray-700 leading-loose">埼玉県では、高齢者が要介護状態にならないよう、介護予防事業を積極的に推進しています。</p>
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">運動教室</h4>
+              <ul class="text-sm text-gray-700 leading-loose space-y-1">
+                <li>筋力トレーニング</li>
+                <li>ストレッチ教室</li>
+                <li>ウォーキング教室</li>
+                <li>体操教室</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">認知症予防</h4>
+              <ul class="text-sm text-gray-700 leading-loose space-y-1">
+                <li>脳トレーニング</li>
+                <li>回想法</li>
+                <li>認知症カフェ</li>
+                <li>認知症サポーター養成</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h4 class="text-lg font-bold text-saitama-green mb-3">栄養・口腔ケア</h4>
+              <ul class="text-sm text-gray-700 leading-loose space-y-1">
+                <li>栄養指導教室</li>
+                <li>口腔機能向上訓練</li>
+                <li>嚥下機能訓練</li>
+                <li>健康相談</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="mt-12 pt-8 border-t border-gray-300">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+        <nav aria-label="関連ページ">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li><a href="/life/welfare/medical.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">医療施設</span><p class="text-sm text-gray-600 mt-1">県内の医療体制</p></a></li>
+            <li><a href="/life/welfare/support.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">生活支援</span><p class="text-sm text-gray-600 mt-1">各種生活支援サービス</p></a></li>
+            <li><a href="/life/education/lifelong.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">生涯学習</span><p class="text-sm text-gray-600 mt-1">シニア大学など</p></a></li>
+            <li><a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green"><span class="text-saitama-blue font-bold">暮らし トップ</span><p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p></a></li>
+          </ul>
+        </nav>
+      </aside>
+    </article>
+  </main>
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div><h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2><p class="text-gray-400 text-sm leading-relaxed">埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。</p></div>
+        <div><h2 class="text-lg font-bold mb-4">主要カテゴリー</h2><ul class="space-y-2 text-sm"><li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li><li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li><li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li><li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li><li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li></ul></div>
+        <div><h2 class="text-lg font-bold mb-4">サイト情報</h2><ul class="space-y-2 text-sm"><li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li><li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li><li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li><li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li></ul></div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400"><p>&copy; 2025 埼玉県総合案内. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script>document.getElementById('mobile-menu-toggle').addEventListener('click', function() {const menu = document.getElementById('mobile-menu');const isExpanded = this.getAttribute('aria-expanded') === 'true';this.setAttribute('aria-expanded', !isExpanded);menu.classList.toggle('hidden');this.setAttribute('aria-label', !isExpanded ? 'メニューを閉じる' : 'メニューを開く');});</script>
+</body>
+</html>
