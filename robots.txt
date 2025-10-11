@@ -1,0 +1,15 @@
+# さいたまなび - robots.txt
+# JIS X 8341-3:2016 Level AA準拠の埼玉県総合紹介サイト
+
+# すべてのクローラーを許可
+User-agent: *
+Allow: /
+
+# クロール不要のファイル（該当なし）
+# Disallow: /private/
+
+# サイトマップの場所
+Sitemap: https://newwind-llc.github.io/saitama-navi/sitemap.xml
+
+# クロール速度の調整（オプション）
+# Crawl-delay: 1

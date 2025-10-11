@@ -33,7 +33,7 @@ jobs:
           # デプロイ用ディレクトリを作成
           mkdir -p _site
 
-          # HTMLファイルのみをコピー
+          # HTMLファイルをコピー
           cp index.html _site/
           cp -r about _site/
           cp -r tourism _site/
@@ -41,6 +41,10 @@ jobs:
           cp -r industry _site/
           cp -r cities _site/
           cp -r site-info _site/
+
+          # SEO用ファイルをコピー
+          cp robots.txt _site/
+          cp sitemap.xml _site/
 
           # .nojekyllファイルを作成（Jekyllの処理をスキップ）
           touch _site/.nojekyll
