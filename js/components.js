@@ -14,6 +14,37 @@
     }
 
     function init() {
+        // ベースパスを検出（GitHub Pages対応）
+        const siteBasePath = window.location.pathname.match(/^\/[^\/]+\//) ? window.location.pathname.match(/^\/[^\/]+\//)[0] : '/';
+
+        // 画像パスを修正（GitHub Pages対応）
+        function fixImagePaths() {
+            if (siteBasePath !== '/') {
+                // すべての画像のsrc属性を修正
+                document.querySelectorAll('img[src^="/img/"]').forEach(img => {
+                    img.src = img.src.replace(/^\/img\//, siteBasePath + 'img/');
+                });
+
+                // 背景画像のパスを修正
+                document.querySelectorAll('[style*="url(\'/img/"]').forEach(elem => {
+                    const style = elem.getAttribute('style');
+                    elem.setAttribute('style', style.replace(/url\('\/img\//g, `url('${siteBasePath}img/`));
+                });
+
+                // CSSの背景画像を修正
+                document.querySelectorAll('.hero-section').forEach(elem => {
+                    const computedStyle = window.getComputedStyle(elem);
+                    const bgImage = computedStyle.backgroundImage;
+                    if (bgImage.includes('/img/')) {
+                        elem.style.backgroundImage = bgImage.replace(/url\("?\/img\//g, `url("${siteBasePath}img/`);
+                    }
+                });
+            }
+        }
+
+        // 画像パスを即座に修正
+        fixImagePaths();
+
         // 現在のページのパスからcomponentsディレクトリへの相対パスを計算
         function getComponentPath() {
             const path = window.location.pathname;
@@ -46,12 +77,13 @@
         const basePath = getComponentPath();
 
         // ヘッダーを読み込む
-        fetch(basePath + 'components/header.html')
+        fetch(getComponentPath() + 'components/header.html')
             .then(response => response.text())
             .then(html => {
                 const headerPlaceholder = document.getElementById('header-placeholder');
                 if (headerPlaceholder) {
                     headerPlaceholder.innerHTML = html;
+                    fixImagePaths(); // ヘッダー内の画像パスを修正
                     highlightCurrentPage();
                     initMobileMenu();
                 }
@@ -59,12 +91,13 @@
             .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
 
         // フッターを読み込む
-        fetch(basePath + 'components/footer.html')
+        fetch(getComponentPath() + 'components/footer.html')
             .then(response => response.text())
             .then(html => {
                 const footerPlaceholder = document.getElementById('footer-placeholder');
                 if (footerPlaceholder) {
                     footerPlaceholder.innerHTML = html;
+                    fixImagePaths(); // フッター内の画像パスを修正
                 }
             })
             .catch(error => console.error('フッターの読み込みに失敗しました:', error));
