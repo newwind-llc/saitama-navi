@@ -20,23 +20,27 @@
         // 画像パスを修正（GitHub Pages対応）
         function fixImagePaths() {
             if (siteBasePath !== '/') {
-                // すべての画像のsrc属性を修正
-                document.querySelectorAll('img[src^="/img/"]').forEach(img => {
-                    img.src = img.src.replace(/^\/img\//, siteBasePath + 'img/');
+                // すべての画像のsrc属性を修正（getAttribute使用で元の値を取得）
+                document.querySelectorAll('img').forEach(img => {
+                    const src = img.getAttribute('src');
+                    if (src && src.startsWith('/img/')) {
+                        img.setAttribute('src', siteBasePath + src.substring(1));
+                    }
                 });
 
                 // 背景画像のパスを修正
                 document.querySelectorAll('[style*="url(\'/img/"]').forEach(elem => {
                     const style = elem.getAttribute('style');
-                    elem.setAttribute('style', style.replace(/url\('\/img\//g, `url('${siteBasePath}img/`));
+                    if (style) {
+                        elem.setAttribute('style', style.replace(/url\('\/img\//g, `url('${siteBasePath}img/`));
+                    }
                 });
 
-                // CSSの背景画像を修正
-                document.querySelectorAll('.hero-section').forEach(elem => {
-                    const computedStyle = window.getComputedStyle(elem);
-                    const bgImage = computedStyle.backgroundImage;
-                    if (bgImage.includes('/img/')) {
-                        elem.style.backgroundImage = bgImage.replace(/url\("?\/img\//g, `url("${siteBasePath}img/`);
+                // CSSの背景画像を修正（index.htmlの<style>タグ内）
+                document.querySelectorAll('style').forEach(styleTag => {
+                    const content = styleTag.textContent;
+                    if (content.includes("url('/img/")) {
+                        styleTag.textContent = content.replace(/url\('\/img\//g, `url('${siteBasePath}img/`);
                     }
                 });
             }
