@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="さいたまなびのアクセシビリティ方針。JIS X 8341-3:2016レベルAAに準拠し、すべての利用者が情報にアクセスできることを目指しています。">
     <title>アクセシビリティ方針 - さいたまなび</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'saitama-green': '#00A040',
-                        'saitama-blue': '#0068B7'
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/custom-styles.css">
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- スキップリンク -->
@@ -26,33 +15,11 @@
     </a>
 
     <!-- ヘッダー -->
-    <header class="bg-white shadow-md sticky top-0 z-40">
+    <div id="header-placeholder"></div>
+
+    <!-- パンくずリスト（このページ専用） -->
+    <div class="bg-white shadow-sm">
         <div class="container mx-auto px-4">
-            <nav class="py-4" role="navigation" aria-label="メインナビゲーション">
-                <!-- ロゴ -->
-                <div class="flex items-center justify-between mb-4">
-                    <a href="/index.html" class="text-2xl font-bold text-gray-800 hover:text-saitama-blue transition-colors">
-                        さいたまなび
-                    </a>
-                    <!-- モバイルメニューボタン -->
-                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
-                        <span class="sr-only">メニューを開く</span>
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- ナビゲーションメニュー -->
-                <ul id="mobile-menu" class="hidden md:flex md:space-x-6 md:justify-center">
-                    <li><a href="/about/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の概要</a></li>
-                    <li><a href="/tourism/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
-                    <li><a href="/life/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活・暮らし</a></li>
-                    <li><a href="/industry/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
-                    <li><a href="/cities/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
-                </ul>
-            </nav>
-
             <!-- パンくずリスト -->
             <nav aria-label="パンくずリスト" class="py-2 text-sm">
                 <ol class="flex flex-wrap space-x-2">
@@ -64,7 +31,7 @@
                 </ol>
             </nav>
         </div>
-    </header>
+    </div>
 
     <!-- メインコンテンツ -->
     <main id="main" class="container mx-auto px-4 py-8 max-w-4xl">
@@ -384,91 +351,11 @@
     </main>
 
     <!-- フッター -->
-    <footer class="bg-gray-800 text-white mt-12">
-        <div class="container mx-auto px-4 py-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- カテゴリリンク -->
-                <div>
-                    <h3 class="font-semibold mb-3 text-lg">カテゴリ</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/about/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">埼玉県の概要</a></li>
-                        <li><a href="/tourism/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">観光・レジャー</a></li>
-                        <li><a href="/life/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">生活・暮らし</a></li>
-                        <li><a href="/industry/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">産業・経済</a></li>
-                        <li><a href="/cities/index.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">市町村情報</a></li>
-                    </ul>
-                </div>
+    <div id="footer-placeholder"></div>
 
-                <!-- 観光スポット -->
-                <div>
-                    <h3 class="font-semibold mb-3 text-lg">主要観光スポット</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/tourism/spots/kawagoe.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越エリア</a></li>
-                        <li><a href="/tourism/spots/chichibu.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">秩父エリア</a></li>
-                        <li><a href="/tourism/spots/nagatoro.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">長瀞エリア</a></li>
-                        <li><a href="/tourism/spots/omiya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">大宮エリア</a></li>
-                        <li><a href="/tourism/spots/tokorozawa.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢エリア</a></li>
-                    </ul>
-                </div>
+    
 
-                <!-- 市町村 -->
-                <div>
-                    <h3 class="font-semibold mb-3 text-lg">主要都市</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/cities/saitama-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">さいたま市</a></li>
-                        <li><a href="/cities/kawaguchi.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川口市</a></li>
-                        <li><a href="/cities/kawagoe-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">川越市</a></li>
-                        <li><a href="/cities/tokorozawa-city.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">所沢市</a></li>
-                        <li><a href="/cities/koshigaya.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">越谷市</a></li>
-                    </ul>
-                </div>
-
-                <!-- サイト情報 -->
-                <div>
-                    <h3 class="font-semibold mb-3 text-lg">サイト情報</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/site-info/sitemap.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">サイトマップ</a></li>
-                        <li><a href="/site-info/accessibility.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">アクセシビリティ方針</a></li>
-                        <li><a href="/site-info/privacy.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">プライバシーポリシー</a></li>
-                        <li><a href="/site-info/contact.html" class="hover:underline hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-white">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-                <p>&copy; 2025 さいたまなび. All rights reserved.</p>
-                <p class="mt-2 text-gray-400">
-                    このサイトはJIS X 8341-3:2016レベルAAに準拠しています。
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // モバイルメニュー開閉
-        (function() {
-            const menuButton = document.getElementById('mobile-menu-button');
-            const menu = document.getElementById('mobile-menu');
-
-            if (menuButton && menu) {
-                menuButton.addEventListener('click', function() {
-                    const expanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !expanded);
-                    menu.classList.toggle('hidden');
-
-                    // アイコン変更
-                    const icon = this.querySelector('svg path');
-                    if (!expanded) {
-                        icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-                        this.querySelector('.sr-only').textContent = 'メニューを閉じる';
-                    } else {
-                        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-                        this.querySelector('.sr-only').textContent = 'メニューを開く';
-                    }
-                });
-            }
-        })();
-    </script>
+    <!-- 共通コンポーネント読み込み -->
+    <script src="../js/components.js"></script>
 </body>
 </html>

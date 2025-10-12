@@ -5,57 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>熊谷市 - さいたまなび</title>
   <meta name="description" content="熊谷市は人口約19万人の北埼玉の中核都市で、ラグビータウンとして知られ、夏の暑さでも有名です。農業と工業が盛んな都市です。">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'saitama-green': '#00A040',
-            'saitama-blue': '#0068B7',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/custom-styles.css">
 </head>
 <body class="font-sans bg-gray-50">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-saitama-blue focus:text-white">メインコンテンツへスキップ</a>
-  <header class="bg-white shadow-md sticky top-0 z-40">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between py-4">
-        <div class="text-xl md:text-2xl font-bold text-saitama-green">
-          <a href="/index.html" class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-saitama-blue">さいたまなび</a>
-        </div>
-        <nav class="hidden md:block" aria-label="メインナビゲーション">
-          <ul class="flex space-x-6">
-            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
-            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
-            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
-            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
-            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
-          </ul>
-        </nav>
-        <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <span class="sr-only">メニューを開く</span>
-        </button>
-      </div>
-      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルナビゲーション">
-        <ul class="space-y-2">
-          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
-          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
-          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
-          <li><a href="/industry/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
-          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  
+  <!-- ヘッダー -->
 
-  <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
+  <div id="header-placeholder"></div>
+
+
+  <!-- パンくずリスト（このページ専用） -->
+
+  <div class="bg-white shadow-sm">
+
+      <div class="container mx-auto px-4">
+
+          <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
     <div class="container mx-auto px-4">
       <ol class="flex flex-wrap items-center space-x-2 text-sm">
         <li><a href="/index.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">ホーム</a></li>
@@ -66,6 +33,10 @@
       </ol>
     </div>
   </nav>
+
+      </div>
+
+  </div>
 
   <main id="main" class="container mx-auto px-4 py-8">
     <article>
@@ -237,63 +208,42 @@
         </table>
       </section>
 
-      <section class="bg-saitama-green bg-opacity-10 rounded-lg p-6 mb-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">関連ページ</h2>
+      <aside class="bg-blue-50 p-6 rounded-lg">
+        <h2 class="text-xl font-semibold mb-4 text-gray-800">関連カテゴリ</h2>
         <ul class="space-y-2">
-          <li><a href="/tourism/sports.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">スポーツ・アウトドア</a></li>
-          <li><a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">交通アクセス</a></li>
-          <li><a href="/industry/agriculture.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">農業</a></li>
-          <li><a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉の歴史</a></li>
+          <li><a href="/tourism/sports.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            スポーツ・アウトドア</a></li>
+          <li><a href="/life/transportation.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            交通アクセス</a></li>
+          <li><a href="/industry/agriculture.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            農業</a></li>
+          <li><a href="/about/history.html" class="text-saitama-blue hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            埼玉の歴史</a></li>
         </ul>
       </section>
     </article>
   </main>
 
-  <footer class="bg-gray-800 text-white mt-12">
-    <div class="container mx-auto px-4 py-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-        <div>
-          <h2 class="text-lg font-bold mb-4">さいたまなび</h2>
-          <p class="text-gray-300 text-sm leading-relaxed">埼玉県の魅力を発信する総合情報サイトです。観光、生活、産業など、埼玉に関する様々な情報をお届けします。</p>
-        </div>
-        <nav aria-label="フッターナビゲーション">
-          <h2 class="text-lg font-bold mb-4">サイトマップ</h2>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/about/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉について</a></li>
-            <li><a href="/tourism/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
-            <li><a href="/life/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活情報</a></li>
-            <li><a href="/industry/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
-            <li><a href="/cities/index.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
-          </ul>
-        </nav>
-        <div>
-          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/site-info/about.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトについて</a></li>
-            <li><a href="/site-info/accessibility.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">アクセシビリティ方針</a></li>
-            <li><a href="/site-info/privacy.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">プライバシーポリシー</a></li>
-            <li><a href="/site-info/sitemap.html" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-saitama-blue">サイトマップ</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
-        <p>&copy; 2024 さいたまなび All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  
 
-  <script>
-    (function() {
-      const menuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (menuButton && mobileMenu) {
-        menuButton.addEventListener('click', function() {
-          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-          menuButton.setAttribute('aria-expanded', !isExpanded);
-          mobileMenu.classList.toggle('hidden');
-        });
-      }
-    })();
-  </script>
+  <!-- フッター -->
+
+
+  <div id="footer-placeholder"></div>
+
+  <!-- 共通コンポーネント読み込み -->
+    <script src="../js/components.js"></script>
 </body>
 </html>

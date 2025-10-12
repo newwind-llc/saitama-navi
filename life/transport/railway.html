@@ -5,19 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>鉄道網 - 交通 - 暮らし - 埼玉県総合案内</title>
   <meta name="description" content="埼玉県の充実した鉄道ネットワークをご紹介。JR線、東武鉄道、西武鉄道など多様な路線が県内を結び、都心へのアクセスも良好です。">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'saitama-green': '#00A040',
-            'saitama-blue': '#0068B7',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/custom-styles.css">
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed">
   <!-- Skip Link -->
@@ -25,49 +14,13 @@
     本文へスキップ
   </a>
 
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-40">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between py-4">
-        <div class="text-xl md:text-2xl font-bold text-saitama-green">
-          <a href="/index.html" class="hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-saitama-green focus:ring-offset-2 rounded">
-            埼玉県総合案内
-          </a>
-        </div>
+  <!-- ヘッダー -->
+    <div id="header-placeholder"></div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:block" aria-label="メインメニュー">
-          <ul class="flex space-x-6">
-            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">埼玉について</a></li>
-            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">観光・レジャー</a></li>
-            <li><a href="/life/index.html" class="text-saitama-green font-bold focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1" aria-current="page">暮らし</a></li>
-            <li><a href="/industry/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">産業・経済</a></li>
-            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green rounded px-2 py-1">市町村情報</a></li>
-          </ul>
-        </nav>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメニュー">
-        <ul class="space-y-2">
-          <li><a href="/about/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">埼玉について</a></li>
-          <li><a href="/tourism/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">観光・レジャー</a></li>
-          <li><a href="/life/index.html" class="block py-2 px-4 bg-green-50 text-saitama-green font-bold rounded focus:outline-none focus:ring-2 focus:ring-saitama-green" aria-current="page">暮らし</a></li>
-          <li><a href="/industry/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">産業・経済</a></li>
-          <li><a href="/cities/index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-green">市町村情報</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Breadcrumb -->
+    <!-- パンくずリスト（このページ専用） -->
+    <div class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <!-- パンくずリスト -->
   <nav aria-label="パンくずリスト" class="bg-white border-b">
     <div class="container mx-auto px-4 py-3">
       <ol class="flex flex-wrap items-center space-x-2 text-sm">
@@ -79,6 +32,8 @@
       </ol>
     </div>
   </nav>
+        </div>
+    </div>
 
   <!-- Main Content -->
   <main id="main" class="container mx-auto px-4 py-8">
@@ -373,31 +328,39 @@
       </section>
 
       <!-- Related Pages -->
-      <aside class="mt-12 pt-8 border-t border-gray-300">
-        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+      <aside class="bg-blue-50 p-6 rounded-lg">
+        <h2 class="text-xl font-semibold mb-4 text-gray-800">関連カテゴリ</h2>
         <nav aria-label="関連ページ">
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <li>
               <a href="/life/transport/highway.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
-                <span class="text-saitama-blue font-bold">道路・高速道路</span>
+                <span class="text-saitama-blue font-bold"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>道路・高速道路</span>
                 <p class="text-sm text-gray-600 mt-1">埼玉県の道路網と高速道路</p>
               </a>
             </li>
             <li>
               <a href="/life/transport/access.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
-                <span class="text-saitama-blue font-bold">都心アクセス</span>
+                <span class="text-saitama-blue font-bold"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>都心アクセス</span>
                 <p class="text-sm text-gray-600 mt-1">東京都心への所要時間</p>
               </a>
             </li>
             <li>
               <a href="/life/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
-                <span class="text-saitama-blue font-bold">暮らし トップ</span>
+                <span class="text-saitama-blue font-bold"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>暮らし トップ</span>
                 <p class="text-sm text-gray-600 mt-1">暮らしカテゴリー一覧</p>
               </a>
             </li>
             <li>
               <a href="/cities/index.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-saitama-green">
-                <span class="text-saitama-blue font-bold">市町村情報</span>
+                <span class="text-saitama-blue font-bold"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>市町村情報</span>
                 <p class="text-sm text-gray-600 mt-1">各市町村の詳細情報</p>
               </a>
             </li>
@@ -407,41 +370,11 @@
     </article>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white mt-16">
-    <div class="container mx-auto px-4 py-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-        <div>
-          <h2 class="text-lg font-bold mb-4">埼玉県総合案内</h2>
-          <p class="text-gray-400 text-sm leading-relaxed">
-            埼玉県の魅力を発信する総合情報サイトです。観光、暮らし、産業など幅広い情報をお届けします。
-          </p>
-        </div>
-        <div>
-          <h2 class="text-lg font-bold mb-4">主要カテゴリー</h2>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/about/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">埼玉について</a></li>
-            <li><a href="/tourism/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">観光・レジャー</a></li>
-            <li><a href="/life/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">暮らし</a></li>
-            <li><a href="/industry/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">産業・経済</a></li>
-            <li><a href="/cities/index.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">市町村情報</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="text-lg font-bold mb-4">サイト情報</h2>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/site-info/about.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトについて</a></li>
-            <li><a href="/site-info/accessibility.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">アクセシビリティ</a></li>
-            <li><a href="/site-info/sitemap.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">サイトマップ</a></li>
-            <li><a href="/site-info/contact.html" class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">お問い合わせ</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
-        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <!-- フッター -->
+  
+  <!-- フッター -->
+
+  <div id="footer-placeholder"></div>
 
   <!-- Mobile Menu Script -->
   <script>
@@ -459,5 +392,8 @@
       }
     });
   </script>
+
+    <!-- 共通コンポーネント読み込み -->
+    <script src="../../js/components.js"></script>
 </body>
 </html>

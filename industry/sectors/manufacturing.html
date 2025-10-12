@@ -5,19 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>製造業 - 産業・経済 | 埼玉県総合案内</title>
   <meta name="description" content="埼玉県の製造業に関する情報。製造品出荷額、主要産業、成長セクター、技術力について紹介します。">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'saitama-green': '#00A040',
-            'saitama-blue': '#0068B7',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/custom-styles.css">
 </head>
 <body class="bg-gray-50">
   <!-- スキップリンク -->
@@ -26,46 +15,7 @@
   </a>
 
   <!-- ヘッダー -->
-  <header class="bg-white shadow-md sticky top-0 z-40">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center py-4">
-        <div class="text-2xl font-bold text-saitama-green">
-          <a href="/index.html" class="hover:opacity-80 transition-opacity">埼玉県総合案内</a>
-        </div>
-
-        <!-- デスクトップナビゲーション -->
-        <nav class="hidden md:block" aria-label="メインナビゲーション">
-          <ul class="flex space-x-6">
-            <li><a href="/about/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
-            <li><a href="/tourism/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
-            <li><a href="/life/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
-            <li><a href="/industry/index.html" class="text-saitama-green font-bold">産業・経済</a></li>
-            <li><a href="/cities/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
-            <li><a href="/site-info/index.html" class="text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
-          </ul>
-        </nav>
-
-        <!-- モバイルメニューボタン -->
-        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- モバイルナビゲーション -->
-      <nav id="mobile-menu" class="hidden md:hidden pb-4" aria-label="モバイルメインナビゲーション">
-        <ul class="space-y-2">
-          <li><a href="/about/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">埼玉について</a></li>
-          <li><a href="/tourism/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">観光・レジャー</a></li>
-          <li><a href="/life/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">生活情報</a></li>
-          <li><a href="/industry/index.html" class="block py-2 text-saitama-green font-bold">産業・経済</a></li>
-          <li><a href="/cities/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">市町村情報</a></li>
-          <li><a href="/site-info/index.html" class="block py-2 text-gray-700 hover:text-saitama-green transition-colors">サイト情報</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <div id="header-placeholder"></div>
 
   <!-- パンくずリスト -->
   <nav aria-label="パンくずリスト" class="bg-gray-100 py-3">
@@ -344,80 +294,52 @@
       </section>
 
       <!-- 関連ページ -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">関連ページ</h2>
+      <aside class="bg-blue-50 p-6 rounded-lg">
+        <h2 class="text-xl font-semibold mb-4 text-gray-800">関連カテゴリ</h2>
         <div class="grid md:grid-cols-3 gap-4">
           <a href="/industry/sectors/agriculture.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-            <h3 class="font-bold text-saitama-blue mb-2">農業</h3>
+            <h3 class="font-bold text-saitama-blue mb-2"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>農業</h3>
             <p class="text-sm text-gray-600">埼玉県の農業と特産品</p>
           </a>
           <a href="/industry/companies/major-companies.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-            <h3 class="font-bold text-saitama-blue mb-2">主要企業</h3>
+            <h3 class="font-bold text-saitama-blue mb-2"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>主要企業</h3>
             <p class="text-sm text-gray-600">県内の上場企業と優良企業</p>
           </a>
           <a href="/industry/employment/job-support.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-            <h3 class="font-bold text-saitama-blue mb-2">就労支援</h3>
+            <h3 class="font-bold text-saitama-blue mb-2"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>就労支援</h3>
             <p class="text-sm text-gray-600">製造業の就職支援情報</p>
           </a>
           <a href="/life/education/universities.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-            <h3 class="font-bold text-saitama-blue mb-2">大学・研究機関</h3>
+            <h3 class="font-bold text-saitama-blue mb-2"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>大学・研究機関</h3>
             <p class="text-sm text-gray-600">産学連携の取り組み</p>
           </a>
           <a href="/about/geography/transportation.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-            <h3 class="font-bold text-saitama-blue mb-2">交通アクセス</h3>
+            <h3 class="font-bold text-saitama-blue mb-2"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>交通アクセス</h3>
             <p class="text-sm text-gray-600">物流インフラ情報</p>
           </a>
           <a href="/industry/index.html" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-            <h3 class="font-bold text-saitama-blue mb-2">産業・経済トップ</h3>
+            <h3 class="font-bold text-saitama-blue mb-2"><svg class="w-5 h-5 mr-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>産業・経済トップ</h3>
             <p class="text-sm text-gray-600">産業情報一覧に戻る</p>
           </a>
         </div>
-      </section>
+      </aside>
     </article>
   </main>
 
   <!-- フッター -->
-  <footer class="bg-gray-800 text-white py-8 mt-12">
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8 mb-8">
-        <div>
-          <h3 class="font-bold text-lg mb-4">埼玉について</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/about/profile/overview.html" class="hover:text-saitama-green transition-colors">埼玉県の概要</a></li>
-            <li><a href="/about/geography/index.html" class="hover:text-saitama-green transition-colors">地理・気候</a></li>
-            <li><a href="/about/history/index.html" class="hover:text-saitama-green transition-colors">歴史・文化</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-4">観光・レジャー</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/tourism/spots/index.html" class="hover:text-saitama-green transition-colors">観光スポット</a></li>
-            <li><a href="/tourism/events/index.html" class="hover:text-saitama-green transition-colors">イベント</a></li>
-            <li><a href="/tourism/food/local-cuisine.html" class="hover:text-saitama-green transition-colors">グルメ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-4">生活情報</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/life/education/index.html" class="hover:text-saitama-green transition-colors">教育</a></li>
-            <li><a href="/life/medical/index.html" class="hover:text-saitama-green transition-colors">医療</a></li>
-            <li><a href="/life/welfare/index.html" class="hover:text-saitama-green transition-colors">福祉</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-4">サイト情報</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/site-info/accessibility.html" class="hover:text-saitama-green transition-colors">アクセシビリティ</a></li>
-            <li><a href="/site-info/sitemap.html" class="hover:text-saitama-green transition-colors">サイトマップ</a></li>
-            <li><a href="/site-info/contact.html" class="hover:text-saitama-green transition-colors">お問い合わせ</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-gray-700 pt-8 text-sm text-center">
-        <p>&copy; 2025 埼玉県総合案内. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    <div id="footer-placeholder"></div>
 
   <script>
     // モバイルメニュートグル
@@ -433,5 +355,8 @@
       this.setAttribute('aria-label', isExpanded ? 'メニューを開く' : 'メニューを閉じる');
     });
   </script>
+
+    <!-- 共通コンポーネント読み込み -->
+    <script src="../../js/components.js"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!-- ヘッダー -->
+<header class="bg-white shadow-md fixed top-0 left-0 right-0 z-40">
+    <!-- 右側：こばとん画像と著作権表示（デスクトップのみ・固定配置） -->
+    <div class="hidden md:flex fixed top-4 right-8 flex-col items-center z-50">
+        <img src="/img/kobaton.jpg" alt="埼玉県マスコット こばとん" class="h-6 w-auto">
+        <p class="text-xs text-gray-600 mt-1 whitespace-nowrap">©埼玉県2025</p>
+    </div>
+
+    <div class="container mx-auto px-4">
+        <nav class="py-4 relative" role="navigation" aria-label="メインナビゲーション">
+            <!-- ロゴとマスコット -->
+            <div class="flex items-center justify-center mb-4">
+                <!-- 中央：サイトロゴ -->
+                <a href="/index.html" class="text-2xl font-bold text-gray-800 hover:text-saitama-blue transition-colors">
+                    さいたまなび
+                </a>
+            </div>
+
+            <!-- モバイルメニューボタン（絶対配置） -->
+            <button id="mobile-menu-button" class="md:hidden absolute top-4 right-0 p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-saitama-blue" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">メニューを開く</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- ナビゲーションメニュー -->
+            <ul id="mobile-menu" class="hidden md:flex md:space-x-6 md:justify-center">
+                <li><a href="/about/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">埼玉県の概要</a></li>
+                <li><a href="/tourism/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">観光・レジャー</a></li>
+                <li><a href="/life/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">生活・暮らし</a></li>
+                <li><a href="/industry/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">産業・経済</a></li>
+                <li><a href="/cities/index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">市町村情報</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
