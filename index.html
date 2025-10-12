@@ -7,6 +7,57 @@
     <title>さいたまなび - 観光・文化・生活情報</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/custom-styles.css">
+    <style>
+        /* TOPページ専用：h2のみ角丸ボタン風スタイル */
+        #main h2 {
+            display: inline-block;
+            background: rgba(0, 104, 183, 0.7);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            box-shadow: 0 3px 10px rgba(0, 104, 183, 0.3);
+            margin-bottom: 2rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        /* h1とh2を中央揃え */
+        #main section {
+            text-align: center;
+        }
+
+        /* text-centerの親要素に合わせて中央配置 */
+        .text-center h1,
+        .text-center h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ホバー効果 */
+        #main h2:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 104, 183, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        /* ヒーローセクションの背景画像 */
+        .hero-section {
+            background-image: url('/img/top_kv.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* テキストの可読性を確保 - 黒枠付き */
+        .hero-section h1,
+        .hero-section p {
+            text-shadow:
+                -2px -2px 4px rgba(0, 0, 0, 0.8),
+                2px -2px 4px rgba(0, 0, 0, 0.8),
+                -2px 2px 4px rgba(0, 0, 0, 0.8),
+                2px 2px 4px rgba(0, 0, 0, 0.8),
+                0 0 8px rgba(0, 0, 0, 0.9);
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- スキップリンク -->
@@ -20,7 +71,7 @@
     <!-- メインコンテンツ -->
     <main id="main">
         <!-- ヒーローセクション -->
-        <section class="bg-gradient-to-r from-saitama-blue to-saitama-green text-white py-16 md:py-24">
+        <section class="hero-section text-white py-16 md:py-24">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
@@ -79,9 +130,9 @@
                     <!-- 埼玉県の概要 -->
                     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
                         <figure>
-                            <img src="https://via.placeholder.com/400x250/00A040/ffffff?text=埼玉県の概要"
+                            <img src="/img/saitama-gaiyou.png"
                                  alt="埼玉県の概要カテゴリ。県の地理、歴史、文化、統計データなどの基本情報を掲載"
-                                 class="w-full h-48 object-cover">
+                                 class="w-full h-48 object-cover object-top">
                         </figure>
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2 text-gray-800">
