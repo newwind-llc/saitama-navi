@@ -18,8 +18,18 @@
         function getComponentPath() {
             const path = window.location.pathname;
 
+            // GitHub Pagesのベースパス（/saitama-navi/）を除外
+            let adjustedPath = path;
+            const basePathMatch = path.match(/^\/[^\/]+\//);
+            if (basePathMatch && basePathMatch[0] !== '/') {
+                // ベースパスがある場合（GitHub Pages等）、それを除外
+                if (path.startsWith('/saitama-navi/')) {
+                    adjustedPath = path.replace('/saitama-navi', '');
+                }
+            }
+
             // パスからファイル名を除去してディレクトリパスを取得
-            const directory = path.substring(0, path.lastIndexOf('/'));
+            const directory = adjustedPath.substring(0, adjustedPath.lastIndexOf('/'));
 
             // ルートからの階層数を計算（先頭と末尾の/を除く）
             const pathParts = directory.split('/').filter(p => p);
