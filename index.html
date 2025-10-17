@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="埼玉県の観光、文化、産業、生活情報を網羅した総合紹介サイト。都心から90分でアクセスできる自然豊かな埼玉県の魅力を発信します。">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="埼玉県の観光、文化、産業、生活情報を網羅した総合紹介サイト。都心から90分でアクセスできる自然豊かな埼玉県の魅力を発信します。"
+    />
     <title>さいたまなび - 観光・文化・生活情報</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/custom-styles.css" />
     <style>
-        /* TOPページ専用：h2のみ角丸ボタン風スタイル */
-        #main h2 {
-            display: inline-block;
-            background: rgba(0, 104, 183, 0.7);
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            box-shadow: 0 3px 10px rgba(0, 104, 183, 0.3);
-            margin-bottom: 2rem;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-        }
+      /* TOPページ専用：h2のみ角丸ボタン風スタイル */
+      #main h2 {
+        display: inline-block;
+        background: rgba(0, 104, 183, 0.7);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        box-shadow: 0 3px 10px rgba(0, 104, 183, 0.3);
+        margin-bottom: 2rem;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      }
 
-        /* h1とh2を中央揃え */
-        #main section {
-            text-align: center;
-        }
+      /* h1とh2を中央揃え */
+      #main section {
+        text-align: center;
+      }
 
-        /* text-centerの親要素に合わせて中央配置 */
-        .text-center h1,
-        .text-center h2 {
-            margin-left: auto;
-            margin-right: auto;
-        }
+      /* text-centerの親要素に合わせて中央配置 */
+      .text-center h1,
+      .text-center h2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-        /* ホバー効果 */
-        #main h2:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 104, 183, 0.4);
-            transition: all 0.3s ease;
-        }
+      /* ホバー効果 */
+      #main h2:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 104, 183, 0.4);
+        transition: all 0.3s ease;
+      }
 
-        /* ヒーローセクションの背景画像 */
-        .hero-section {
-            background-image: url('/img/top_kv.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+      /* ヒーローセクションの背景画像 */
+      .hero-section {
+        background-image: url("/img/tokinokane.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
 
-        /* テキストの可読性を確保 - 黒枠付き */
-        .hero-section h1,
-        .hero-section p {
-            text-shadow:
-                -2px -2px 4px rgba(0, 0, 0, 0.8),
-                2px -2px 4px rgba(0, 0, 0, 0.8),
-                -2px 2px 4px rgba(0, 0, 0, 0.8),
-                2px 2px 4px rgba(0, 0, 0, 0.8),
-                0 0 8px rgba(0, 0, 0, 0.9);
-        }
+      /* テキストの可読性を確保 - 黒枠付き */
+      .hero-section h1,
+      .hero-section p {
+        text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.8),
+          2px -2px 4px rgba(0, 0, 0, 0.8), -2px 2px 4px rgba(0, 0, 0, 0.8),
+          2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.9);
+      }
     </style>
-</head>
-<body class="bg-gray-50 text-gray-900">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
     <!-- スキップリンク -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue">
-        メインコンテンツへスキップ
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-saitama-blue text-white px-4 py-2 rounded-md shadow-lg z-50 focus:ring-2 focus:ring-offset-2 focus:ring-saitama-blue"
+    >
+      メインコンテンツへスキップ
     </a>
 
     <!-- ヘッダー -->
@@ -70,302 +73,427 @@
 
     <!-- メインコンテンツ -->
     <main id="main">
-        <!-- ヒーローセクション -->
-        <section class="hero-section text-white py-16 md:py-24">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                        埼玉県へようこそ
-                    </h1>
-                    <p class="text-lg md:text-xl leading-relaxed mb-8">
-                        都心から90分でアクセスできる自然豊かな埼玉県。豊かな歴史文化、多彩な観光スポット、快適な生活環境を兼ね備えた魅力あふれる県です。人口約732万人、面積3,797.75km²の広大なエリアで、皆様をお待ちしています。
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="/tourism/index.html" class="bg-white text-saitama-blue px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue">
-                            観光情報を見る
-                        </a>
-                        <a href="/about/index.html" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue">
-                            埼玉県を知る
-                        </a>
-                    </div>
-                </div>
+      <!-- ヒーローセクション -->
+      <section class="hero-section text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              埼玉県へようこそ
+            </h1>
+            <p class="text-lg md:text-xl leading-relaxed mb-8">
+              都心から90分でアクセスできる自然豊かな埼玉県。豊かな歴史文化、多彩な観光スポット、快適な生活環境を兼ね備えた魅力あふれる県です。人口約732万人、面積3,797.75km²の広大なエリアで、皆様をお待ちしています。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/tourism/index.html"
+                class="bg-white text-saitama-blue px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue"
+              >
+                観光情報を見る
+              </a>
+              <a
+                href="/about/index.html"
+                class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue"
+              >
+                埼玉県を知る
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- 埼玉県の基本情報 -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">埼玉県の基本情報</h2>
-                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
-                        <div class="text-4xl mb-2 text-saitama-blue" aria-hidden="true">👥</div>
-                        <h3 class="text-lg font-semibold mb-2 text-gray-800">人口</h3>
-                        <p class="text-3xl font-bold text-saitama-blue mb-1">732万人</p>
-                        <p class="text-sm text-gray-600">2025年9月1日時点</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
-                        <div class="text-4xl mb-2 text-saitama-green" aria-hidden="true">🏘️</div>
-                        <h3 class="text-lg font-semibold mb-2 text-gray-800">世帯数</h3>
-                        <p class="text-3xl font-bold text-saitama-green mb-1">336万世帯</p>
-                        <p class="text-sm text-gray-600">2025年9月1日時点</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
-                        <div class="text-4xl mb-2 text-saitama-blue" aria-hidden="true">🗺️</div>
-                        <h3 class="text-lg font-semibold mb-2 text-gray-800">面積</h3>
-                        <p class="text-3xl font-bold text-saitama-blue mb-1">3,797.75km²</p>
-                        <p class="text-sm text-gray-600">全国39位</p>
-                    </div>
-                </div>
-                <p class="text-sm text-gray-600 text-center mt-4">
-                    出典：埼玉県推計人口（令和7年9月1日時点）、国土地理院
+      <!-- 埼玉県の基本情報 -->
+      <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800"
+          >
+            埼玉県の基本情報
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+              <div class="text-4xl mb-2 text-saitama-blue" aria-hidden="true">
+                👥
+              </div>
+              <h3 class="text-lg font-semibold mb-2 text-gray-800">人口</h3>
+              <p class="text-3xl font-bold text-saitama-blue mb-1">732万人</p>
+              <p class="text-sm text-gray-600">2025年9月1日時点</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+              <div class="text-4xl mb-2 text-saitama-green" aria-hidden="true">
+                🏘️
+              </div>
+              <h3 class="text-lg font-semibold mb-2 text-gray-800">世帯数</h3>
+              <p class="text-3xl font-bold text-saitama-green mb-1">
+                336万世帯
+              </p>
+              <p class="text-sm text-gray-600">2025年9月1日時点</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+              <div class="text-4xl mb-2 text-saitama-blue" aria-hidden="true">
+                🗺️
+              </div>
+              <h3 class="text-lg font-semibold mb-2 text-gray-800">面積</h3>
+              <p class="text-3xl font-bold text-saitama-blue mb-1">
+                3,797.75km²
+              </p>
+              <p class="text-sm text-gray-600">全国39位</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600 text-center mt-4">
+            出典：埼玉県推計人口（令和7年9月1日時点）、国土地理院
+          </p>
+        </div>
+      </section>
+
+      <!-- カテゴリナビゲーション -->
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800"
+          >
+            カテゴリから探す
+          </h2>
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+          >
+            <!-- 埼玉県の概要 -->
+            <article
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <figure>
+                <img
+                  src="/img/saitama-gaiyou.png"
+                  alt="埼玉県の概要カテゴリ。県の地理、歴史、文化、統計データなどの基本情報を掲載"
+                  class="w-full h-48 object-cover object-top"
+                />
+              </figure>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">
+                  <a
+                    href="/about/index.html"
+                    class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                  >
+                    埼玉県の概要
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  埼玉県の地理、気候、歴史、文化、人口統計など、県の基本情報をご紹介します。
                 </p>
-            </div>
-        </section>
+                <a
+                  href="/about/index.html"
+                  class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  詳しく見る →
+                </a>
+              </div>
+            </article>
 
-        <!-- カテゴリナビゲーション -->
-        <section class="py-12 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">カテゴリから探す</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                    <!-- 埼玉県の概要 -->
-                    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                        <figure>
-                            <img src="/img/saitama-gaiyou.png"
-                                 alt="埼玉県の概要カテゴリ。県の地理、歴史、文化、統計データなどの基本情報を掲載"
-                                 class="w-full h-48 object-cover object-top">
-                        </figure>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">
-                                <a href="/about/index.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                    埼玉県の概要
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                埼玉県の地理、気候、歴史、文化、人口統計など、県の基本情報をご紹介します。
-                            </p>
-                            <a href="/about/index.html" class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                詳しく見る →
-                            </a>
-                        </div>
-                    </article>
+            <!-- 観光・レジャー -->
+            <article
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <figure>
+                <img
+                  src="https://via.placeholder.com/400x250/0068B7/ffffff?text=観光・レジャー"
+                  alt="観光・レジャーカテゴリ。川越、秩父、長瀞などの観光スポット、イベント、グルメ情報を掲載"
+                  class="w-full h-48 object-cover"
+                />
+              </figure>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">
+                  <a
+                    href="/tourism/index.html"
+                    class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                  >
+                    観光・レジャー
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  川越、秩父、長瀞など、埼玉県の魅力的な観光スポット、イベント、グルメ情報を網羅しています。
+                </p>
+                <a
+                  href="/tourism/index.html"
+                  class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  詳しく見る →
+                </a>
+              </div>
+            </article>
 
-                    <!-- 観光・レジャー -->
-                    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                        <figure>
-                            <img src="https://via.placeholder.com/400x250/0068B7/ffffff?text=観光・レジャー"
-                                 alt="観光・レジャーカテゴリ。川越、秩父、長瀞などの観光スポット、イベント、グルメ情報を掲載"
-                                 class="w-full h-48 object-cover">
-                        </figure>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">
-                                <a href="/tourism/index.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                    観光・レジャー
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                川越、秩父、長瀞など、埼玉県の魅力的な観光スポット、イベント、グルメ情報を網羅しています。
-                            </p>
-                            <a href="/tourism/index.html" class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                詳しく見る →
-                            </a>
-                        </div>
-                    </article>
+            <!-- 生活・暮らし -->
+            <article
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <figure>
+                <img
+                  src="https://via.placeholder.com/400x250/00A040/ffffff?text=生活・暮らし"
+                  alt="生活・暮らしカテゴリ。交通、医療、福祉、教育、子育て支援などの生活情報を掲載"
+                  class="w-full h-48 object-cover"
+                />
+              </figure>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">
+                  <a
+                    href="/life/index.html"
+                    class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                  >
+                    生活・暮らし
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  交通アクセス、医療・福祉、教育、子育て支援など、埼玉県での快適な生活に役立つ情報を提供します。
+                </p>
+                <a
+                  href="/life/index.html"
+                  class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  詳しく見る →
+                </a>
+              </div>
+            </article>
 
-                    <!-- 生活・暮らし -->
-                    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                        <figure>
-                            <img src="https://via.placeholder.com/400x250/00A040/ffffff?text=生活・暮らし"
-                                 alt="生活・暮らしカテゴリ。交通、医療、福祉、教育、子育て支援などの生活情報を掲載"
-                                 class="w-full h-48 object-cover">
-                        </figure>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">
-                                <a href="/life/index.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                    生活・暮らし
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                交通アクセス、医療・福祉、教育、子育て支援など、埼玉県での快適な生活に役立つ情報を提供します。
-                            </p>
-                            <a href="/life/index.html" class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                詳しく見る →
-                            </a>
-                        </div>
-                    </article>
+            <!-- 産業・経済 -->
+            <article
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <figure>
+                <img
+                  src="https://via.placeholder.com/400x250/0068B7/ffffff?text=産業・経済"
+                  alt="産業・経済カテゴリ。製造業、農業、商業、主要企業、就労支援などの産業情報を掲載"
+                  class="w-full h-48 object-cover"
+                />
+              </figure>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">
+                  <a
+                    href="/industry/index.html"
+                    class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                  >
+                    産業・経済
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  製造業、農業、商業など、埼玉県の産業構造、主要企業、就労支援に関する情報をまとめています。
+                </p>
+                <a
+                  href="/industry/index.html"
+                  class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  詳しく見る →
+                </a>
+              </div>
+            </article>
 
-                    <!-- 産業・経済 -->
-                    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                        <figure>
-                            <img src="https://via.placeholder.com/400x250/0068B7/ffffff?text=産業・経済"
-                                 alt="産業・経済カテゴリ。製造業、農業、商業、主要企業、就労支援などの産業情報を掲載"
-                                 class="w-full h-48 object-cover">
-                        </figure>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">
-                                <a href="/industry/index.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                    産業・経済
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                製造業、農業、商業など、埼玉県の産業構造、主要企業、就労支援に関する情報をまとめています。
-                            </p>
-                            <a href="/industry/index.html" class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                詳しく見る →
-                            </a>
-                        </div>
-                    </article>
+            <!-- 市町村情報 -->
+            <article
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <figure>
+                <img
+                  src="https://via.placeholder.com/400x250/00A040/ffffff?text=市町村情報"
+                  alt="市町村情報カテゴリ。さいたま市、川口市、川越市など県内主要都市の詳細情報を掲載"
+                  class="w-full h-48 object-cover"
+                />
+              </figure>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">
+                  <a
+                    href="/cities/index.html"
+                    class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                  >
+                    市町村情報
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  さいたま市、川口市、川越市など、埼玉県内の主要都市の特徴、観光、生活情報をご紹介します。
+                </p>
+                <a
+                  href="/cities/index.html"
+                  class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  詳しく見る →
+                </a>
+              </div>
+            </article>
 
-                    <!-- 市町村情報 -->
-                    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                        <figure>
-                            <img src="https://via.placeholder.com/400x250/00A040/ffffff?text=市町村情報"
-                                 alt="市町村情報カテゴリ。さいたま市、川口市、川越市など県内主要都市の詳細情報を掲載"
-                                 class="w-full h-48 object-cover">
-                        </figure>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">
-                                <a href="/cities/index.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                    市町村情報
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                さいたま市、川口市、川越市など、埼玉県内の主要都市の特徴、観光、生活情報をご紹介します。
-                            </p>
-                            <a href="/cities/index.html" class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                詳しく見る →
-                            </a>
-                        </div>
-                    </article>
+            <!-- サイト情報 -->
+            <article
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <figure>
+                <img
+                  src="https://via.placeholder.com/400x250/0068B7/ffffff?text=サイト情報"
+                  alt="サイト情報カテゴリ。サイトマップ、アクセシビリティ方針、プライバシーポリシーを掲載"
+                  class="w-full h-48 object-cover"
+                />
+              </figure>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">
+                  <a
+                    href="/site-info/sitemap.html"
+                    class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                  >
+                    サイト情報
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  サイトマップ、アクセシビリティ方針、プライバシーポリシー、お問い合わせ先などの情報をご確認いただけます。
+                </p>
+                <a
+                  href="/site-info/sitemap.html"
+                  class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  詳しく見る →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                    <!-- サイト情報 -->
-                    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                        <figure>
-                            <img src="https://via.placeholder.com/400x250/0068B7/ffffff?text=サイト情報"
-                                 alt="サイト情報カテゴリ。サイトマップ、アクセシビリティ方針、プライバシーポリシーを掲載"
-                                 class="w-full h-48 object-cover">
-                        </figure>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">
-                                <a href="/site-info/sitemap.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                    サイト情報
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                サイトマップ、アクセシビリティ方針、プライバシーポリシー、お問い合わせ先などの情報をご確認いただけます。
-                            </p>
-                            <a href="/site-info/sitemap.html" class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                詳しく見る →
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <!-- 季節の見どころ -->
+      <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800"
+          >
+            季節の見どころ
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <article class="bg-gray-50 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-bold mb-3 text-saitama-blue">
+                川越「小江戸」の街並み
+              </h3>
+              <figure class="mb-4">
+                <img
+                  src="https://via.placeholder.com/400x250/00A040/ffffff?text=川越時の鐘"
+                  alt="川越の時の鐘。江戸時代初期から時を告げる木造3層構造の鐘楼で、高さ約16メートル"
+                  class="w-full h-48 object-cover rounded-md"
+                />
+                <figcaption class="text-sm text-gray-600 mt-2">
+                  川越のシンボル「時の鐘」
+                </figcaption>
+              </figure>
+              <p class="text-gray-600 leading-relaxed">
+                江戸の雰囲気が残る蔵造りの街並み。東京から1時間で訪れることができ、フォトジェニックなスポットとして人気です。
+              </p>
+            </article>
 
-        <!-- 季節の見どころ -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">季節の見どころ</h2>
-                <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                    <article class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3 text-saitama-blue">川越「小江戸」の街並み</h3>
-                        <figure class="mb-4">
-                            <img src="https://via.placeholder.com/400x250/00A040/ffffff?text=川越時の鐘"
-                                 alt="川越の時の鐘。江戸時代初期から時を告げる木造3層構造の鐘楼で、高さ約16メートル"
-                                 class="w-full h-48 object-cover rounded-md">
-                            <figcaption class="text-sm text-gray-600 mt-2">
-                                川越のシンボル「時の鐘」
-                            </figcaption>
-                        </figure>
-                        <p class="text-gray-600 leading-relaxed">
-                            江戸の雰囲気が残る蔵造りの街並み。東京から1時間で訪れることができ、フォトジェニックなスポットとして人気です。
-                        </p>
-                    </article>
+            <article class="bg-gray-50 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-bold mb-3 text-saitama-blue">
+                秩父・長瀞の自然
+              </h3>
+              <figure class="mb-4">
+                <img
+                  src="https://via.placeholder.com/400x250/0068B7/ffffff?text=長瀞の岩畳"
+                  alt="長瀞の岩畳。荒川の清流に沿って広がる結晶片岩の一枚岩で、国の天然記念物に指定"
+                  class="w-full h-48 object-cover rounded-md"
+                />
+                <figcaption class="text-sm text-gray-600 mt-2">
+                  長瀞の岩畳とライン下り
+                </figcaption>
+              </figure>
+              <p class="text-gray-600 leading-relaxed">
+                標高1,100mに位置する三峯神社、荒川でのライン下りなど、自然豊かな観光スポットが点在しています。
+              </p>
+            </article>
 
-                    <article class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3 text-saitama-blue">秩父・長瀞の自然</h3>
-                        <figure class="mb-4">
-                            <img src="https://via.placeholder.com/400x250/0068B7/ffffff?text=長瀞の岩畳"
-                                 alt="長瀞の岩畳。荒川の清流に沿って広がる結晶片岩の一枚岩で、国の天然記念物に指定"
-                                 class="w-full h-48 object-cover rounded-md">
-                            <figcaption class="text-sm text-gray-600 mt-2">
-                                長瀞の岩畳とライン下り
-                            </figcaption>
-                        </figure>
-                        <p class="text-gray-600 leading-relaxed">
-                            標高1,100mに位置する三峯神社、荒川でのライン下りなど、自然豊かな観光スポットが点在しています。
-                        </p>
-                    </article>
+            <article class="bg-gray-50 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-bold mb-3 text-saitama-blue">
+                伝統の祭り
+              </h3>
+              <figure class="mb-4">
+                <img
+                  src="https://via.placeholder.com/400x250/00A040/ffffff?text=秩父夜祭"
+                  alt="秩父夜祭。日本三大曳山祭の一つで、豪華絢爛な山車が街中を巡行する冬の祭典"
+                  class="w-full h-48 object-cover rounded-md"
+                />
+                <figcaption class="text-sm text-gray-600 mt-2">
+                  ユネスコ無形文化遺産「秩父夜祭」
+                </figcaption>
+              </figure>
+              <p class="text-gray-600 leading-relaxed">
+                12月の秩父夜祭、10月の川越まつりなど、歴史ある伝統行事が年間を通して開催されています。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                    <article class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3 text-saitama-blue">伝統の祭り</h3>
-                        <figure class="mb-4">
-                            <img src="https://via.placeholder.com/400x250/00A040/ffffff?text=秩父夜祭"
-                                 alt="秩父夜祭。日本三大曳山祭の一つで、豪華絢爛な山車が街中を巡行する冬の祭典"
-                                 class="w-full h-48 object-cover rounded-md">
-                            <figcaption class="text-sm text-gray-600 mt-2">
-                                ユネスコ無形文化遺産「秩父夜祭」
-                            </figcaption>
-                        </figure>
-                        <p class="text-gray-600 leading-relaxed">
-                            12月の秩父夜祭、10月の川越まつりなど、歴史ある伝統行事が年間を通して開催されています。
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <!-- 注目情報 -->
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800"
+          >
+            注目情報
+          </h2>
+          <div class="max-w-4xl mx-auto space-y-4">
+            <article
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+            >
+              <time class="text-sm text-gray-500" datetime="2024-05-01"
+                >2024年5月</time
+              >
+              <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
+                <a
+                  href="/tourism/spots/kawagoe.html"
+                  class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  川越に「りそな小江戸テラス」オープン
+                </a>
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                地域活性化を目指した複合施設が川越にオープン。観光とビジネスの新たな拠点として注目を集めています。
+              </p>
+            </article>
 
-        <!-- 注目情報 -->
-        <section class="py-12 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">注目情報</h2>
-                <div class="max-w-4xl mx-auto space-y-4">
-                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                        <time class="text-sm text-gray-500" datetime="2024-05-01">2024年5月</time>
-                        <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
-                            <a href="/tourism/spots/kawagoe.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                川越に「りそな小江戸テラス」オープン
-                            </a>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            地域活性化を目指した複合施設が川越にオープン。観光とビジネスの新たな拠点として注目を集めています。
-                        </p>
-                    </article>
+            <article
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+            >
+              <time class="text-sm text-gray-500" datetime="2025-01-01"
+                >2025年</time
+              >
+              <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
+                <a
+                  href="/tourism/events/chichibu-yomatsuri.html"
+                  class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  田んぼアート「鬼滅の刃 無限城編」コラボ決定
+                </a>
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                ギネス世界記録認定の田んぼアートと人気アニメがコラボレーション。2025年の新たな観光スポットとして期待されています。
+              </p>
+            </article>
 
-                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                        <time class="text-sm text-gray-500" datetime="2025-01-01">2025年</time>
-                        <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
-                            <a href="/tourism/events/chichibu-yomatsuri.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                田んぼアート「鬼滅の刃 無限城編」コラボ決定
-                            </a>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            ギネス世界記録認定の田んぼアートと人気アニメがコラボレーション。2025年の新たな観光スポットとして期待されています。
-                        </p>
-                    </article>
-
-                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                        <time class="text-sm text-gray-500" datetime="2024-10-01">2024年10月</time>
-                        <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
-                            <a href="/about/population.html" class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue">
-                                埼玉県の人口、減少から増加に転換
-                            </a>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            2024年10月1日時点で0.01%の人口増加を記録。住みやすい環境と都心へのアクセスの良さが評価されています。
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
+            <article
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+            >
+              <time class="text-sm text-gray-500" datetime="2024-10-01"
+                >2024年10月</time
+              >
+              <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
+                <a
+                  href="/about/population.html"
+                  class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
+                >
+                  埼玉県の人口、減少から増加に転換
+                </a>
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                2024年10月1日時点で0.01%の人口増加を記録。住みやすい環境と都心へのアクセスの良さが評価されています。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- フッター -->
     <div id="footer-placeholder"></div>
 
-    
-
     <!-- 共通コンポーネント読み込み -->
     <script src="js/components.js"></script>
-</body>
+  </body>
 </html>
