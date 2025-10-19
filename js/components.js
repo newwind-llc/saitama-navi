@@ -7,77 +7,24 @@
   "use strict";
 
   // DOMの読み込み完了を待つ
-  if (document.readyState === "loading") {
+  if (document.readyState === "loading") {console.log("111");
     document.addEventListener("DOMContentLoaded", init);
-  } else {
+  } else {console.log("222");
     init();
   }
 
   function init() {
-    // ベースパスを検出（GitHub Pages対応）
-    const repoName = "saitama-navi"; // GitHubリポジトリ名
-    const path = window.location.pathname;
-    const siteBasePath = path.startsWith(`/${repoName}/`)
-      ? `/${repoName}/`
-      : "/";
-
-    // 画像パスを修正（GitHub Pages対応）
-    function fixImagePaths() {
-      if (siteBasePath !== "/") {
-        // すべての画像のsrc属性を修正（getAttribute使用で元の値を取得）
-        document.querySelectorAll("img").forEach((img) => {
-          const src = img.getAttribute("src"); // getAttributeで元のパスを取得
-          if (src && src.startsWith("/img/")) {
-            img.setAttribute("src", siteBasePath + src.substring(1));
-          }
-        });
-
-        // 背景画像のパスを修正
-        document.querySelectorAll('[style*="url(\'/img/"]').forEach((elem) => {
-          const style = elem.getAttribute("style");
-          if (style) {
-            elem.style.backgroundImage = elem.style.backgroundImage.replace(
-              /url\(['"]?\/img\//,
-              `url('${siteBasePath}img/`
-            );
-          }
-        });
-
-        // CSSの背景画像を修正（index.htmlの<style>タグ内）
-        document.querySelectorAll("style").forEach((styleTag) => {
-          const content = styleTag.textContent;
-          if (content.includes("url('/img/")) {
-            styleTag.textContent = content.replace(
-              /url\(\s*['"]?\/img\//g,
-              `url('${siteBasePath}img/`
-            );
-          }
-        });
-      }
-    }
-
-    // 画像パスを即座に修正
-    fixImagePaths();
-
-    // 現在のページのパスからcomponentsディレクトリへの相対パスを計算
-    function getComponentPath() {
+    // 現在のページのパスからルートへの相対パスを計算
+    function getRelativePathToRoot() {
       const path = window.location.pathname;
 
-      // GitHub Pagesのベースパス（/saitama-navi/）を除外
-      let adjustedPath = path;
-      const basePathMatch = path.match(/^\/[^\/]+\//);
-      if (basePathMatch && basePathMatch[0] !== "/") {
-        // ベースパスがある場合（GitHub Pages等）、それを除外
-        if (path.startsWith("/saitama-navi/")) {
-          adjustedPath = path.replace("/saitama-navi", "");
-        }
-      }
-
       // パスからファイル名を除去してディレクトリパスを取得
-      const directory = adjustedPath.substring(
-        0,
-        adjustedPath.lastIndexOf("/")
-      );
+      let directory = path.substring(0, path.lastIndexOf("/"));
+
+      // GitHub Pagesのベースパス（/saitama-navi/）を除外
+      if (directory.startsWith("/saitama-navi")) {
+        directory = directory.replace("/saitama-navi", "");
+      }
 
       // ルートからの階層数を計算（先頭と末尾の/を除く）
       const pathParts = directory.split("/").filter((p) => p);
@@ -91,16 +38,40 @@
       }
     }
 
-    const basePath = getComponentPath();
+    const basePath = getRelativePathToRoot();
 
+    // header/footer内の絶対パスを相対パスに変換
+    function convertAbsolutePathsToRelative(element) {
+      // リンク（a, link要素）のhrefを修正
+      element.querySelectorAll('a[href^="/"], link[href^="/"]').forEach((elem) => {
+        const href = elem.getAttribute("href");
+        if (href && href.startsWith("/") && !href.startsWith("//")) {
+          elem.setAttribute("href", basePath + href.substring(1));
+        }
+      });
+
+      // 画像のsrcを修正
+      element.querySelectorAll('img[src^="/"]').forEach((img) => {
+        const src = img.getAttribute("src");
+        if (src && src.startsWith("/") && !src.startsWith("//")) {
+          img.setAttribute("src", basePath + src.substring(1));
+        }
+      });
+    }
+    
     // ヘッダーを読み込む
-    fetch(getComponentPath() + "components/header.html")
-      .then((response) => response.text())
+    fetch(basePath + "components/header.html")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+      })
       .then((html) => {
         const headerPlaceholder = document.getElementById("header-placeholder");
         if (headerPlaceholder) {
           headerPlaceholder.innerHTML = html;
-          fixImagePaths(); // ヘッダー内の画像パスを修正
+          convertAbsolutePathsToRelative(headerPlaceholder);
           highlightCurrentPage();
           initMobileMenu();
         }
@@ -110,13 +81,18 @@
       );
 
     // フッターを読み込む
-    fetch(getComponentPath() + "components/footer.html")
-      .then((response) => response.text())
+    fetch(basePath + "components/footer.html")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+      })
       .then((html) => {
         const footerPlaceholder = document.getElementById("footer-placeholder");
         if (footerPlaceholder) {
           footerPlaceholder.innerHTML = html;
-          fixImagePaths(); // フッター内の画像パスを修正
+          convertAbsolutePathsToRelative(footerPlaceholder);
         }
       })
       .catch((error) =>
@@ -125,16 +101,40 @@
 
     // 現在のページをナビゲーションでハイライト
     function highlightCurrentPage() {
-      const path = window.location.pathname;
+      const currentPath = window.location.pathname;
       const menuLinks = document.querySelectorAll("#mobile-menu a");
 
       menuLinks.forEach((link) => {
         const href = link.getAttribute("href");
+        if (!href) return;
+
+        // 現在のパスを正規化（GitHub Pagesのベースパスを除去）
+        let normalizedPath = currentPath;
+        if (normalizedPath.startsWith("/saitama-navi")) {
+          normalizedPath = normalizedPath.replace("/saitama-navi", "");
+        }
+
+        // リンクのhrefを絶対パス形式に変換して比較
+        let absoluteHref = href;
+        if (href.startsWith("../")) {
+          // 相対パスを絶対パスに変換
+          const depth = (href.match(/\.\.\//g) || []).length;
+          const pathParts = normalizedPath.split("/").filter((p) => p);
+          pathParts.splice(pathParts.length - depth);
+          const remainingPath = href.replace(/\.\.\//g, "");
+          absoluteHref = "/" + pathParts.join("/") + "/" + remainingPath;
+        } else if (href.startsWith("./")) {
+          const directory = normalizedPath.substring(
+            0,
+            normalizedPath.lastIndexOf("/")
+          );
+          absoluteHref = directory + "/" + href.substring(2);
+        }
+
         // パスが一致する、または現在のパスがそのセクションに含まれる場合
         if (
-          path === href ||
-          (href !== "/index.html" &&
-            path.startsWith(href.replace("index.html", "")))
+          normalizedPath === absoluteHref ||
+          normalizedPath.startsWith(absoluteHref.replace(/index\.html$/, ""))
         ) {
           link.classList.remove("hover:bg-gray-100", "hover:text-saitama-blue");
           link.classList.add("bg-saitama-blue", "text-white", "font-semibold");

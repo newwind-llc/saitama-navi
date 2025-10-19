@@ -8,8 +8,8 @@
       content="埼玉県の観光、文化、産業、生活情報を網羅した総合紹介サイト。都心から90分でアクセスできる自然豊かな埼玉県の魅力を発信します。"
     />
     <title>さいたまなび - 観光・文化・生活情報</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/custom-styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/custom-styles.css" />
     <style>
       /* TOPページ専用：h2のみ角丸ボタン風スタイル */
       #main h2 {
@@ -44,7 +44,7 @@
 
       /* ヒーローセクションの背景画像 */
       .hero-section {
-        background-image: url("/img/tokinokane.jpg");
+        background-image: url("./img/tokinokane.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -73,6 +73,7 @@
         color: rgb(255 255 255 / var(--tw-text-opacity, 1));
       }
     </style>
+    <script src="js/components.js"></script>
   </head>
   <body class="bg-gray-50 text-gray-900">
     <!-- スキップリンク -->
@@ -100,13 +101,13 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/tourism/index.html"
+                href="./tourism/index.html"
                 class="bg-white text-saitama-blue px-6 py-3 rounded-lg font-semibold hover:bg-saitama-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue"
               >
                 観光情報を見る
               </a>
               <a
-                href="/about/index.html"
+                href="./about/index.html"
                 class="bg-white text-saitama-blue px-6 py-3 rounded-lg font-semibold hover:bg-saitama-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue"
               >
                 埼玉県を知る
@@ -177,7 +178,7 @@
             >
               <figure>
                 <img
-                  src="/img/埼玉県.png"
+                  src="./img/埼玉県.png"
                   alt="埼玉県の概要カテゴリ。県の地理、歴史、文化、統計データなどの基本情報を掲載"
                   class="w-full h-48 object-cover object-top"
                 />
@@ -185,7 +186,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="/about/index.html"
+                    href="./about/index.html"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     埼玉県の概要
@@ -195,7 +196,7 @@
                   埼玉県の地理、気候、歴史、文化、人口統計など、県の基本情報をご紹介します。
                 </p>
                 <a
-                  href="/about/index.html"
+                  href="./about/index.html"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -209,7 +210,7 @@
             >
               <figure>
                 <img
-                  src="img/秩父市_ミューズパーク2.jpg"
+                  src="./img/秩父市_ミューズパーク2.jpg"
                   alt="観光・レジャーカテゴリ。川越、秩父、長瀞などの観光スポット、イベント、グルメ情報を掲載"
                   class="w-full h-48 object-cover"
                 />
@@ -217,7 +218,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="/tourism/index.html"
+                    href="./tourism/index.html"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     観光・レジャー
@@ -227,7 +228,7 @@
                   川越、秩父、長瀞など、埼玉県の魅力的な観光スポット、イベント、グルメ情報を網羅しています。
                 </p>
                 <a
-                  href="/tourism/index.html"
+                  href="./tourism/index.html"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -241,7 +242,7 @@
             >
               <figure>
                 <img
-                  src="img/越生梅林2.jpg"
+                  src="./img/越生梅林2.jpg"
                   alt="生活・暮らしカテゴリ。交通、医療、福祉、教育、子育て支援などの生活情報を掲載"
                   class="w-full h-48 object-cover"
                 />
@@ -249,7 +250,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="/life/index.html"
+                    href="./life/index.html"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     生活・暮らし
@@ -259,7 +260,7 @@
                   交通アクセス、医療・福祉、教育、子育て支援など、埼玉県での快適な生活に役立つ情報を提供します。
                 </p>
                 <a
-                  href="/life/index.html"
+                  href="./life/index.html"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -273,7 +274,7 @@
             >
               <figure>
                 <img
-                  src="img/さいたま新都心.jpg"
+                  src="./img/さいたま新都心.jpg"
                   alt="産業・経済カテゴリ。製造業、農業、商業、主要企業、就労支援などの産業情報を掲載"
                   class="w-full h-48 object-cover"
                 />
@@ -281,7 +282,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="/industry/index.html"
+                    href="./industry/index.html"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     産業・経済
@@ -291,7 +292,7 @@
                   製造業、農業、商業など、埼玉県の産業構造、主要企業、就労支援に関する情報をまとめています。
                 </p>
                 <a
-                  href="/industry/index.html"
+                  href="./industry/index.html"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -305,7 +306,7 @@
             >
               <figure>
                 <img
-                  src="img/浦和.jpg"
+                  src="./img/浦和.jpg"
                   alt="市町村情報カテゴリ。さいたま市、川口市、川越市など県内主要都市の詳細情報を掲載"
                   class="w-full h-48 object-cover"
                 />
@@ -313,7 +314,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="/cities/index.html"
+                    href="./cities/index.html"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     市町村情報
@@ -323,7 +324,7 @@
                   さいたま市、川口市、川越市など、埼玉県内の主要都市の特徴、観光、生活情報をご紹介します。
                 </p>
                 <a
-                  href="/cities/index.html"
+                  href="./cities/index.html"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -337,7 +338,7 @@
             >
               <figure>
                 <img
-                  src="img/コバトン-こんにちわ.png"
+                  src="./img/コバトン-こんにちわ.png"
                   alt="サイト情報カテゴリ。サイトマップ、アクセシビリティ方針、プライバシーポリシーを掲載"
                   class="w-full h-48 object-cover object-top"
                 />
@@ -346,7 +347,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="/site-info/sitemap.html"
+                    href="./site-info/sitemap.html"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     サイト情報
@@ -356,7 +357,7 @@
                   サイトマップ、アクセシビリティ方針、プライバシーポリシー、お問い合わせ先などの情報をご確認いただけます。
                 </p>
                 <a
-                  href="/site-info/sitemap.html"
+                  href="./site-info/sitemap.html"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -382,7 +383,7 @@
               </h3>
               <figure class="mb-4">
                 <img
-                  src="img/tokinokane.jpg"
+                  src="./img/tokinokane.jpg"
                   alt="川越の時の鐘。江戸時代初期から時を告げる木造3層構造の鐘楼で、高さ約16メートル"
                   class="w-full h-48 object-cover rounded-md"
                 />
@@ -401,7 +402,7 @@
               </h3>
               <figure class="mb-4">
                 <img
-                  src="img/長瀞岩畳.jpg"
+                  src="./img/長瀞岩畳.jpg"
                   alt="長瀞の岩畳。荒川の清流に沿って広がる結晶片岩の一枚岩で、国の天然記念物に指定"
                   class="w-full h-48 object-cover rounded-md"
                 />
@@ -420,7 +421,7 @@
               </h3>
               <figure class="mb-4">
                 <img
-                  src="/img/秩父夜祭.jpg"
+                  src="./img/秩父夜祭.jpg"
                   alt="秩父夜祭。日本三大曳山祭の一つで、豪華絢爛な山車が街中を巡行する冬の祭典"
                   class="w-full h-48 object-cover rounded-md"
                 />
@@ -453,7 +454,7 @@
               >
               <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
                 <a
-                  href="/tourism/spots/kawagoe.html"
+                  href="./tourism/spots/kawagoe.html"
                   class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   川越に「りそな小江戸テラス」オープン
@@ -472,7 +473,7 @@
               >
               <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
                 <a
-                  href="/tourism/events/chichibu-yomatsuri.html"
+                  href="./tourism/events/chichibu-yomatsuri.html"
                   class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   田んぼアート「鬼滅の刃 無限城編」コラボ決定
@@ -491,7 +492,7 @@
               >
               <h3 class="text-xl font-bold mt-2 mb-2 text-gray-800">
                 <a
-                  href="/about/population.html"
+                  href="./about/population.html"
                   class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   埼玉県の人口、減少から増加に転換
@@ -508,8 +509,5 @@
 
     <!-- フッター -->
     <div id="footer-placeholder"></div>
-
-    <!-- 共通コンポーネント読み込み -->
-    <script src="js/components.js"></script>
   </body>
 </html>
