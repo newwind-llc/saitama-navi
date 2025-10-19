@@ -7,9 +7,9 @@
   "use strict";
 
   // DOMの読み込み完了を待つ
-  if (document.readyState === "loading") {console.log("111");
+  if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
-  } else {console.log("222");
+  } else {
     init();
   }
 
