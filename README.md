@@ -1,79 +1,16 @@
 # さいたまなび
 
-JIS X 8341-3:2016 Level AA準拠の埼玉県総合紹介サイト（全50ページ）
+JIS X 8341-3:2016 Level AA準拠の埼玉県総合紹介サイト（全51ページ）
 
 ## 技術スタック
 
 - HTML5
-- TailwindCSS (CDN)
-- Vanilla JavaScript
-- Nginx (Docker - ローカル開発用)
+- TailwindCSS v3.4.18（プリコンパイル済みの静的CSS `css/styles.css` として同梱）
+- 独自スタイル（`css/custom-styles.css`）
+- Vanilla JavaScript（共通ヘッダー/フッター読み込み、モバイルメニュー）
+- Nginx（Docker - ローカル開発用）
 
-## GitHub Pagesでの公開
-
-このプロジェクトはGitHub Actionsで自動的にデプロイされます。
-
-### セットアップ手順
-
-1. **リポジトリ設定**
-   - GitHubリポジトリの「Settings」→「Pages」を開く
-   - 「Source」を「GitHub Actions」に設定
-
-2. **自動デプロイ**
-   - mainブランチにプッシュすると自動的にデプロイされます
-   - `.github/workflows/deploy.yml`が実行されます
-   - HTMLファイルのみが公開されます（設定ファイルやドキュメントは除外）
-
-3. **公開URL**
-   - `https://<username>.github.io/<repository-name>/`
-
-### セキュリティ
-- nginx.conf、Dockerfile、CLAUDE.md、docs/などの内部ファイルは公開されません
-- GitHub Actionsが自動的にHTMLファイルのみを抽出してデプロイします
-
-## ローカル環境での確認方法
-
-### 方法1: Docker Compose（推奨）
-
-```bash
-# イメージをビルドして起動
-docker-compose up -d
-
-# ブラウザで確認
-open http://localhost:8080
-
-# 停止
-docker-compose down
-```
-
-### 方法2: Dockerコマンド
-
-```bash
-# イメージをビルド
-docker build -t saitama-website .
-
-# コンテナを起動
-docker run -d -p 8080:80 --name saitama-website saitama-website
-
-# ブラウザで確認
-open http://localhost:8080
-
-# 停止と削除
-docker stop saitama-website
-docker rm saitama-website
-```
-
-### 方法3: 簡易HTTPサーバー（Dockerなし）
-
-Pythonがインストールされている場合：
-
-```bash
-# Python 3の場合
-python3 -m http.server 8080
-
-# ブラウザで確認
-open http://localhost:8080
-```
+※ `package.json` / `tailwind.config.js` はリポジトリに含まれていません。`css/styles.css` は外部ビルド済みの成果物として配置されているため、未使用のTailwindユーティリティは含まれません。新たに必要なクラスがある場合は `css/custom-styles.css` に追記してください。
 
 ## サイト構成
 
@@ -121,8 +58,9 @@ open http://localhost:8080
   - tokorozawa-city.html, koshigaya.html, kasukabe.html
   - ageo.html, kumagaya.html, chichibu-city.html
 
-### サイト情報 (site-info/) - 4ページ
+### サイト情報 (site-info/) - 5ページ
 - `accessibility.html` - アクセシビリティ方針
+- `accessibility-test-result.html` - アクセシビリティ試験結果（JIS X 8341-3:2016 達成基準ごとの判定結果）
 - `sitemap.html` - サイトマップ
 - `privacy.html` - プライバシーポリシー
 - `contact.html` - お問い合わせ
@@ -143,7 +81,7 @@ open http://localhost:8080
 
 ## データソース
 
-すべてのコンテンツは2024-2025年の公式データに基づいています：
+すべてのコンテンツは2024-2026年の公式データに基づいています：
 
 - 埼玉県公式サイト
 - 各市町村公式サイト
@@ -154,4 +92,8 @@ open http://localhost:8080
 
 ## ライセンス
 
-このプロジェクトは教育目的で作成されています。
+© 2026 合同会社NEWWIND. All rights reserved.
+
+本リポジトリは合同会社NEWWINDが制作した制作物であり、無断での複製・転載・改変・再配布、ならびに本コードを利用した類似サイトの構築を禁じます。
+
+埼玉県および各市町村の公式情報は各機関に著作権があり、本サイトは情報提供を目的に出典を明示の上で引用しています。
