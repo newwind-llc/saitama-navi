@@ -27,3 +27,30 @@ aside h2 {
     text-shadow: none;
     text-align: left;
 }
+
+/* アクセシビリティ試験結果ページの結果一覧テーブル（4つの一覧で列幅を統一） */
+.test-result-table {
+    table-layout: fixed;
+    width: 100%;
+    min-width: 48rem; /* 狭い画面では overflow-x-auto により横スクロール */
+}
+.test-result-table col.col-jis      { width: 5.5rem; }   /* 1: JIS項番（固定） */
+.test-result-table col.col-criterion{ width: 14rem; }    /* 2: 達成基準 */
+.test-result-table col.col-content  { width: auto; }     /* 3: チェック内容（残り幅可変） */
+.test-result-table col.col-judge    { width: 5rem; }     /* 4: 判定（固定） */
+.test-result-table col.col-note     { width: 11rem; }    /* 5: 備考 */
+
+.test-result-table th,
+.test-result-table td {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+/* 1列目（JIS項番）と4列目（判定）は改行禁止 */
+.test-result-table th:nth-child(1),
+.test-result-table td:nth-child(1),
+.test-result-table th:nth-child(4),
+.test-result-table td:nth-child(4) {
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
