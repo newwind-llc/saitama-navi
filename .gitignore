@@ -3,6 +3,7 @@ CLAUDE.md
 .claude/
 docs/
 COMPLETION_SUMMARY.txt
+JISチェックリスト.xlsx
 
 # OS固有ファイル
 .DS_Store
