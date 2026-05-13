@@ -35,6 +35,7 @@ jobs:
 
           # HTMLファイルをコピー
           cp index.html _site/
+          cp googlefed2eeacd163ed0e.html _site/
           cp -r about _site/
           cp -r tourism _site/
           cp -r life _site/
