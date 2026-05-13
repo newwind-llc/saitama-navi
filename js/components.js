@@ -1,12 +1,23 @@
 /**
- * 共通コンポーネント読み込みとモバイルメニュー機能
+ * components.js — ヘッダー/フッターの動的挙動のみ
  * JIS X 8341-3:2016 Level AA準拠
+ *
+ * 公開成果物（_site）は scripts/build-static.js により
+ *   <div id="header-placeholder"></div>
+ *   <div id="footer-placeholder"></div>
+ * が <header>/<footer> へ静的展開済みのため、このスクリプトは
+ *   - 現在ページに対応するナビ項目のハイライト
+ *   - モバイルメニュー開閉
+ * のみを担当する。
+ *
+ * 開発時に元HTMLを直接開いた場合（placeholder のまま）はヘッダー/フッターは
+ * 表示されない。プレビュー時は scripts/build-static.js を実行して
+ * _site/ を生成し、そちらを HTTP サーバで開くこと。
  */
 
 (function () {
   "use strict";
 
-  // DOMの読み込み完了を待つ
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
@@ -14,164 +25,82 @@
   }
 
   function init() {
-    // 現在のページのパスからルートへの相対パスを計算
-    function getRelativePathToRoot() {
-      const path = window.location.pathname;
+    highlightCurrentNav();
+    initMobileMenu();
+  }
 
-      // パスからファイル名を除去してディレクトリパスを取得
-      let directory = path.substring(0, path.lastIndexOf("/"));
+  // ---------------------------------------------------------------------------
+  // ナビハイライト
+  // ---------------------------------------------------------------------------
 
-      // GitHub Pagesのベースパス（/saitama-navi/）を除外
-      if (directory.startsWith("/saitama-navi")) {
-        directory = directory.replace("/saitama-navi", "");
+  function highlightCurrentNav() {
+    const currentUrl = new URL(window.location.href);
+    const currentPath = normalizePath(currentUrl.pathname);
+    // メニュー項目のみを対象にする（ロゴのホームリンクは除外）
+    const links = document.querySelectorAll("#mobile-menu a[href]");
+
+    links.forEach((link) => {
+      const rawHref = link.getAttribute("href");
+      if (!rawHref || rawHref.startsWith("#")) return;
+      let linkUrl;
+      try {
+        linkUrl = new URL(link.href);
+      } catch (_) {
+        return;
       }
+      if (linkUrl.origin !== currentUrl.origin) return;
 
-      // ルートからの階層数を計算（先頭と末尾の/を除く）
-      const pathParts = directory.split("/").filter((p) => p);
-      const depth = pathParts.length;
+      const linkPath = normalizePath(linkUrl.pathname);
+      const isExact = currentPath === linkPath;
+      // カテゴリトップ（"/about/" 形式）の場合、配下ページもハイライト
+      const isAncestor =
+        linkPath.endsWith("/") &&
+        linkPath !== "/" &&
+        currentPath.startsWith(linkPath);
 
-      // 階層数に応じた相対パスを返す
-      if (depth === 0) {
-        return "./";
+      if (isExact || isAncestor) {
+        link.classList.remove("hover:bg-gray-100", "hover:text-saitama-blue");
+        link.classList.add("bg-saitama-blue", "text-white", "font-semibold");
+        link.setAttribute("aria-current", "page");
+      }
+    });
+  }
+
+  function normalizePath(p) {
+    // index.html 終端を取り除く（"/about/index.html" → "/about/"）
+    return p.replace(/index\.html$/, "");
+  }
+
+  // ---------------------------------------------------------------------------
+  // モバイルメニュー
+  // ---------------------------------------------------------------------------
+
+  function initMobileMenu() {
+    const menuButton = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
+    if (!menuButton || !menu) return;
+
+    menuButton.addEventListener("click", function () {
+      const expanded = this.getAttribute("aria-expanded") === "true";
+      this.setAttribute("aria-expanded", String(!expanded));
+      menu.classList.toggle("hidden");
+
+      const icon = this.querySelector("svg path");
+      if (!expanded) {
+        if (icon) icon.setAttribute("d", "M6 18L18 6M6 6l12 12");
+        const sr = this.querySelector(".sr-only");
+        if (sr) sr.textContent = "メニューを閉じる";
       } else {
-        return "../".repeat(depth);
+        if (icon) icon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+        const sr = this.querySelector(".sr-only");
+        if (sr) sr.textContent = "メニューを開く";
       }
-    }
+    });
 
-    const basePath = getRelativePathToRoot();
-
-    // header/footer内の絶対パスを相対パスに変換
-    function convertAbsolutePathsToRelative(element) {
-      // リンク（a, link要素）のhrefを修正
-      element.querySelectorAll('a[href^="/"], link[href^="/"]').forEach((elem) => {
-        const href = elem.getAttribute("href");
-        if (href && href.startsWith("/") && !href.startsWith("//")) {
-          elem.setAttribute("href", basePath + href.substring(1));
-        }
-      });
-
-      // 画像のsrcを修正
-      element.querySelectorAll('img[src^="/"]').forEach((img) => {
-        const src = img.getAttribute("src");
-        if (src && src.startsWith("/") && !src.startsWith("//")) {
-          img.setAttribute("src", basePath + src.substring(1));
-        }
-      });
-    }
-    
-    // ヘッダーを読み込む
-    fetch(basePath + "components/header.html")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.text();
-      })
-      .then((html) => {
-        const headerPlaceholder = document.getElementById("header-placeholder");
-        if (headerPlaceholder) {
-          headerPlaceholder.innerHTML = html;
-          convertAbsolutePathsToRelative(headerPlaceholder);
-          highlightCurrentPage();
-          initMobileMenu();
-        }
-      })
-      .catch((error) =>
-        console.error("ヘッダーの読み込みに失敗しました:", error)
-      );
-
-    // フッターを読み込む
-    fetch(basePath + "components/footer.html")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.text();
-      })
-      .then((html) => {
-        const footerPlaceholder = document.getElementById("footer-placeholder");
-        if (footerPlaceholder) {
-          footerPlaceholder.innerHTML = html;
-          convertAbsolutePathsToRelative(footerPlaceholder);
-        }
-      })
-      .catch((error) =>
-        console.error("フッターの読み込みに失敗しました:", error)
-      );
-
-    // 現在のページをナビゲーションでハイライト
-    function highlightCurrentPage() {
-      const currentPath = window.location.pathname;
-      const menuLinks = document.querySelectorAll("#mobile-menu a");
-
-      menuLinks.forEach((link) => {
-        const href = link.getAttribute("href");
-        if (!href) return;
-
-        // 現在のパスを正規化（GitHub Pagesのベースパスを除去）
-        let normalizedPath = currentPath;
-        if (normalizedPath.startsWith("/saitama-navi")) {
-          normalizedPath = normalizedPath.replace("/saitama-navi", "");
-        }
-
-        // リンクのhrefを絶対パス形式に変換して比較
-        let absoluteHref = href;
-        if (href.startsWith("../")) {
-          // 相対パスを絶対パスに変換
-          const depth = (href.match(/\.\.\//g) || []).length;
-          const pathParts = normalizedPath.split("/").filter((p) => p);
-          pathParts.splice(pathParts.length - depth);
-          const remainingPath = href.replace(/\.\.\//g, "");
-          absoluteHref = "/" + pathParts.join("/") + "/" + remainingPath;
-        } else if (href.startsWith("./")) {
-          const directory = normalizedPath.substring(
-            0,
-            normalizedPath.lastIndexOf("/")
-          );
-          absoluteHref = directory + "/" + href.substring(2);
-        }
-
-        // パスが一致する、または現在のパスがそのセクションに含まれる場合
-        if (
-          normalizedPath === absoluteHref ||
-          normalizedPath.startsWith(absoluteHref.replace(/index\.html$/, ""))
-        ) {
-          link.classList.remove("hover:bg-gray-100", "hover:text-saitama-blue");
-          link.classList.add("bg-saitama-blue", "text-white", "font-semibold");
-          link.setAttribute("aria-current", "page");
-        }
-      });
-    }
-
-    // モバイルメニューの初期化
-    function initMobileMenu() {
-      const menuButton = document.getElementById("mobile-menu-button");
-      const menu = document.getElementById("mobile-menu");
-
-      if (menuButton && menu) {
-        menuButton.addEventListener("click", function () {
-          const expanded = this.getAttribute("aria-expanded") === "true";
-          this.setAttribute("aria-expanded", !expanded);
-          menu.classList.toggle("hidden");
-
-          // アイコン変更
-          const icon = this.querySelector("svg path");
-          if (!expanded) {
-            icon.setAttribute("d", "M6 18L18 6M6 6l12 12");
-            this.querySelector(".sr-only").textContent = "メニューを閉じる";
-          } else {
-            icon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
-            this.querySelector(".sr-only").textContent = "メニューを開く";
-          }
-        });
-
-        // Escキーでメニューを閉じる（アクセシビリティ向上）
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && !menu.classList.contains("hidden")) {
-            menuButton.click();
-          }
-        });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.classList.contains("hidden")) {
+        menuButton.click();
       }
-    }
+    });
   }
 })();

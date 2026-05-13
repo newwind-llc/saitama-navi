@@ -28,33 +28,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Prepare deployment files
-        run: |
-          # デプロイ用ディレクトリを作成
-          mkdir -p _site
-
-          # HTMLファイルをコピー
-          cp index.html _site/
-          cp googlefed2eeacd163ed0e.html _site/
-          cp -r about _site/
-          cp -r tourism _site/
-          cp -r life _site/
-          cp -r industry _site/
-          cp -r cities _site/
-          cp -r site-info _site/
-
-          # 静的リソースをコピー
-          cp -r components _site/
-          cp -r js _site/
-          cp -r css _site/
-          cp -r img _site/
-
-          # SEO用ファイルをコピー
-          cp robots.txt _site/
-          cp sitemap.xml _site/
-
-          # .nojekyllファイルを作成（Jekyllの処理をスキップ）
-          touch _site/.nojekyll
+      - name: Build static site (header/footer expansion)
+        # _site/ を生成し、共通ヘッダー/フッターを各HTMLへ静的展開する。
+        # ファイルコピー・パス変換・.nojekyll 作成は scripts/build-static.js が一括処理。
+        run: node scripts/build-static.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

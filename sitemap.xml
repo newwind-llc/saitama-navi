@@ -296,6 +296,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://newwind-llc.github.io/saitama-navi/site-info/accessibility-test-result.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://newwind-llc.github.io/saitama-navi/site-info/sitemap.html</loc>
     <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>

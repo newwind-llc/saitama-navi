@@ -50,6 +50,9 @@ build/
 *.min.js
 *.min.css
 
+# 静的展開後の公開成果物（GitHub Actions / scripts/build-static.js で再生成）
+_site/
+
 # 環境変数ファイル
 .env
 .env.local

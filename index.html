@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://newwind-llc.github.io/saitama-navi/" />
     <meta
       name="description"
       content="埼玉県の観光、文化、産業、生活情報を網羅した総合紹介サイト。都心から90分でアクセスできる自然豊かな埼玉県の魅力を発信します。"
@@ -44,7 +45,11 @@
 
       /* ヒーローセクションの背景画像 */
       .hero-section {
-        background-image: url("./img/tokinokane.jpg");
+        background-image: url("./img/tokinokane-hero.jpg");
+        background-image: image-set(
+          url("./img/tokinokane-hero.webp") type("image/webp"),
+          url("./img/tokinokane-hero.jpg") type("image/jpeg")
+        );
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -74,6 +79,17 @@
       }
     </style>
     <script src="js/components.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "さいたまなび",
+        "alternateName": "Saitama Navi",
+        "url": "https://newwind-llc.github.io/saitama-navi/",
+        "inLanguage": "ja",
+        "description": "埼玉県の観光、文化、産業、生活情報を網羅した総合紹介サイト。"
+      }
+    </script>
   </head>
   <body class="bg-gray-50 text-gray-900">
     <!-- Skip Link -->
@@ -94,20 +110,20 @@
         <div class="container mx-auto px-4">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              埼玉県へようこそ
+              さいたまなび - 埼玉県の観光・文化・生活情報
             </h1>
             <p class="text-lg md:text-xl leading-relaxed mb-8">
-              都心から90分でアクセスできる自然豊かな埼玉県。豊かな歴史文化、多彩な観光スポット、快適な生活環境を兼ね備えた魅力あふれる県です。人口約732万人、面積3,797.75km²の広大なエリアで、皆様をお待ちしています。
+              「さいたまなび」は、都心から90分でアクセスできる自然豊かな埼玉県の魅力を発信する総合情報サイトです。豊かな歴史文化、多彩な観光スポット、快適な生活環境を兼ね備えた人口約732万人・面積3,797.75km²の埼玉県を、観光・暮らし・産業の各分野からご紹介します。
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="./tourism/index.html"
+                href="./tourism/"
                 class="bg-white text-saitama-blue px-6 py-3 rounded-lg font-semibold hover:bg-saitama-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue"
               >
                 観光情報を見る
               </a>
               <a
-                href="./about/index.html"
+                href="./about/"
                 class="bg-white text-saitama-blue px-6 py-3 rounded-lg font-semibold hover:bg-saitama-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saitama-blue"
               >
                 埼玉県を知る
@@ -186,7 +202,7 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="./about/index.html"
+                    href="./about/"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     埼玉県の概要
@@ -196,7 +212,7 @@
                   埼玉県の地理、気候、歴史、文化、人口統計など、県の基本情報をご紹介します。
                 </p>
                 <a
-                  href="./about/index.html"
+                  href="./about/"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -213,12 +229,13 @@
                   src="./img/秩父市_ミューズパーク2.jpg"
                   alt="観光・レジャーカテゴリ。川越、秩父、長瀞などの観光スポット、イベント、グルメ情報を掲載"
                   class="w-full h-48 object-cover"
-                />
+                  loading="lazy"
+                  decoding="async" />
               </figure>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="./tourism/index.html"
+                    href="./tourism/"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     観光・レジャー
@@ -228,7 +245,7 @@
                   川越、秩父、長瀞など、埼玉県の魅力的な観光スポット、イベント、グルメ情報を網羅しています。
                 </p>
                 <a
-                  href="./tourism/index.html"
+                  href="./tourism/"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -245,12 +262,13 @@
                   src="./img/越生梅林2.jpg"
                   alt="生活・暮らしカテゴリ。交通、医療、福祉、教育、子育て支援などの生活情報を掲載"
                   class="w-full h-48 object-cover"
-                />
+                  loading="lazy"
+                  decoding="async" />
               </figure>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="./life/index.html"
+                    href="./life/"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     生活・暮らし
@@ -260,7 +278,7 @@
                   交通アクセス、医療・福祉、教育、子育て支援など、埼玉県での快適な生活に役立つ情報を提供します。
                 </p>
                 <a
-                  href="./life/index.html"
+                  href="./life/"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -277,12 +295,13 @@
                   src="./img/さいたま新都心.jpg"
                   alt="産業・経済カテゴリ。製造業、農業、商業、主要企業、就労支援などの産業情報を掲載"
                   class="w-full h-48 object-cover"
-                />
+                  loading="lazy"
+                  decoding="async" />
               </figure>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="./industry/index.html"
+                    href="./industry/"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     産業・経済
@@ -292,7 +311,7 @@
                   製造業、農業、商業など、埼玉県の産業構造、主要企業、就労支援に関する情報をまとめています。
                 </p>
                 <a
-                  href="./industry/index.html"
+                  href="./industry/"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -309,12 +328,13 @@
                   src="./img/浦和.jpg"
                   alt="市町村情報カテゴリ。さいたま市、川口市、川越市など県内主要都市の詳細情報を掲載"
                   class="w-full h-48 object-cover"
-                />
+                  loading="lazy"
+                  decoding="async" />
               </figure>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2 text-gray-800">
                   <a
-                    href="./cities/index.html"
+                    href="./cities/"
                     class="hover:text-saitama-blue transition-colors focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                   >
                     市町村情報
@@ -324,7 +344,7 @@
                   さいたま市、川口市、川越市など、埼玉県内の主要都市の特徴、観光、生活情報をご紹介します。
                 </p>
                 <a
-                  href="./cities/index.html"
+                  href="./cities/"
                   class="text-saitama-blue font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-saitama-blue"
                 >
                   詳しく見る →
@@ -341,7 +361,8 @@
                   src="./img/コバトン-こんにちわ.png"
                   alt="サイト情報カテゴリ。サイトマップ、アクセシビリティ方針、プライバシーポリシーを掲載"
                   class="w-full h-48 object-cover object-top"
-                />
+                  loading="lazy"
+                  decoding="async" />
                 <figcaption>©埼玉県2005</figcaption>
               </figure>
               <div class="p-6">
@@ -383,9 +404,11 @@
               </h3>
               <figure class="mb-4">
                 <img
-                  src="./img/tokinokane.jpg"
+                  src="./img/tokinokane-hero.jpg"
                   alt="川越の時の鐘。江戸時代初期から時を告げる木造3層構造の鐘楼で、高さ約16メートル"
                   class="w-full h-48 object-cover rounded-md"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <figcaption class="text-sm text-gray-600 mt-2">
                   川越のシンボル「時の鐘」
@@ -405,7 +428,8 @@
                   src="./img/長瀞岩畳.jpg"
                   alt="長瀞の岩畳。荒川の清流に沿って広がる結晶片岩の一枚岩で、国の天然記念物に指定"
                   class="w-full h-48 object-cover rounded-md"
-                />
+                  loading="lazy"
+                  decoding="async" />
                 <figcaption class="text-sm text-gray-600 mt-2">
                   長瀞の岩畳とライン下り
                 </figcaption>
@@ -424,7 +448,8 @@
                   src="./img/秩父夜祭.jpg"
                   alt="秩父夜祭。日本三大曳山祭の一つで、豪華絢爛な山車が街中を巡行する冬の祭典"
                   class="w-full h-48 object-cover rounded-md"
-                />
+                  loading="lazy"
+                  decoding="async" />
                 <figcaption class="text-sm text-gray-600 mt-2">
                   ユネスコ無形文化遺産「秩父夜祭」
                 </figcaption>
